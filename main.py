@@ -1,27 +1,21 @@
-import requests
+import json
 
-api_key = "RGAPI-c29ff9d4-7749-47e3-846b-b161d1eb25eb"
+file = open('matchs_metada_example.json')
 
-def get_player_data_by_name(name):
+data = json.load(file)
 
-    url = f"https://br1.api.riotgames.com/lol/summoner/v4/summoners/by-name/{username}?api_key={api_key}"
-    
-    return requests.get(url).json()
+file.close()
 
+puuid_akaashi= 'jkgVko75HkHz9kHMYrVKYuPPC60s59vKct4Dj2djr0ETBLd52pqBO6xERuqLPsL7VbNR8sHHh7cFNg'
 
-def get_match_data_by_player_id(id):
+participants_info = data[1]['metadata']['participants']
+player_idx =  participants_info.index(puuid_akaashi)
 
-    url = f"https://br1.api.riotgames.com/lol/spectator/v4/active-games/by-summoner/{id}?api_key={api_key}"
+player_info = data[1]['info']['participants'][player_idx]
 
-    return  requests.get(url).json()
+# print(player_idx)
 
-
-
-username = 'Koi Panda'
-
-player = get_player_data_by_name(username)
-print(f"Gettng {player['name']} data statistics => {player['id']}")
-match = get_match_data_by_player_id(player['id'])
-# user = res.json()
-# id = user['id']
-print(match)
+player_info = json.dumps(player_info, indent=4)
+ 
+with open("temp.json", "w") as outfile:
+    outfile.write(player_info)

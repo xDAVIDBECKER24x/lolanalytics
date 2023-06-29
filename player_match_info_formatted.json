@@ -1,0 +1,23 @@
+{
+    "championName": "Aphelios",
+    "assists": 3,
+    "champExperience": 11338,
+    "consumablesPurchased": 10,
+    "damageDealtToBuildings": 2136,
+    "damageDealtToObjectives": 16222,
+    "damageDealtToTurrets": 2136,
+    "deaths": 4,
+    "firstBloodKill": false,
+    "firstTowerKill": false,
+    "gameEndedInSurrender": true,
+    "goldEarned": 10702,
+    "kills": 3,
+    "largestMultiKill": 2,
+    "longestTimeSpentLiving": 706,
+    "sightWardsBoughtInGame": 0,
+    "teamEarlySurrendered": false,
+    "totalDamageDealtToChampions": 17043,
+    "totalMinionsKilled": 218,
+    "wardsPlaced": 12,
+    "win": false
+}

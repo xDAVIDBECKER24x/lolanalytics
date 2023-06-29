@@ -123,11 +123,11 @@ def save_json_to_csv(data,file):
 #https://developer.riotgames.com/apis#match-v5/GET_getMatch
 
 
-raw_data_matchs_file = 'matchs_metadata_example.json'
+raw_data_matchs_file = 'nataruk/matchs_metadata_nataruk.json'
 
 # Load raw data from exported matches json
-raw_matches_data = open(raw_data_matchs_file)
-raw_matches_data = json.load(raw_matches_data)
+raw_data_matchs_file = open(raw_data_matchs_file)
+raw_matches_data = json.load(raw_data_matchs_file)
 raw_data_matchs_file.close()
 
 
@@ -136,8 +136,9 @@ raw_data_matchs_file.close()
 puuid_akaashi = 'jkgVko75HkHz9kHMYrVKYuPPC60s59vKct4Dj2djr0ETBLd52pqBO6xERuqLPsL7VbNR8sHHh7cFNg'
 puuid_tekendol = 'z2RlhdFkRh2CJ052bFeAd1SgdGIG9pyLJMPRpQImpELnUCgR0o4Gw2k2S6RR4vQ85daZ7imGU6w4hQ'
 puuid_nataruk = 'LdDeMb13ze9R_iYpMxyT5xP9PeiabtBtQ7FC65nrxXCDwLob2KGirZv__t71vwP9bDR-rhIf24m7vg'
+puuid_titan = 'dgBKuZgDjSv5F8Tgnuzi158sZlyyMtv1X9icbWvjFt7NbvIt7U31Ss6-IGyyJosYUIShfQzQpl4KHw'
 
-save_file = "ping_overview_akaashi.json"
+save_file = "nataruk/ping_overview_nataruk.json"
 
 # count_matches = save_data_file(puuid_akaashi,save_file)
 
@@ -145,7 +146,7 @@ save_file = "ping_overview_akaashi.json"
 # print(player_match_info)
 
 
-save_pings_overview(raw_matches_data,puuid_akaashi,save_file)
+save_pings_overview(raw_matches_data,puuid_nataruk,save_file)
 
 # save_json_to_csv(overview, "match_overview_akaashi.csv")
 

@@ -122,21 +122,27 @@ def save_json_to_csv(data,file):
 
 #https://developer.riotgames.com/apis#match-v5/GET_getMatch
 
+
+raw_data_matchs_file = 'matchs_metadata_example.json'
+
 # Load raw data from exported matches json
-raw_data_file = open('matchs_metadata_example.json')
-raw_matches_data = json.load(raw_data_file)
-raw_data_file.close()
+raw_matches_data = open(raw_data_matchs_file)
+raw_matches_data = json.load(raw_matches_data)
+raw_data_matchs_file.close()
 
 
-match_id = 'BR1_2755319405'
+# match_id = 'BR1_2755319405'
+
 puuid_akaashi = 'jkgVko75HkHz9kHMYrVKYuPPC60s59vKct4Dj2djr0ETBLd52pqBO6xERuqLPsL7VbNR8sHHh7cFNg'
+puuid_tekendol = 'z2RlhdFkRh2CJ052bFeAd1SgdGIG9pyLJMPRpQImpELnUCgR0o4Gw2k2S6RR4vQ85daZ7imGU6w4hQ'
+puuid_nataruk = 'LdDeMb13ze9R_iYpMxyT5xP9PeiabtBtQ7FC65nrxXCDwLob2KGirZv__t71vwP9bDR-rhIf24m7vg'
+
 save_file = "ping_overview_akaashi.json"
 
 # count_matches = save_data_file(puuid_akaashi,save_file)
 
 # player_match_info = get_player_match_info_by_player_puuid(raw_matches_data[0],puuid_akaashi)
 # print(player_match_info)
-
 
 
 save_pings_overview(raw_matches_data,puuid_akaashi,save_file)

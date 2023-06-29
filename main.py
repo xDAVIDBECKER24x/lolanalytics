@@ -1,5 +1,7 @@
 import csv
 import json
+from time import gmtime
+from time import strftime
 
 def format_json(json_data):
 
@@ -55,7 +57,10 @@ def save_match_overview(match_list,puuid,save_file):
 
             player_data = get_player_match_info_by_player_puuid(match,puuid)
 
-            match_overview['gameDuration'] = match['info']['gameDuration']
+            match_duration = match['info']['gameDuration']
+            match_duration = strftime("%H:%M:%S", gmtime(match_duration))
+
+            match_overview['gameDuration'] = match_duration
             match_overview['championName'] = player_data['championName']
             match_overview['kills'] = player_data['kills']
             match_overview['deaths'] = player_data['deaths']
@@ -96,8 +101,9 @@ save_file = "match_overview_akaashi.json"
 
 
 
-overview = save_match_overview(raw_matches_data,puuid_akaashi,save_file)
-save_json_to_csv(overview, "match_overview_akaashi.csv")
+save_match_overview(raw_matches_data,puuid_akaashi,save_file)
+
+# save_json_to_csv(overview, "match_overview_akaashi.csv")
 
 
 

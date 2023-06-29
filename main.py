@@ -123,7 +123,7 @@ def save_json_to_csv(data,file):
 #https://developer.riotgames.com/apis#match-v5/GET_getMatch
 
 
-raw_data_matchs_file = 'nataruk/matchs_metadata_nataruk.json'
+raw_data_matchs_file = 'proplayers/matchs_metadata_titan.json'
 
 # Load raw data from exported matches json
 raw_data_matchs_file = open(raw_data_matchs_file)
@@ -138,7 +138,7 @@ puuid_tekendol = 'z2RlhdFkRh2CJ052bFeAd1SgdGIG9pyLJMPRpQImpELnUCgR0o4Gw2k2S6RR4v
 puuid_nataruk = 'LdDeMb13ze9R_iYpMxyT5xP9PeiabtBtQ7FC65nrxXCDwLob2KGirZv__t71vwP9bDR-rhIf24m7vg'
 puuid_titan = 'dgBKuZgDjSv5F8Tgnuzi158sZlyyMtv1X9icbWvjFt7NbvIt7U31Ss6-IGyyJosYUIShfQzQpl4KHw'
 
-save_file = "nataruk/ping_overview_nataruk.json"
+save_file = "proplayers/ping_overview_titan.json"
 
 # count_matches = save_data_file(puuid_akaashi,save_file)
 
@@ -146,7 +146,7 @@ save_file = "nataruk/ping_overview_nataruk.json"
 # print(player_match_info)
 
 
-save_pings_overview(raw_matches_data,puuid_nataruk,save_file)
+save_pings_overview(raw_matches_data,puuid_titan,save_file)
 
 # save_json_to_csv(overview, "match_overview_akaashi.csv")
 

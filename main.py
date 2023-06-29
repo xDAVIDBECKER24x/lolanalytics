@@ -73,6 +73,41 @@ def save_match_overview(match_list,puuid,save_file):
 
     return
 
+def save_pings_overview(match_list,puuid,save_file):
+
+    with open(save_file, "w") as outfile:
+
+        for match in match_list:
+
+            pings_overview = {}
+
+            player_data = get_player_match_info_by_player_puuid(match,puuid)
+
+            match_duration = match['info']['gameDuration']
+            match_duration = strftime("%H:%M:%S", gmtime(match_duration))
+
+            pings_overview['gameDuration'] = match_duration
+            pings_overview['championName'] = player_data['championName']
+            pings_overview['win'] = player_data['win']
+            pings_overview['allInPings'] = player_data['allInPings']
+            pings_overview['baitPings'] = player_data['baitPings']
+            pings_overview['basicPings'] = player_data['basicPings']
+            pings_overview['commandPings'] = player_data['commandPings']
+            pings_overview['dangerPings'] = player_data['dangerPings']
+            pings_overview['enemyMissingPings'] = player_data['enemyMissingPings']
+            pings_overview['enemyVisionPings'] = player_data['enemyVisionPings']
+            pings_overview['getBackPings'] = player_data['getBackPings']
+            pings_overview['holdPings'] = player_data['holdPings']
+            pings_overview['needVisionPings'] = player_data['needVisionPings']
+            pings_overview['onMyWayPings'] = player_data['onMyWayPings']
+            pings_overview['pushPings'] = player_data['pushPings']
+
+
+            pings_overview = format_json(pings_overview)    
+
+            outfile.write(pings_overview)
+        
+    return
 
 def save_json_to_csv(data,file):
 
@@ -83,16 +118,19 @@ def save_json_to_csv(data,file):
         writer.writeheader()
         writer.writerows(data)
 
+    
 
-# Load data from exported matches json
-file = open('matchs_metadata_example.json')
-raw_matches_data = json.load(file)
-file.close()
+#https://developer.riotgames.com/apis#match-v5/GET_getMatch
+
+# Load raw data from exported matches json
+raw_data_file = open('matchs_metadata_example.json')
+raw_matches_data = json.load(raw_data_file)
+raw_data_file.close()
 
 
 match_id = 'BR1_2755319405'
 puuid_akaashi = 'jkgVko75HkHz9kHMYrVKYuPPC60s59vKct4Dj2djr0ETBLd52pqBO6xERuqLPsL7VbNR8sHHh7cFNg'
-save_file = "match_overview_akaashi.json"
+save_file = "ping_overview_akaashi.json"
 
 # count_matches = save_data_file(puuid_akaashi,save_file)
 
@@ -101,7 +139,7 @@ save_file = "match_overview_akaashi.json"
 
 
 
-save_match_overview(raw_matches_data,puuid_akaashi,save_file)
+save_pings_overview(raw_matches_data,puuid_akaashi,save_file)
 
 # save_json_to_csv(overview, "match_overview_akaashi.csv")
 

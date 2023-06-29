@@ -26,8 +26,7 @@
         "gameType": "MATCHED_GAME",
         "gameVersion": "13.12.515.4234",
         "mapId": 11,
-        "participants": [
-            {
+        "participants": [{
                 "allInPings": 2,
                 "assistMePings": 3,
                 "assists": 1,
@@ -220,11 +219,9 @@
                         "flex": 5008,
                         "offense": 5008
                     },
-                    "styles": [
-                        {
+                    "styles": [{
                             "description": "primaryStyle",
-                            "selections": [
-                                {
+                            "selections": [{
                                     "perk": 8437,
                                     "var1": 1409,
                                     "var2": 809,
@@ -253,8 +250,7 @@
                         },
                         {
                             "description": "subStyle",
-                            "selections": [
-                                {
+                            "selections": [{
                                     "perk": 8299,
                                     "var1": 2022,
                                     "var2": 0,
@@ -522,11 +518,9 @@
                         "flex": 5008,
                         "offense": 5005
                     },
-                    "styles": [
-                        {
+                    "styles": [{
                             "description": "primaryStyle",
-                            "selections": [
-                                {
+                            "selections": [{
                                     "perk": 8010,
                                     "var1": 478,
                                     "var2": 0,
@@ -555,8 +549,7 @@
                         },
                         {
                             "description": "subStyle",
-                            "selections": [
-                                {
+                            "selections": [{
                                     "perk": 8347,
                                     "var1": 0,
                                     "var2": 0,
@@ -823,11 +816,9 @@
                         "flex": 5008,
                         "offense": 5005
                     },
-                    "styles": [
-                        {
+                    "styles": [{
                             "description": "primaryStyle",
-                            "selections": [
-                                {
+                            "selections": [{
                                     "perk": 8021,
                                     "var1": 2339,
                                     "var2": 1833,
@@ -856,8 +847,7 @@
                         },
                         {
                             "description": "subStyle",
-                            "selections": [
-                                {
+                            "selections": [{
                                     "perk": 8226,
                                     "var1": 250,
                                     "var2": 418,
@@ -1124,11 +1114,9 @@
                         "flex": 5008,
                         "offense": 5005
                     },
-                    "styles": [
-                        {
+                    "styles": [{
                             "description": "primaryStyle",
-                            "selections": [
-                                {
+                            "selections": [{
                                     "perk": 8021,
                                     "var1": 1072,
                                     "var2": 880,
@@ -1157,8 +1145,7 @@
                         },
                         {
                             "description": "subStyle",
-                            "selections": [
-                                {
+                            "selections": [{
                                     "perk": 8233,
                                     "var1": 19,
                                     "var2": 20,
@@ -1426,11 +1413,9 @@
                         "flex": 5008,
                         "offense": 5007
                     },
-                    "styles": [
-                        {
+                    "styles": [{
                             "description": "primaryStyle",
-                            "selections": [
-                                {
+                            "selections": [{
                                     "perk": 8351,
                                     "var1": 71,
                                     "var2": 869,
@@ -1459,8 +1444,7 @@
                         },
                         {
                             "description": "subStyle",
-                            "selections": [
-                                {
+                            "selections": [{
                                     "perk": 8242,
                                     "var1": 76,
                                     "var2": 0,
@@ -1728,11 +1712,9 @@
                         "flex": 5008,
                         "offense": 5005
                     },
-                    "styles": [
-                        {
+                    "styles": [{
                             "description": "primaryStyle",
-                            "selections": [
-                                {
+                            "selections": [{
                                     "perk": 8010,
                                     "var1": 875,
                                     "var2": 0,
@@ -1761,8 +1743,7 @@
                         },
                         {
                             "description": "subStyle",
-                            "selections": [
-                                {
+                            "selections": [{
                                     "perk": 8444,
                                     "var1": 1611,
                                     "var2": 0,
@@ -2031,11 +2012,9 @@
                         "flex": 5008,
                         "offense": 5005
                     },
-                    "styles": [
-                        {
+                    "styles": [{
                             "description": "primaryStyle",
-                            "selections": [
-                                {
+                            "selections": [{
                                     "perk": 8010,
                                     "var1": 397,
                                     "var2": 0,
@@ -2064,8 +2043,7 @@
                         },
                         {
                             "description": "subStyle",
-                            "selections": [
-                                {
+                            "selections": [{
                                     "perk": 8347,
                                     "var1": 0,
                                     "var2": 0,
@@ -2335,11 +2313,9 @@
                         "flex": 5008,
                         "offense": 5005
                     },
-                    "styles": [
-                        {
+                    "styles": [{
                             "description": "primaryStyle",
-                            "selections": [
-                                {
+                            "selections": [{
                                     "perk": 8229,
                                     "var1": 1391,
                                     "var2": 0,
@@ -2368,8 +2344,7 @@
                         },
                         {
                             "description": "subStyle",
-                            "selections": [
-                                {
+                            "selections": [{
                                     "perk": 8106,
                                     "var1": 5,
                                     "var2": 0,
@@ -2638,11 +2613,9 @@
                         "flex": 5008,
                         "offense": 5005
                     },
-                    "styles": [
-                        {
+                    "styles": [{
                             "description": "primaryStyle",
-                            "selections": [
-                                {
+                            "selections": [{
                                     "perk": 8005,
                                     "var1": 818,
                                     "var2": 545,
@@ -2671,8 +2644,7 @@
                         },
                         {
                             "description": "subStyle",
-                            "selections": [
-                                {
+                            "selections": [{
                                     "perk": 8304,
                                     "var1": 10,
                                     "var2": 3,
@@ -2941,11 +2913,9 @@
                         "flex": 5008,
                         "offense": 5008
                     },
-                    "styles": [
-                        {
+                    "styles": [{
                             "description": "primaryStyle",
-                            "selections": [
-                                {
+                            "selections": [{
                                     "perk": 8214,
                                     "var1": 753,
                                     "var2": 779,
@@ -2974,8 +2944,7 @@
                         },
                         {
                             "description": "subStyle",
-                            "selections": [
-                                {
+                            "selections": [{
                                     "perk": 8453,
                                     "var1": 2632,
                                     "var2": 213,
@@ -3055,10 +3024,8 @@
         ],
         "platformId": "BR1",
         "queueId": 420,
-        "teams": [
-            {
-                "bans": [
-                    {
+        "teams": [{
+                "bans": [{
                         "championId": 107,
                         "pickTurn": 1
                     },
@@ -3109,8 +3076,7 @@
                 "win": false
             },
             {
-                "bans": [
-                    {
+                "bans": [{
                         "championId": 30,
                         "pickTurn": 6
                     },

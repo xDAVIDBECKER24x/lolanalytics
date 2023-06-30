@@ -109,6 +109,23 @@ def save_pings_overview(match_list,puuid,save_file):
         
     return
 
+def save_date_matchs(match_list,save_file):
+
+    with open(save_file, "w") as outfile:
+
+       for match in match_list:
+
+            date_overview = {}
+
+            date_overview['gameCreation'] = match['info']['gameCreation']
+
+            date_overview = format_json(date_overview)    
+
+            outfile.write(date_overview)
+
+    return
+
+
 def save_json_to_csv(data,file):
 
     headers = data[0].keys()
@@ -118,12 +135,16 @@ def save_json_to_csv(data,file):
         writer.writeheader()
         writer.writerows(data)
 
+    return
+
     
 
 #https://developer.riotgames.com/apis#match-v5/GET_getMatch
 
 
-raw_data_matchs_file = 'matchs_metadata_tinows.json'
+path = 'newplayers/tekendol/'
+
+raw_data_matchs_file = path + 'matchs_metadata_tekendol.json'
 
 # Load raw data from exported matches json
 raw_data_matchs_file = open(raw_data_matchs_file)   
@@ -138,16 +159,18 @@ puuid_tekendol = 'z2RlhdFkRh2CJ052bFeAd1SgdGIG9pyLJMPRpQImpELnUCgR0o4Gw2k2S6RR4v
 puuid_nataruk = 'LdDeMb13ze9R_iYpMxyT5xP9PeiabtBtQ7FC65nrxXCDwLob2KGirZv__t71vwP9bDR-rhIf24m7vg'
 puuid_titan = 'dgBKuZgDjSv5F8Tgnuzi158sZlyyMtv1X9icbWvjFt7NbvIt7U31Ss6-IGyyJosYUIShfQzQpl4KHw'
 puuid_tinows = 'VqN8fBYVLJeXt4LiADsU71WoFtl19lY_cb0prtH_gI4HAAZ2LzHj84s4eD-bTrKPjRuC2IriGyoVdg'
+puuid_jojo = 'PNw506k5hy7E_TVBM0-3f3m9WNk1I_A0qgakr2yqH7_aS7s5G636Y724mT5Do0Gj2FbBpr3QDqxU_g'
 
-save_file = "proplayers/ping_overview_tinows.json"
+save_file = path +  "dates_tekendol.json"
 
 # count_matches = save_data_file(puuid_akaashi,save_file)
 
 # player_match_info = get_player_match_info_by_player_puuid(raw_matches_data[0],puuid_akaashi)
 # print(player_match_info)
 
+save_date_matchs(raw_matches_data,save_file)
 
-save_pings_overview(raw_matches_data,puuid_tinows,save_file)
+# save_pings_overview(raw_matches_data,puuid_tinows,save_file)
 
 # save_json_to_csv(overview, "match_overview_akaashi.csv")
 

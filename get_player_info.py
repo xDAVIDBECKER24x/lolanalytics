@@ -17,7 +17,7 @@ def get_match_data_by_player_id(id):
 
 
 
-username = 'FX Jojinho'
+username = 'PAIN caca1'
 
 player = get_player_data_by_name(username)
 print(f"Gettng {player['name']} data statistics => {player['puuid']}")

@@ -123,10 +123,10 @@ def save_json_to_csv(data,file):
 #https://developer.riotgames.com/apis#match-v5/GET_getMatch
 
 
-raw_data_matchs_file = 'proplayers/matchs_metadata_titan.json'
+raw_data_matchs_file = 'matchs_metadata_tinows.json'
 
 # Load raw data from exported matches json
-raw_data_matchs_file = open(raw_data_matchs_file)
+raw_data_matchs_file = open(raw_data_matchs_file)   
 raw_matches_data = json.load(raw_data_matchs_file)
 raw_data_matchs_file.close()
 
@@ -137,8 +137,9 @@ puuid_akaashi = 'jkgVko75HkHz9kHMYrVKYuPPC60s59vKct4Dj2djr0ETBLd52pqBO6xERuqLPsL
 puuid_tekendol = 'z2RlhdFkRh2CJ052bFeAd1SgdGIG9pyLJMPRpQImpELnUCgR0o4Gw2k2S6RR4vQ85daZ7imGU6w4hQ'
 puuid_nataruk = 'LdDeMb13ze9R_iYpMxyT5xP9PeiabtBtQ7FC65nrxXCDwLob2KGirZv__t71vwP9bDR-rhIf24m7vg'
 puuid_titan = 'dgBKuZgDjSv5F8Tgnuzi158sZlyyMtv1X9icbWvjFt7NbvIt7U31Ss6-IGyyJosYUIShfQzQpl4KHw'
+puuid_tinows = 'VqN8fBYVLJeXt4LiADsU71WoFtl19lY_cb0prtH_gI4HAAZ2LzHj84s4eD-bTrKPjRuC2IriGyoVdg'
 
-save_file = "proplayers/ping_overview_titan.json"
+save_file = "proplayers/ping_overview_tinows.json"
 
 # count_matches = save_data_file(puuid_akaashi,save_file)
 
@@ -146,7 +147,7 @@ save_file = "proplayers/ping_overview_titan.json"
 # print(player_match_info)
 
 
-save_pings_overview(raw_matches_data,puuid_titan,save_file)
+save_pings_overview(raw_matches_data,puuid_tinows,save_file)
 
 # save_json_to_csv(overview, "match_overview_akaashi.csv")
 

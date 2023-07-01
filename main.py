@@ -159,7 +159,7 @@ match_settings['game_mode'] = ["CLASSIC"]
 
 
 player_type = 'proplayer'
-player_alias = 'dynquedo'
+player_alias = 'ayu'
 path = player_type + '/'+player_alias+'/'
 
 raw_data_matchs_file = path + 'matchs_metadata_'+player_alias+'.json'
@@ -170,11 +170,14 @@ raw_matches_data = json.load(raw_data_matchs_file)
 raw_data_matchs_file.close()
 
 
-# match_id = 'BR1_2755319405'
 players_puuid = {}
+
+# Line Players
 players_puuid['akaashi'] = 'jkgVko75HkHz9kHMYrVKYuPPC60s59vKct4Dj2djr0ETBLd52pqBO6xERuqLPsL7VbNR8sHHh7cFNg'
 players_puuid['tekendol'] = 'z2RlhdFkRh2CJ052bFeAd1SgdGIG9pyLJMPRpQImpELnUCgR0o4Gw2k2S6RR4vQ85daZ7imGU6w4hQ'
 players_puuid['nataruk'] = 'LdDeMb13ze9R_iYpMxyT5xP9PeiabtBtQ7FC65nrxXCDwLob2KGirZv__t71vwP9bDR-rhIf24m7vg'
+
+# Pro Players
 players_puuid['titan'] = 'dgBKuZgDjSv5F8Tgnuzi158sZlyyMtv1X9icbWvjFt7NbvIt7U31Ss6-IGyyJosYUIShfQzQpl4KHw'
 players_puuid['tinows'] = 'VqN8fBYVLJeXt4LiADsU71WoFtl19lY_cb0prtH_gI4HAAZ2LzHj84s4eD-bTrKPjRuC2IriGyoVdg'
 players_puuid['jojo'] = 'PNw506k5hy7E_TVBM0-3f3m9WNk1I_A0qgakr2yqH7_aS7s5G636Y724mT5Do0Gj2FbBpr3QDqxU_g'
@@ -185,6 +188,10 @@ players_puuid['ceos'] = 'yJJ-Tv5ruDm6r_u21LBVcZtfwe9MCtB7EYHLLNR8rZdUPkYSeDfryUw
 players_puuid['cariok'] = 'KywiMYSX0-Fui38aiX34d18pyayDw_81CWE4qsa-GW7hBZQWQjdR9XRmor448qpDmnsACq1vELB-lQ'
 players_puuid['dynquedo'] = '856AWrKcOZK-aAlrw8z4-CK2i7-hsoct_BIzeMDMcbLrGCibfISJGej0vKTtZs_ai6pVVRZ01BJhvA'
 players_puuid['zay'] = 'gciJ-QUyWRkiI6Ota4xNKC4ELdu792pqHG0bkVozcPZ-rjBfUT-1jGCk7EtAm2tixOel83sKZEX9fA'
+players_puuid['damage'] = 'rnD8fXMqIaIyScczJq-JkjiEN9EVsLlnvOS7O-o4boKwPk1YU9zbh2IhpEdV9RECRpcG00DBE9cuag'
+players_puuid['croc'] = 'i16VY0qrzqqPGTAAdBL7hHbtokXDc7ARPhLkmnCfuxoaGrFoYY5Pk7KgIuaK67cF0mCm45sZvNQckg'
+players_puuid['brance'] = 'IH-gtERps3P_hpAw2sYJ6Lq1qo_D-WZbP-sWWm9VsqE8VCk-Up65cOyO0e-W9_GYeVFy7mEyxMyJyg'
+players_puuid['ayu'] = 'QWwXTNR7ej2kBByiH9lztGGQYELHDcZ3_jNhqmFrwZE7EOLG47VwKH7BMrC8lmdaQtazJqw4rKHDSA'
 
 save_file = path + "ping_overview_"+player_alias+".json"
 

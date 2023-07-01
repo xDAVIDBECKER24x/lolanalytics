@@ -159,7 +159,7 @@ match_settings['game_mode'] = ["CLASSIC"]
 
 
 player_type = 'proplayer'
-player_alias = 'ayu'
+player_alias = 'tay'
 path = player_type + '/'+player_alias+'/'
 
 raw_data_matchs_file = path + 'matchs_metadata_'+player_alias+'.json'
@@ -192,6 +192,8 @@ players_puuid['damage'] = 'rnD8fXMqIaIyScczJq-JkjiEN9EVsLlnvOS7O-o4boKwPk1YU9zbh
 players_puuid['croc'] = 'i16VY0qrzqqPGTAAdBL7hHbtokXDc7ARPhLkmnCfuxoaGrFoYY5Pk7KgIuaK67cF0mCm45sZvNQckg'
 players_puuid['brance'] = 'IH-gtERps3P_hpAw2sYJ6Lq1qo_D-WZbP-sWWm9VsqE8VCk-Up65cOyO0e-W9_GYeVFy7mEyxMyJyg'
 players_puuid['ayu'] = 'QWwXTNR7ej2kBByiH9lztGGQYELHDcZ3_jNhqmFrwZE7EOLG47VwKH7BMrC8lmdaQtazJqw4rKHDSA'
+players_puuid['tay'] = 'UVFHubHn9zQZ_Ua-_CLCXjvMMZ2W6JkUEOLrxJh_-nnbNBgyhexCErrv6-PBFCsHKXN4kfzM8_QsDQ'
+players_puuid['ninjakiwi'] = 'GS1QsEoXcPLk5SI_CxTWFl-EsbrGAlTHLNJtPPRDGSKjVr0d99IpPxjV_TtN_22-xq6xVews39cTJg'
 
 save_file = path + "ping_overview_"+player_alias+".json"
 

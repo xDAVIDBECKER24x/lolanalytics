@@ -124,6 +124,8 @@ def save_pings_overview(match_list, match_settings, puuid, save_file):
 
 def save_date_matchs(match_list, save_file):
 
+
+
     with open(save_file, "w") as outfile:
 
         for match in match_list:
@@ -158,8 +160,8 @@ match_settings['game_mode'] = ["CLASSIC"]
 
 
 
-player_type = 'streamer'
-player_alias = 'nicklink'
+player_type = 'raky'
+player_alias = 'fefo'
 path = player_type + '/'+player_alias+'/'
 
 raw_data_matchs_file = path + 'matchs_metadata_'+player_alias+'.json'
@@ -176,9 +178,12 @@ players_puuid = {}
 players_puuid['akaashi'] = 'jkgVko75HkHz9kHMYrVKYuPPC60s59vKct4Dj2djr0ETBLd52pqBO6xERuqLPsL7VbNR8sHHh7cFNg'
 players_puuid['tekendol'] = 'z2RlhdFkRh2CJ052bFeAd1SgdGIG9pyLJMPRpQImpELnUCgR0o4Gw2k2S6RR4vQ85daZ7imGU6w4hQ'
 players_puuid['nataruk'] = 'LdDeMb13ze9R_iYpMxyT5xP9PeiabtBtQ7FC65nrxXCDwLob2KGirZv__t71vwP9bDR-rhIf24m7vg'
+players_puuid['tabrao'] = '4gWUWuer_YdkoJGUGq6gMKmU5A-YomJzCZRi-ULy8BCNVQLo5BzGF1x340xss8ZONLynoW2yZoqB_Q'
+players_puuid['fefo'] = 'QhIMBC9B9C0CFir2LL2g02azc3toGnAcEcALtHRLvjJiX2C2dWf8a9E5C1bzZ88i7CKDevTdCU35sQ'
 
 # Streamer Players
 players_puuid['nicklink'] = 'LiK_rfePGdi96HJYh1eyN9RDyz8nr2gI9fDLhU-D0barCr-rIaxXr627Dk5dxqAEe6OPW4vmjY-Njw'
+players_puuid['nagasawa'] = 'DGN6xyQNxmImoxC8VlMqxkVDkFTq0IoQhmyF3ODZ65vRYZMxRNhsuOxeUOOjfAXpdiAfLPZC23ByXw'
 
 # Pro Players
 players_puuid['titan'] = 'dgBKuZgDjSv5F8Tgnuzi158sZlyyMtv1X9icbWvjFt7NbvIt7U31Ss6-IGyyJosYUIShfQzQpl4KHw'

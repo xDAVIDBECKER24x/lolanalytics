@@ -1,4 +1,4 @@
-{
+[{
     "gameCreation": "30-06-2023",
     "gameDuration": "00:28:37",
     "championName": "Ahri",
@@ -15,7 +15,7 @@
     "needVisionPings": 1,
     "onMyWayPings": 14,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "30-06-2023",
     "gameDuration": "00:38:58",
     "championName": "KSante",
@@ -32,7 +32,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 27,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "29-06-2023",
     "gameDuration": "00:27:42",
     "championName": "KSante",
@@ -49,7 +49,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 9,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "29-06-2023",
     "gameDuration": "00:40:43",
     "championName": "Ahri",
@@ -66,7 +66,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 31,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "29-06-2023",
     "gameDuration": "00:30:22",
     "championName": "Renekton",
@@ -83,7 +83,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 13,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "29-06-2023",
     "gameDuration": "00:23:52",
     "championName": "Gnar",
@@ -100,7 +100,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 22,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "29-06-2023",
     "gameDuration": "00:20:16",
     "championName": "Tristana",
@@ -117,7 +117,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 10,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "29-06-2023",
     "gameDuration": "00:24:40",
     "championName": "Gwen",
@@ -134,7 +134,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 18,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "28-06-2023",
     "gameDuration": "00:29:25",
     "championName": "RekSai",
@@ -151,7 +151,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 43,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "28-06-2023",
     "gameDuration": "00:30:12",
     "championName": "Kaisa",
@@ -168,7 +168,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 25,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "28-06-2023",
     "gameDuration": "00:24:50",
     "championName": "Gnar",
@@ -185,7 +185,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 12,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "28-06-2023",
     "gameDuration": "00:27:30",
     "championName": "Ahri",
@@ -202,7 +202,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 11,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "28-06-2023",
     "gameDuration": "00:32:42",
     "championName": "KSante",
@@ -219,7 +219,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 30,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "27-06-2023",
     "gameDuration": "00:36:04",
     "championName": "Khazix",
@@ -236,7 +236,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 5,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "27-06-2023",
     "gameDuration": "00:31:58",
     "championName": "Camille",
@@ -253,7 +253,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 6,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "27-06-2023",
     "gameDuration": "00:38:29",
     "championName": "RekSai",
@@ -270,7 +270,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 12,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "25-06-2023",
     "gameDuration": "00:22:37",
     "championName": "Jayce",
@@ -287,7 +287,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 12,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "24-06-2023",
     "gameDuration": "00:33:30",
     "championName": "KSante",
@@ -304,7 +304,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 17,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "24-06-2023",
     "gameDuration": "00:32:16",
     "championName": "KSante",
@@ -321,7 +321,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 19,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "24-06-2023",
     "gameDuration": "00:29:11",
     "championName": "KSante",
@@ -338,7 +338,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 6,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "24-06-2023",
     "gameDuration": "00:18:18",
     "championName": "Maokai",
@@ -355,7 +355,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 14,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "24-06-2023",
     "gameDuration": "00:24:38",
     "championName": "KSante",
@@ -372,7 +372,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 11,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "24-06-2023",
     "gameDuration": "00:29:06",
     "championName": "Zeri",
@@ -389,7 +389,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 12,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "24-06-2023",
     "gameDuration": "00:16:43",
     "championName": "RekSai",
@@ -406,7 +406,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 9,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "24-06-2023",
     "gameDuration": "00:22:32",
     "championName": "Kennen",
@@ -423,7 +423,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 6,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "23-06-2023",
     "gameDuration": "00:23:49",
     "championName": "Milio",
@@ -440,7 +440,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 18,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "23-06-2023",
     "gameDuration": "00:22:52",
     "championName": "Zeri",
@@ -457,7 +457,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 13,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "23-06-2023",
     "gameDuration": "00:18:40",
     "championName": "Gnar",
@@ -474,7 +474,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 5,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "23-06-2023",
     "gameDuration": "00:23:48",
     "championName": "Ahri",
@@ -491,7 +491,7 @@
     "needVisionPings": 1,
     "onMyWayPings": 31,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "21-06-2023",
     "gameDuration": "00:15:31",
     "championName": "RekSai",
@@ -508,7 +508,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 2,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "21-06-2023",
     "gameDuration": "00:22:43",
     "championName": "Kaisa",
@@ -525,7 +525,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 19,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "21-06-2023",
     "gameDuration": "00:16:07",
     "championName": "Ezreal",
@@ -542,7 +542,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 1,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "21-06-2023",
     "gameDuration": "00:25:22",
     "championName": "Gnar",
@@ -559,7 +559,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 11,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "21-06-2023",
     "gameDuration": "00:25:38",
     "championName": "RekSai",
@@ -576,7 +576,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 8,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "21-06-2023",
     "gameDuration": "00:29:17",
     "championName": "Kaisa",
@@ -593,7 +593,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 34,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "19-06-2023",
     "gameDuration": "00:27:09",
     "championName": "KSante",
@@ -610,7 +610,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 16,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "19-06-2023",
     "gameDuration": "00:17:33",
     "championName": "Leblanc",
@@ -627,7 +627,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 5,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "19-06-2023",
     "gameDuration": "00:25:37",
     "championName": "Gragas",
@@ -644,7 +644,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 14,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "19-06-2023",
     "gameDuration": "00:18:34",
     "championName": "Ahri",
@@ -661,7 +661,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 11,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "19-06-2023",
     "gameDuration": "00:32:05",
     "championName": "Leblanc",
@@ -678,7 +678,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 25,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "19-06-2023",
     "gameDuration": "00:33:08",
     "championName": "Milio",
@@ -695,7 +695,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 14,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "19-06-2023",
     "gameDuration": "00:15:17",
     "championName": "Leblanc",
@@ -712,7 +712,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 7,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "19-06-2023",
     "gameDuration": "00:25:39",
     "championName": "Leblanc",
@@ -729,7 +729,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 18,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "18-06-2023",
     "gameDuration": "00:24:57",
     "championName": "Ahri",
@@ -746,7 +746,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 24,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "18-06-2023",
     "gameDuration": "00:39:24",
     "championName": "LeeSin",
@@ -763,7 +763,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 43,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "18-06-2023",
     "gameDuration": "00:39:06",
     "championName": "Gragas",
@@ -780,7 +780,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 28,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "18-06-2023",
     "gameDuration": "00:31:53",
     "championName": "Ahri",
@@ -797,7 +797,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 41,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "17-06-2023",
     "gameDuration": "00:15:26",
     "championName": "KSante",
@@ -814,7 +814,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 1,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "17-06-2023",
     "gameDuration": "00:26:25",
     "championName": "Gragas",
@@ -831,7 +831,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 23,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "16-06-2023",
     "gameDuration": "00:24:56",
     "championName": "KSante",
@@ -848,7 +848,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 7,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "16-06-2023",
     "gameDuration": "00:37:01",
     "championName": "Gragas",
@@ -865,7 +865,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 38,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "16-06-2023",
     "gameDuration": "00:34:10",
     "championName": "Gragas",
@@ -882,7 +882,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 36,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "15-06-2023",
     "gameDuration": "00:15:39",
     "championName": "Gragas",
@@ -899,7 +899,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 22,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "15-06-2023",
     "gameDuration": "00:21:48",
     "championName": "KSante",
@@ -916,7 +916,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 2,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "14-06-2023",
     "gameDuration": "00:33:38",
     "championName": "Gragas",
@@ -933,7 +933,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 16,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "14-06-2023",
     "gameDuration": "00:25:27",
     "championName": "KSante",
@@ -950,7 +950,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 14,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "14-06-2023",
     "gameDuration": "00:21:40",
     "championName": "Jayce",
@@ -967,7 +967,7 @@
     "needVisionPings": 1,
     "onMyWayPings": 21,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "14-06-2023",
     "gameDuration": "00:28:10",
     "championName": "KSante",
@@ -984,7 +984,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 7,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "14-06-2023",
     "gameDuration": "00:31:37",
     "championName": "Zeri",
@@ -1001,7 +1001,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 23,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "13-06-2023",
     "gameDuration": "00:28:09",
     "championName": "KSante",
@@ -1018,7 +1018,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 16,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "12-06-2023",
     "gameDuration": "00:33:50",
     "championName": "Gragas",
@@ -1035,7 +1035,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 20,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "12-06-2023",
     "gameDuration": "00:26:16",
     "championName": "KSante",
@@ -1052,7 +1052,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 13,
     "pushPings": 1
-}{
+}, {
     "gameCreation": "12-06-2023",
     "gameDuration": "00:41:29",
     "championName": "Gragas",
@@ -1069,7 +1069,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 13,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "12-06-2023",
     "gameDuration": "00:15:31",
     "championName": "KSante",
@@ -1086,7 +1086,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 4,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "12-06-2023",
     "gameDuration": "00:24:26",
     "championName": "KSante",
@@ -1103,7 +1103,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 14,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "12-06-2023",
     "gameDuration": "00:19:22",
     "championName": "KSante",
@@ -1120,7 +1120,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 3,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "12-06-2023",
     "gameDuration": "00:19:24",
     "championName": "Milio",
@@ -1137,7 +1137,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 17,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "11-06-2023",
     "gameDuration": "00:28:24",
     "championName": "Gwen",
@@ -1154,7 +1154,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 16,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "11-06-2023",
     "gameDuration": "00:15:12",
     "championName": "KSante",
@@ -1171,7 +1171,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 12,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "11-06-2023",
     "gameDuration": "00:31:44",
     "championName": "Ezreal",
@@ -1188,7 +1188,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 17,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "11-06-2023",
     "gameDuration": "00:23:24",
     "championName": "Sylas",
@@ -1205,7 +1205,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 28,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "10-06-2023",
     "gameDuration": "00:19:37",
     "championName": "Lissandra",
@@ -1222,7 +1222,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 11,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "10-06-2023",
     "gameDuration": "00:24:07",
     "championName": "Ezreal",
@@ -1239,7 +1239,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 13,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "10-06-2023",
     "gameDuration": "00:33:40",
     "championName": "KSante",
@@ -1256,7 +1256,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 36,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "10-06-2023",
     "gameDuration": "00:34:30",
     "championName": "KSante",
@@ -1273,7 +1273,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 18,
     "pushPings": 1
-}{
+}, {
     "gameCreation": "10-06-2023",
     "gameDuration": "00:30:14",
     "championName": "Zeri",
@@ -1290,7 +1290,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 30,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "10-06-2023",
     "gameDuration": "00:34:07",
     "championName": "KSante",
@@ -1307,7 +1307,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 20,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "10-06-2023",
     "gameDuration": "00:26:58",
     "championName": "KSante",
@@ -1324,7 +1324,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 25,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "07-06-2023",
     "gameDuration": "00:25:45",
     "championName": "Jinx",
@@ -1341,7 +1341,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 18,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "07-06-2023",
     "gameDuration": "00:26:54",
     "championName": "Qiyana",
@@ -1358,7 +1358,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 14,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "07-06-2023",
     "gameDuration": "00:24:49",
     "championName": "Sylas",
@@ -1375,7 +1375,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 19,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "07-06-2023",
     "gameDuration": "00:26:39",
     "championName": "Jinx",
@@ -1392,7 +1392,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 11,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "07-06-2023",
     "gameDuration": "00:22:33",
     "championName": "Ahri",
@@ -1409,7 +1409,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 17,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "06-06-2023",
     "gameDuration": "00:30:25",
     "championName": "KSante",
@@ -1426,7 +1426,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 27,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "06-06-2023",
     "gameDuration": "00:26:07",
     "championName": "Jayce",
@@ -1443,7 +1443,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 7,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "06-06-2023",
     "gameDuration": "00:15:15",
     "championName": "Sylas",
@@ -1460,7 +1460,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 15,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "06-06-2023",
     "gameDuration": "00:25:03",
     "championName": "KSante",
@@ -1477,7 +1477,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 8,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "06-06-2023",
     "gameDuration": "00:18:48",
     "championName": "Ahri",
@@ -1494,7 +1494,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 6,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "05-06-2023",
     "gameDuration": "00:31:49",
     "championName": "Jayce",
@@ -1511,7 +1511,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 19,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "05-06-2023",
     "gameDuration": "00:28:15",
     "championName": "Leblanc",
@@ -1528,7 +1528,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 23,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "05-06-2023",
     "gameDuration": "00:29:23",
     "championName": "Zeri",
@@ -1545,7 +1545,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 30,
     "pushPings": 1
-}{
+}, {
     "gameCreation": "05-06-2023",
     "gameDuration": "00:01:44",
     "championName": "Sylas",
@@ -1562,7 +1562,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 0,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "02-06-2023",
     "gameDuration": "00:39:41",
     "championName": "Leblanc",
@@ -1579,7 +1579,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 21,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "02-06-2023",
     "gameDuration": "00:15:21",
     "championName": "Qiyana",
@@ -1596,7 +1596,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 5,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "31-05-2023",
     "gameDuration": "00:07:02",
     "championName": "Sylas",
@@ -1613,7 +1613,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 4,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "31-05-2023",
     "gameDuration": "00:26:34",
     "championName": "Qiyana",
@@ -1630,7 +1630,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 12,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "31-05-2023",
     "gameDuration": "00:18:38",
     "championName": "Neeko",
@@ -1647,7 +1647,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 11,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "31-05-2023",
     "gameDuration": "00:24:17",
     "championName": "Neeko",
@@ -1664,7 +1664,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 9,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "31-05-2023",
     "gameDuration": "00:24:09",
     "championName": "KSante",
@@ -1681,7 +1681,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 19,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "31-05-2023",
     "gameDuration": "00:25:12",
     "championName": "Qiyana",
@@ -1698,7 +1698,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 19,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "30-05-2023",
     "gameDuration": "00:31:12",
     "championName": "Leblanc",
@@ -1715,7 +1715,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 36,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "30-05-2023",
     "gameDuration": "00:28:05",
     "championName": "Neeko",
@@ -1732,7 +1732,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 22,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "30-05-2023",
     "gameDuration": "00:25:17",
     "championName": "Neeko",
@@ -1749,7 +1749,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 13,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "30-05-2023",
     "gameDuration": "00:24:17",
     "championName": "Neeko",
@@ -1766,7 +1766,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 8,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "30-05-2023",
     "gameDuration": "00:29:20",
     "championName": "Neeko",
@@ -1783,7 +1783,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 20,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "29-05-2023",
     "gameDuration": "00:25:33",
     "championName": "Ahri",
@@ -1800,7 +1800,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 17,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "29-05-2023",
     "gameDuration": "00:22:29",
     "championName": "Ahri",
@@ -1817,7 +1817,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 39,
     "pushPings": 1
-}{
+}, {
     "gameCreation": "29-05-2023",
     "gameDuration": "00:24:08",
     "championName": "KSante",
@@ -1834,7 +1834,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 12,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "26-05-2023",
     "gameDuration": "00:22:24",
     "championName": "Jhin",
@@ -1851,7 +1851,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 3,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "26-05-2023",
     "gameDuration": "00:19:58",
     "championName": "Lucian",
@@ -1868,7 +1868,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 19,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "26-05-2023",
     "gameDuration": "00:35:16",
     "championName": "Nautilus",
@@ -1885,7 +1885,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 21,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "26-05-2023",
     "gameDuration": "00:22:11",
     "championName": "KSante",
@@ -1902,7 +1902,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 9,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "26-05-2023",
     "gameDuration": "00:27:49",
     "championName": "KSante",
@@ -1919,7 +1919,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 26,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "26-05-2023",
     "gameDuration": "00:22:31",
     "championName": "Ahri",
@@ -1936,7 +1936,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 17,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "26-05-2023",
     "gameDuration": "00:29:16",
     "championName": "KSante",
@@ -1953,7 +1953,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 18,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "25-05-2023",
     "gameDuration": "00:21:44",
     "championName": "Gragas",
@@ -1970,7 +1970,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 29,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "25-05-2023",
     "gameDuration": "00:02:32",
     "championName": "Gragas",
@@ -1987,7 +1987,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 0,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "25-05-2023",
     "gameDuration": "00:28:32",
     "championName": "Gragas",
@@ -2004,7 +2004,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 31,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "25-05-2023",
     "gameDuration": "00:26:44",
     "championName": "Zeri",
@@ -2021,7 +2021,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 18,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "25-05-2023",
     "gameDuration": "00:21:12",
     "championName": "KSante",
@@ -2038,7 +2038,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 7,
     "pushPings": 1
-}{
+}, {
     "gameCreation": "25-05-2023",
     "gameDuration": "00:26:26",
     "championName": "KSante",
@@ -2055,7 +2055,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 22,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "25-05-2023",
     "gameDuration": "00:22:38",
     "championName": "Sylas",
@@ -2072,7 +2072,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 9,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "24-05-2023",
     "gameDuration": "00:23:14",
     "championName": "Jinx",
@@ -2089,7 +2089,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 5,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "24-05-2023",
     "gameDuration": "00:15:16",
     "championName": "KSante",
@@ -2106,7 +2106,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 2,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "24-05-2023",
     "gameDuration": "00:28:16",
     "championName": "KSante",
@@ -2123,7 +2123,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 13,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "24-05-2023",
     "gameDuration": "00:28:03",
     "championName": "Gragas",
@@ -2140,7 +2140,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 13,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "24-05-2023",
     "gameDuration": "00:19:00",
     "championName": "KSante",
@@ -2157,7 +2157,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 10,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "23-05-2023",
     "gameDuration": "00:32:09",
     "championName": "Gragas",
@@ -2174,7 +2174,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 29,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "23-05-2023",
     "gameDuration": "00:41:27",
     "championName": "KSante",
@@ -2191,7 +2191,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 29,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "23-05-2023",
     "gameDuration": "00:16:37",
     "championName": "KSante",
@@ -2208,7 +2208,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 6,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "19-05-2023",
     "gameDuration": "00:27:24",
     "championName": "Leblanc",
@@ -2225,7 +2225,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 31,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "19-05-2023",
     "gameDuration": "00:15:58",
     "championName": "Ahri",
@@ -2242,7 +2242,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 8,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "19-05-2023",
     "gameDuration": "00:30:07",
     "championName": "Leblanc",
@@ -2259,7 +2259,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 23,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "18-05-2023",
     "gameDuration": "00:15:21",
     "championName": "KSante",
@@ -2276,7 +2276,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 0,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "18-05-2023",
     "gameDuration": "00:36:00",
     "championName": "Leblanc",
@@ -2293,7 +2293,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 18,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "18-05-2023",
     "gameDuration": "00:30:05",
     "championName": "Zed",
@@ -2310,7 +2310,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 15,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "17-05-2023",
     "gameDuration": "00:31:34",
     "championName": "Zeri",
@@ -2327,7 +2327,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 6,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "17-05-2023",
     "gameDuration": "00:29:39",
     "championName": "Jinx",
@@ -2344,7 +2344,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 5,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "17-05-2023",
     "gameDuration": "00:19:01",
     "championName": "Ahri",
@@ -2361,7 +2361,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 16,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "17-04-2023",
     "gameDuration": "00:10:41",
     "championName": "Sylas",
@@ -2378,7 +2378,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 4,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "17-04-2023",
     "gameDuration": "00:15:20",
     "championName": "Sylas",
@@ -2395,7 +2395,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 0,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "17-04-2023",
     "gameDuration": "00:35:18",
     "championName": "Zed",
@@ -2412,7 +2412,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 19,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "17-04-2023",
     "gameDuration": "00:18:48",
     "championName": "Yasuo",
@@ -2429,7 +2429,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 7,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "15-04-2023",
     "gameDuration": "00:22:08",
     "championName": "Ahri",
@@ -2446,7 +2446,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 20,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "15-04-2023",
     "gameDuration": "00:19:12",
     "championName": "Zed",
@@ -2463,7 +2463,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 5,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "14-04-2023",
     "gameDuration": "00:28:41",
     "championName": "Lissandra",
@@ -2480,7 +2480,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 27,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "14-04-2023",
     "gameDuration": "00:18:18",
     "championName": "Ahri",
@@ -2497,7 +2497,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 8,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "13-04-2023",
     "gameDuration": "00:20:41",
     "championName": "Zed",
@@ -2514,7 +2514,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 17,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "13-04-2023",
     "gameDuration": "00:15:51",
     "championName": "Lucian",
@@ -2531,7 +2531,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 13,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "12-04-2023",
     "gameDuration": "00:15:12",
     "championName": "Lissandra",
@@ -2548,7 +2548,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 10,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "12-04-2023",
     "gameDuration": "00:22:42",
     "championName": "KSante",
@@ -2565,7 +2565,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 2,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "11-04-2023",
     "gameDuration": "00:32:28",
     "championName": "Lucian",
@@ -2582,7 +2582,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 12,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "11-04-2023",
     "gameDuration": "00:27:29",
     "championName": "Ahri",
@@ -2599,7 +2599,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 12,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "11-04-2023",
     "gameDuration": "00:27:21",
     "championName": "Ahri",
@@ -2616,7 +2616,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 12,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "10-04-2023",
     "gameDuration": "00:31:42",
     "championName": "Lissandra",
@@ -2633,7 +2633,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 25,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "09-04-2023",
     "gameDuration": "00:30:31",
     "championName": "Lissandra",
@@ -2650,7 +2650,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 23,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "09-04-2023",
     "gameDuration": "00:28:26",
     "championName": "Lucian",
@@ -2667,7 +2667,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 15,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "09-04-2023",
     "gameDuration": "00:30:01",
     "championName": "Lissandra",
@@ -2684,7 +2684,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 26,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "09-04-2023",
     "gameDuration": "00:19:32",
     "championName": "Lissandra",
@@ -2701,7 +2701,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 15,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "08-04-2023",
     "gameDuration": "00:32:01",
     "championName": "Lucian",
@@ -2718,7 +2718,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 19,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "08-04-2023",
     "gameDuration": "00:43:27",
     "championName": "Varus",
@@ -2735,7 +2735,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 3,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "06-04-2023",
     "gameDuration": "00:31:30",
     "championName": "Zeri",
@@ -2752,7 +2752,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 7,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "06-04-2023",
     "gameDuration": "00:34:05",
     "championName": "Kassadin",
@@ -2769,7 +2769,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 24,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "06-04-2023",
     "gameDuration": "00:22:49",
     "championName": "Vex",
@@ -2786,7 +2786,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 28,
     "pushPings": 1
-}{
+}, {
     "gameCreation": "04-04-2023",
     "gameDuration": "00:26:34",
     "championName": "Sylas",
@@ -2803,7 +2803,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 27,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "03-04-2023",
     "gameDuration": "00:22:49",
     "championName": "Sylas",
@@ -2820,7 +2820,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 15,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "03-04-2023",
     "gameDuration": "00:30:03",
     "championName": "AurelionSol",
@@ -2837,7 +2837,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 16,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "03-04-2023",
     "gameDuration": "00:32:16",
     "championName": "Tristana",
@@ -2854,7 +2854,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 18,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "03-04-2023",
     "gameDuration": "00:26:14",
     "championName": "Tristana",
@@ -2871,7 +2871,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 13,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "03-04-2023",
     "gameDuration": "00:22:18",
     "championName": "Jayce",
@@ -2888,7 +2888,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 21,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "03-04-2023",
     "gameDuration": "00:20:06",
     "championName": "AurelionSol",
@@ -2905,7 +2905,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 3,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "03-04-2023",
     "gameDuration": "00:29:18",
     "championName": "Ahri",
@@ -2922,7 +2922,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 19,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "03-04-2023",
     "gameDuration": "00:30:26",
     "championName": "Zed",
@@ -2939,7 +2939,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 19,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "03-04-2023",
     "gameDuration": "00:28:11",
     "championName": "Tristana",
@@ -2956,7 +2956,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 29,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "03-04-2023",
     "gameDuration": "00:29:12",
     "championName": "Sylas",
@@ -2973,7 +2973,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 27,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "02-04-2023",
     "gameDuration": "00:29:59",
     "championName": "Ahri",
@@ -2990,7 +2990,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 19,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "01-04-2023",
     "gameDuration": "00:12:10",
     "championName": "Taliyah",
@@ -3007,7 +3007,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 10,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "31-03-2023",
     "gameDuration": "00:30:50",
     "championName": "Ahri",
@@ -3024,7 +3024,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 15,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "31-03-2023",
     "gameDuration": "00:15:25",
     "championName": "Tristana",
@@ -3041,7 +3041,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 9,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "30-03-2023",
     "gameDuration": "00:25:40",
     "championName": "Kalista",
@@ -3058,7 +3058,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 5,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "30-03-2023",
     "gameDuration": "00:18:29",
     "championName": "Kaisa",
@@ -3075,7 +3075,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 4,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "30-03-2023",
     "gameDuration": "00:32:03",
     "championName": "Sylas",
@@ -3092,7 +3092,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 20,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "29-03-2023",
     "gameDuration": "00:25:03",
     "championName": "Yone",
@@ -3109,7 +3109,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 8,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "29-03-2023",
     "gameDuration": "00:27:46",
     "championName": "Ahri",
@@ -3126,7 +3126,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 41,
     "pushPings": 1
-}{
+}, {
     "gameCreation": "29-03-2023",
     "gameDuration": "00:24:58",
     "championName": "Sylas",
@@ -3143,7 +3143,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 22,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "29-03-2023",
     "gameDuration": "00:26:27",
     "championName": "Ahri",
@@ -3160,7 +3160,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 23,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "28-03-2023",
     "gameDuration": "00:26:41",
     "championName": "Jayce",
@@ -3177,7 +3177,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 14,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "27-03-2023",
     "gameDuration": "00:27:05",
     "championName": "Tristana",
@@ -3194,7 +3194,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 24,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "27-03-2023",
     "gameDuration": "00:18:50",
     "championName": "Viktor",
@@ -3211,7 +3211,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 7,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "27-03-2023",
     "gameDuration": "00:30:08",
     "championName": "Syndra",
@@ -3228,7 +3228,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 25,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "25-03-2023",
     "gameDuration": "00:23:37",
     "championName": "Ahri",
@@ -3245,7 +3245,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 21,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "23-03-2023",
     "gameDuration": "00:28:11",
     "championName": "Taliyah",
@@ -3262,7 +3262,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 43,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "23-03-2023",
     "gameDuration": "00:27:07",
     "championName": "Tristana",
@@ -3279,7 +3279,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 19,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "22-03-2023",
     "gameDuration": "00:28:12",
     "championName": "Ahri",
@@ -3296,7 +3296,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 35,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "22-03-2023",
     "gameDuration": "00:23:33",
     "championName": "Yone",
@@ -3313,7 +3313,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 9,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "22-03-2023",
     "gameDuration": "00:29:26",
     "championName": "Ahri",
@@ -3330,7 +3330,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 36,
     "pushPings": 1
-}{
+}, {
     "gameCreation": "22-03-2023",
     "gameDuration": "00:23:08",
     "championName": "Ahri",
@@ -3347,7 +3347,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 9,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "20-03-2023",
     "gameDuration": "00:02:39",
     "championName": "Zeri",
@@ -3364,7 +3364,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 0,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "20-03-2023",
     "gameDuration": "00:26:10",
     "championName": "Lucian",
@@ -3381,7 +3381,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 16,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "20-03-2023",
     "gameDuration": "00:34:37",
     "championName": "Jayce",
@@ -3398,7 +3398,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 24,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "20-03-2023",
     "gameDuration": "00:15:44",
     "championName": "Ahri",
@@ -3415,7 +3415,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 9,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "20-03-2023",
     "gameDuration": "00:24:00",
     "championName": "Cassiopeia",
@@ -3432,7 +3432,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 13,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "16-03-2023",
     "gameDuration": "00:39:09",
     "championName": "Varus",
@@ -3449,7 +3449,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 2,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "16-03-2023",
     "gameDuration": "00:22:33",
     "championName": "Jayce",
@@ -3466,7 +3466,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 9,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "16-03-2023",
     "gameDuration": "00:23:19",
     "championName": "Sylas",
@@ -3483,7 +3483,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 16,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "15-03-2023",
     "gameDuration": "00:23:40",
     "championName": "Veigar",
@@ -3500,7 +3500,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 6,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "13-03-2023",
     "gameDuration": "00:22:48",
     "championName": "Gragas",
@@ -3517,7 +3517,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 10,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "13-03-2023",
     "gameDuration": "00:17:39",
     "championName": "Syndra",
@@ -3534,7 +3534,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 6,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "11-03-2023",
     "gameDuration": "00:33:30",
     "championName": "Syndra",
@@ -3551,7 +3551,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 12,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "11-03-2023",
     "gameDuration": "00:20:55",
     "championName": "Leblanc",
@@ -3568,7 +3568,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 7,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "11-03-2023",
     "gameDuration": "00:22:33",
     "championName": "Annie",
@@ -3585,7 +3585,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 11,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "10-03-2023",
     "gameDuration": "00:17:54",
     "championName": "Yone",
@@ -3602,7 +3602,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 9,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "08-03-2023",
     "gameDuration": "00:14:03",
     "championName": "Cassiopeia",
@@ -3619,7 +3619,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 1,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "08-03-2023",
     "gameDuration": "00:20:58",
     "championName": "Lucian",
@@ -3636,7 +3636,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 19,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "08-03-2023",
     "gameDuration": "00:27:09",
     "championName": "AurelionSol",
@@ -3653,7 +3653,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 5,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "08-03-2023",
     "gameDuration": "00:25:07",
     "championName": "Gragas",
@@ -3670,7 +3670,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 23,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "08-03-2023",
     "gameDuration": "00:33:23",
     "championName": "Sylas",
@@ -3687,7 +3687,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 23,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "07-03-2023",
     "gameDuration": "00:35:52",
     "championName": "Gragas",
@@ -3704,7 +3704,7 @@
     "needVisionPings": 2,
     "onMyWayPings": 24,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "07-03-2023",
     "gameDuration": "00:30:20",
     "championName": "Akali",
@@ -3721,7 +3721,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 23,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "07-03-2023",
     "gameDuration": "00:20:10",
     "championName": "AurelionSol",
@@ -3738,7 +3738,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 2,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "05-03-2023",
     "gameDuration": "00:35:23",
     "championName": "Sylas",
@@ -3755,7 +3755,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 37,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "05-03-2023",
     "gameDuration": "00:21:42",
     "championName": "Lucian",
@@ -3772,7 +3772,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 10,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "04-03-2023",
     "gameDuration": "00:27:37",
     "championName": "Zeri",
@@ -3789,7 +3789,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 7,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "04-03-2023",
     "gameDuration": "00:23:09",
     "championName": "Yone",
@@ -3806,7 +3806,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 8,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "04-03-2023",
     "gameDuration": "00:38:52",
     "championName": "Gragas",
@@ -3823,7 +3823,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 28,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "04-03-2023",
     "gameDuration": "00:25:30",
     "championName": "AurelionSol",
@@ -3840,7 +3840,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 16,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "03-03-2023",
     "gameDuration": "00:34:47",
     "championName": "Jayce",
@@ -3857,7 +3857,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 23,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "03-03-2023",
     "gameDuration": "00:27:52",
     "championName": "Gragas",
@@ -3874,7 +3874,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 32,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "03-03-2023",
     "gameDuration": "00:29:30",
     "championName": "AurelionSol",
@@ -3891,7 +3891,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 24,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "03-03-2023",
     "gameDuration": "00:28:09",
     "championName": "Zeri",
@@ -3908,7 +3908,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 9,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "03-03-2023",
     "gameDuration": "00:21:08",
     "championName": "Gragas",
@@ -3925,7 +3925,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 23,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "01-03-2023",
     "gameDuration": "00:25:00",
     "championName": "Ahri",
@@ -3942,7 +3942,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 42,
     "pushPings": 2
-}{
+}, {
     "gameCreation": "28-02-2023",
     "gameDuration": "00:20:08",
     "championName": "Ziggs",
@@ -3959,7 +3959,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 13,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "28-02-2023",
     "gameDuration": "00:22:18",
     "championName": "Zeri",
@@ -3976,7 +3976,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 11,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "28-02-2023",
     "gameDuration": "00:25:31",
     "championName": "Jayce",
@@ -3993,7 +3993,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 15,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "28-02-2023",
     "gameDuration": "00:28:04",
     "championName": "Taliyah",
@@ -4010,7 +4010,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 18,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "27-02-2023",
     "gameDuration": "00:22:19",
     "championName": "AurelionSol",
@@ -4027,7 +4027,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 16,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "27-02-2023",
     "gameDuration": "00:18:43",
     "championName": "Caitlyn",
@@ -4044,7 +4044,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 8,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "27-02-2023",
     "gameDuration": "00:35:19",
     "championName": "Zeri",
@@ -4061,7 +4061,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 22,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "27-02-2023",
     "gameDuration": "00:37:46",
     "championName": "AurelionSol",
@@ -4078,7 +4078,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 42,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "27-02-2023",
     "gameDuration": "00:23:25",
     "championName": "AurelionSol",
@@ -4095,7 +4095,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 15,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "27-02-2023",
     "gameDuration": "00:27:12",
     "championName": "AurelionSol",
@@ -4112,7 +4112,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 21,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "26-02-2023",
     "gameDuration": "00:36:23",
     "championName": "Sylas",
@@ -4129,7 +4129,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 37,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "26-02-2023",
     "gameDuration": "00:15:19",
     "championName": "Akali",
@@ -4146,7 +4146,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 3,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "25-02-2023",
     "gameDuration": "00:35:08",
     "championName": "Annie",
@@ -4163,7 +4163,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 28,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "25-02-2023",
     "gameDuration": "00:23:45",
     "championName": "Zeri",
@@ -4180,7 +4180,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 22,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "24-02-2023",
     "gameDuration": "00:27:57",
     "championName": "Jayce",
@@ -4197,7 +4197,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 12,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "24-02-2023",
     "gameDuration": "00:24:03",
     "championName": "Annie",
@@ -4214,7 +4214,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 8,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "21-02-2023",
     "gameDuration": "00:23:47",
     "championName": "Syndra",
@@ -4231,7 +4231,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 24,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "21-02-2023",
     "gameDuration": "00:24:02",
     "championName": "Sylas",
@@ -4248,7 +4248,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 44,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "19-02-2023",
     "gameDuration": "00:19:11",
     "championName": "Draven",
@@ -4265,7 +4265,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 8,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "19-02-2023",
     "gameDuration": "00:23:57",
     "championName": "Tristana",
@@ -4282,7 +4282,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 9,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "18-02-2023",
     "gameDuration": "00:22:41",
     "championName": "Zeri",
@@ -4299,7 +4299,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 13,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "18-02-2023",
     "gameDuration": "00:28:53",
     "championName": "Syndra",
@@ -4316,7 +4316,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 23,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "17-02-2023",
     "gameDuration": "00:15:16",
     "championName": "Taliyah",
@@ -4333,7 +4333,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 3,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "16-02-2023",
     "gameDuration": "00:21:37",
     "championName": "Lucian",
@@ -4350,7 +4350,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 21,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "16-02-2023",
     "gameDuration": "00:30:00",
     "championName": "Jayce",
@@ -4367,7 +4367,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 15,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "15-02-2023",
     "gameDuration": "00:21:39",
     "championName": "Sylas",
@@ -4384,7 +4384,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 11,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "15-02-2023",
     "gameDuration": "00:23:18",
     "championName": "Jayce",
@@ -4401,7 +4401,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 14,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "15-02-2023",
     "gameDuration": "00:20:56",
     "championName": "Jayce",
@@ -4418,7 +4418,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 17,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "15-02-2023",
     "gameDuration": "00:33:41",
     "championName": "Jayce",
@@ -4435,7 +4435,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 26,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "14-02-2023",
     "gameDuration": "00:20:30",
     "championName": "Lissandra",
@@ -4452,7 +4452,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 5,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "14-02-2023",
     "gameDuration": "00:32:05",
     "championName": "Azir",
@@ -4469,7 +4469,7 @@
     "needVisionPings": 1,
     "onMyWayPings": 13,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "14-02-2023",
     "gameDuration": "00:21:38",
     "championName": "Sylas",
@@ -4486,7 +4486,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 11,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "14-02-2023",
     "gameDuration": "00:27:02",
     "championName": "Kassadin",
@@ -4503,7 +4503,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 13,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "14-02-2023",
     "gameDuration": "00:19:09",
     "championName": "AurelionSol",
@@ -4520,7 +4520,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 7,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "14-02-2023",
     "gameDuration": "00:33:42",
     "championName": "Sylas",
@@ -4537,7 +4537,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 29,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "13-02-2023",
     "gameDuration": "00:26:19",
     "championName": "Lucian",
@@ -4554,7 +4554,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 26,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "13-02-2023",
     "gameDuration": "00:26:19",
     "championName": "Jayce",
@@ -4571,7 +4571,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 16,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "13-02-2023",
     "gameDuration": "00:30:09",
     "championName": "Jayce",
@@ -4588,7 +4588,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 22,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "13-02-2023",
     "gameDuration": "00:17:46",
     "championName": "Lucian",
@@ -4605,7 +4605,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 2,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "13-02-2023",
     "gameDuration": "00:27:32",
     "championName": "Zeri",
@@ -4622,7 +4622,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 16,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "13-02-2023",
     "gameDuration": "00:26:37",
     "championName": "Jhin",
@@ -4639,7 +4639,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 7,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "13-02-2023",
     "gameDuration": "00:22:23",
     "championName": "Jayce",
@@ -4656,7 +4656,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 10,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "13-02-2023",
     "gameDuration": "00:24:24",
     "championName": "Azir",
@@ -4673,7 +4673,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 7,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "13-02-2023",
     "gameDuration": "00:19:57",
     "championName": "Sylas",
@@ -4690,7 +4690,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 9,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "12-02-2023",
     "gameDuration": "00:26:10",
     "championName": "Jayce",
@@ -4707,7 +4707,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 9,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "12-02-2023",
     "gameDuration": "00:27:00",
     "championName": "Tristana",
@@ -4724,7 +4724,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 13,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "12-02-2023",
     "gameDuration": "00:26:11",
     "championName": "Viktor",
@@ -4741,7 +4741,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 9,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "12-02-2023",
     "gameDuration": "00:15:17",
     "championName": "Yone",
@@ -4758,7 +4758,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 7,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "11-02-2023",
     "gameDuration": "00:26:56",
     "championName": "Yone",
@@ -4775,7 +4775,7 @@
     "needVisionPings": 1,
     "onMyWayPings": 19,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "11-02-2023",
     "gameDuration": "00:15:24",
     "championName": "Tristana",
@@ -4792,7 +4792,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 9,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "11-02-2023",
     "gameDuration": "00:30:41",
     "championName": "Tristana",
@@ -4809,7 +4809,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 22,
     "pushPings": 1
-}{
+}, {
     "gameCreation": "10-02-2023",
     "gameDuration": "00:24:02",
     "championName": "Yone",
@@ -4826,7 +4826,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 19,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "07-02-2023",
     "gameDuration": "00:36:32",
     "championName": "Yone",
@@ -4843,7 +4843,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 18,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "07-02-2023",
     "gameDuration": "00:29:48",
     "championName": "Sett",
@@ -4860,7 +4860,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 16,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "07-02-2023",
     "gameDuration": "00:24:39",
     "championName": "Tristana",
@@ -4877,7 +4877,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 5,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "07-02-2023",
     "gameDuration": "00:28:47",
     "championName": "Lucian",
@@ -4894,7 +4894,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 25,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "06-02-2023",
     "gameDuration": "00:26:56",
     "championName": "Tristana",
@@ -4911,7 +4911,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 11,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "05-02-2023",
     "gameDuration": "00:32:26",
     "championName": "Lucian",
@@ -4928,7 +4928,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 5,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "05-02-2023",
     "gameDuration": "00:15:29",
     "championName": "Yone",
@@ -4945,7 +4945,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 3,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "31-01-2023",
     "gameDuration": "00:22:21",
     "championName": "Azir",
@@ -4962,7 +4962,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 19,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "31-01-2023",
     "gameDuration": "00:16:01",
     "championName": "Rumble",
@@ -4979,7 +4979,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 9,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "30-01-2023",
     "gameDuration": "00:25:51",
     "championName": "Yone",
@@ -4996,7 +4996,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 7,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "30-01-2023",
     "gameDuration": "00:15:22",
     "championName": "Akali",
@@ -5013,7 +5013,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 3,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "30-01-2023",
     "gameDuration": "00:39:23",
     "championName": "Varus",
@@ -5030,7 +5030,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 20,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "29-01-2023",
     "gameDuration": "00:21:41",
     "championName": "Akali",
@@ -5047,7 +5047,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 18,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "29-01-2023",
     "gameDuration": "00:31:34",
     "championName": "TwistedFate",
@@ -5064,7 +5064,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 35,
     "pushPings": 1
-}{
+}, {
     "gameCreation": "29-01-2023",
     "gameDuration": "00:33:11",
     "championName": "Sylas",
@@ -5081,7 +5081,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 16,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "29-01-2023",
     "gameDuration": "00:28:05",
     "championName": "Akali",
@@ -5098,7 +5098,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 20,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "29-01-2023",
     "gameDuration": "00:25:12",
     "championName": "Leblanc",
@@ -5115,7 +5115,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 10,
     "pushPings": 1
-}{
+}, {
     "gameCreation": "29-01-2023",
     "gameDuration": "00:29:56",
     "championName": "Viktor",
@@ -5132,7 +5132,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 21,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "29-01-2023",
     "gameDuration": "00:24:39",
     "championName": "Caitlyn",
@@ -5149,7 +5149,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 8,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "28-01-2023",
     "gameDuration": "00:31:25",
     "championName": "Renekton",
@@ -5166,7 +5166,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 7,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "28-01-2023",
     "gameDuration": "00:20:18",
     "championName": "Sylas",
@@ -5183,7 +5183,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 7,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "28-01-2023",
     "gameDuration": "00:26:04",
     "championName": "Azir",
@@ -5200,7 +5200,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 7,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "28-01-2023",
     "gameDuration": "00:20:31",
     "championName": "Ezreal",
@@ -5217,7 +5217,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 6,
     "pushPings": 1
-}{
+}, {
     "gameCreation": "28-01-2023",
     "gameDuration": "00:28:32",
     "championName": "Kassadin",
@@ -5234,7 +5234,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 14,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "28-01-2023",
     "gameDuration": "00:15:25",
     "championName": "Sylas",
@@ -5251,7 +5251,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 7,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "27-01-2023",
     "gameDuration": "00:38:32",
     "championName": "Viktor",
@@ -5268,7 +5268,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 19,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "27-01-2023",
     "gameDuration": "00:15:12",
     "championName": "Ryze",
@@ -5285,7 +5285,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 3,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "27-01-2023",
     "gameDuration": "00:24:05",
     "championName": "Akali",
@@ -5302,7 +5302,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 15,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "27-01-2023",
     "gameDuration": "00:20:22",
     "championName": "Sylas",
@@ -5319,7 +5319,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 9,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "27-01-2023",
     "gameDuration": "00:29:37",
     "championName": "Sylas",
@@ -5336,7 +5336,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 18,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "27-01-2023",
     "gameDuration": "00:19:46",
     "championName": "Varus",
@@ -5353,7 +5353,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 1,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "26-01-2023",
     "gameDuration": "00:28:02",
     "championName": "Akali",
@@ -5370,7 +5370,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 19,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "26-01-2023",
     "gameDuration": "00:28:52",
     "championName": "Zeri",
@@ -5387,7 +5387,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 11,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "24-01-2023",
     "gameDuration": "00:26:21",
     "championName": "Varus",
@@ -5404,7 +5404,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 3,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "24-01-2023",
     "gameDuration": "00:23:39",
     "championName": "Sivir",
@@ -5421,7 +5421,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 9,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "24-01-2023",
     "gameDuration": "00:31:20",
     "championName": "Syndra",
@@ -5438,7 +5438,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 21,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "24-01-2023",
     "gameDuration": "00:29:13",
     "championName": "Yone",
@@ -5455,7 +5455,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 14,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "23-01-2023",
     "gameDuration": "00:31:15",
     "championName": "Leblanc",
@@ -5472,7 +5472,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 12,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "23-01-2023",
     "gameDuration": "00:28:15",
     "championName": "Azir",
@@ -5489,7 +5489,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 22,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "23-01-2023",
     "gameDuration": "00:35:15",
     "championName": "Akali",
@@ -5506,7 +5506,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 24,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "22-01-2023",
     "gameDuration": "00:26:04",
     "championName": "Sylas",
@@ -5523,7 +5523,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 19,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "22-01-2023",
     "gameDuration": "00:26:01",
     "championName": "Akali",
@@ -5540,7 +5540,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 14,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "22-01-2023",
     "gameDuration": "00:15:41",
     "championName": "Sylas",
@@ -5557,7 +5557,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 10,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "22-01-2023",
     "gameDuration": "00:21:21",
     "championName": "Zeri",
@@ -5574,7 +5574,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 7,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "22-01-2023",
     "gameDuration": "00:19:43",
     "championName": "Akali",
@@ -5591,7 +5591,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 7,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "21-01-2023",
     "gameDuration": "00:28:49",
     "championName": "Ryze",
@@ -5608,7 +5608,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 21,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "20-01-2023",
     "gameDuration": "00:24:01",
     "championName": "Sylas",
@@ -5625,7 +5625,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 5,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "20-01-2023",
     "gameDuration": "00:15:47",
     "championName": "Akali",
@@ -5642,7 +5642,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 8,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "20-01-2023",
     "gameDuration": "00:32:23",
     "championName": "Lucian",
@@ -5659,7 +5659,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 17,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "19-01-2023",
     "gameDuration": "00:29:58",
     "championName": "Sylas",
@@ -5676,7 +5676,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 28,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "19-01-2023",
     "gameDuration": "00:32:41",
     "championName": "Varus",
@@ -5693,7 +5693,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 18,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "18-01-2023",
     "gameDuration": "00:26:03",
     "championName": "Sylas",
@@ -5710,7 +5710,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 12,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "18-01-2023",
     "gameDuration": "00:20:10",
     "championName": "Leblanc",
@@ -5727,7 +5727,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 8,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "18-01-2023",
     "gameDuration": "00:28:14",
     "championName": "Galio",
@@ -5744,7 +5744,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 10,
     "pushPings": 1
-}{
+}, {
     "gameCreation": "18-01-2023",
     "gameDuration": "00:16:11",
     "championName": "Akali",
@@ -5761,7 +5761,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 5,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "18-01-2023",
     "gameDuration": "00:29:53",
     "championName": "Ryze",
@@ -5778,7 +5778,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 13,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "17-01-2023",
     "gameDuration": "00:25:14",
     "championName": "Sylas",
@@ -5795,7 +5795,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 18,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "17-01-2023",
     "gameDuration": "00:22:47",
     "championName": "Akali",
@@ -5812,7 +5812,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 9,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "17-01-2023",
     "gameDuration": "00:30:12",
     "championName": "Azir",
@@ -5829,7 +5829,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 23,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "16-01-2023",
     "gameDuration": "00:24:29",
     "championName": "Syndra",
@@ -5846,7 +5846,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 3,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "16-01-2023",
     "gameDuration": "00:25:40",
     "championName": "Leblanc",
@@ -5863,7 +5863,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 21,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "16-01-2023",
     "gameDuration": "00:42:36",
     "championName": "Ryze",
@@ -5880,7 +5880,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 54,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "16-01-2023",
     "gameDuration": "00:30:19",
     "championName": "Ryze",
@@ -5897,7 +5897,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 22,
     "pushPings": 1
-}{
+}, {
     "gameCreation": "16-01-2023",
     "gameDuration": "00:28:43",
     "championName": "Varus",
@@ -5914,7 +5914,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 13,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "12-01-2023",
     "gameDuration": "00:20:32",
     "championName": "Leblanc",
@@ -5931,7 +5931,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 12,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "12-01-2023",
     "gameDuration": "00:20:03",
     "championName": "Ryze",
@@ -5948,7 +5948,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 6,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "12-01-2023",
     "gameDuration": "00:21:45",
     "championName": "Irelia",
@@ -5965,7 +5965,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 4,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "12-01-2023",
     "gameDuration": "00:30:04",
     "championName": "Leblanc",
@@ -5982,7 +5982,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 11,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "12-01-2023",
     "gameDuration": "00:15:29",
     "championName": "Ezreal",
@@ -5999,7 +5999,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 3,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "12-01-2023",
     "gameDuration": "00:21:21",
     "championName": "Syndra",
@@ -6016,7 +6016,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 13,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "11-01-2023",
     "gameDuration": "00:28:48",
     "championName": "Syndra",
@@ -6033,7 +6033,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 29,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "11-01-2023",
     "gameDuration": "00:15:19",
     "championName": "Varus",
@@ -6050,7 +6050,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 1,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "11-01-2023",
     "gameDuration": "00:23:03",
     "championName": "Akali",
@@ -6067,7 +6067,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 4,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "11-01-2023",
     "gameDuration": "00:21:33",
     "championName": "Lucian",
@@ -6084,7 +6084,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 2,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "11-01-2023",
     "gameDuration": "00:26:45",
     "championName": "Lucian",
@@ -6101,7 +6101,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 10,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "11-01-2023",
     "gameDuration": "00:26:08",
     "championName": "Zeri",
@@ -6118,7 +6118,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 9,
     "pushPings": 1
-}{
+}, {
     "gameCreation": "10-01-2023",
     "gameDuration": "00:23:03",
     "championName": "Leblanc",
@@ -6135,7 +6135,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 6,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "10-01-2023",
     "gameDuration": "00:35:59",
     "championName": "Syndra",
@@ -6152,7 +6152,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 18,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "10-01-2023",
     "gameDuration": "00:15:14",
     "championName": "Syndra",
@@ -6169,7 +6169,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 5,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "10-01-2023",
     "gameDuration": "00:22:47",
     "championName": "Sylas",
@@ -6186,7 +6186,7 @@
     "needVisionPings": 1,
     "onMyWayPings": 19,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "20-12-2022",
     "gameDuration": "00:25:54",
     "championName": "Akali",
@@ -6203,7 +6203,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 11,
     "pushPings": 1
-}{
+}, {
     "gameCreation": "20-12-2022",
     "gameDuration": "00:35:20",
     "championName": "Kaisa",
@@ -6220,7 +6220,7 @@
     "needVisionPings": 0,
     "onMyWayPings": 10,
     "pushPings": 0
-}{
+}, {
     "gameCreation": "20-12-2022",
     "gameDuration": "00:23:04",
     "championName": "Syndra",
@@ -6237,4 +6237,4 @@
     "needVisionPings": 0,
     "onMyWayPings": 6,
     "pushPings": 0
-}
+}]

@@ -158,8 +158,8 @@ match_settings['game_mode'] = ["CLASSIC"]
 
 
 
-player_type = 'proplayer'
-player_alias = 'tay'
+player_type = 'streamer'
+player_alias = 'nicklink'
 path = player_type + '/'+player_alias+'/'
 
 raw_data_matchs_file = path + 'matchs_metadata_'+player_alias+'.json'
@@ -176,6 +176,9 @@ players_puuid = {}
 players_puuid['akaashi'] = 'jkgVko75HkHz9kHMYrVKYuPPC60s59vKct4Dj2djr0ETBLd52pqBO6xERuqLPsL7VbNR8sHHh7cFNg'
 players_puuid['tekendol'] = 'z2RlhdFkRh2CJ052bFeAd1SgdGIG9pyLJMPRpQImpELnUCgR0o4Gw2k2S6RR4vQ85daZ7imGU6w4hQ'
 players_puuid['nataruk'] = 'LdDeMb13ze9R_iYpMxyT5xP9PeiabtBtQ7FC65nrxXCDwLob2KGirZv__t71vwP9bDR-rhIf24m7vg'
+
+# Streamer Players
+players_puuid['nicklink'] = 'LiK_rfePGdi96HJYh1eyN9RDyz8nr2gI9fDLhU-D0barCr-rIaxXr627Dk5dxqAEe6OPW4vmjY-Njw'
 
 # Pro Players
 players_puuid['titan'] = 'dgBKuZgDjSv5F8Tgnuzi158sZlyyMtv1X9icbWvjFt7NbvIt7U31Ss6-IGyyJosYUIShfQzQpl4KHw'
@@ -194,6 +197,7 @@ players_puuid['brance'] = 'IH-gtERps3P_hpAw2sYJ6Lq1qo_D-WZbP-sWWm9VsqE8VCk-Up65c
 players_puuid['ayu'] = 'QWwXTNR7ej2kBByiH9lztGGQYELHDcZ3_jNhqmFrwZE7EOLG47VwKH7BMrC8lmdaQtazJqw4rKHDSA'
 players_puuid['tay'] = 'UVFHubHn9zQZ_Ua-_CLCXjvMMZ2W6JkUEOLrxJh_-nnbNBgyhexCErrv6-PBFCsHKXN4kfzM8_QsDQ'
 players_puuid['ninjakiwi'] = 'GS1QsEoXcPLk5SI_CxTWFl-EsbrGAlTHLNJtPPRDGSKjVr0d99IpPxjV_TtN_22-xq6xVews39cTJg'
+players_puuid['guigo'] = 'f_50s5FE-Df1CqeTAEzpT80B_n5uUtScIj7B6I5zqbRUcne4mg4xzAni8mtbnx2K2AU8Zq70bRWCdg'
 
 save_file = path + "ping_overview_"+player_alias+".json"
 

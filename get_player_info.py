@@ -1,6 +1,6 @@
 import requests
 
-api_key = "RGAPI-58cbe3a7-a7c9-454e-8ef5-7169478e13a2"
+api_key = "RGAPI-9040abe6-ba03-45bf-a7d5-ff877f741125"
 
 def get_player_data_by_name(name):
 
@@ -17,7 +17,7 @@ def get_match_data_by_player_id(id):
 
 
 
-username = 'ninjakiwi123'
+username = 'twitch nicklink'
 
 player = get_player_data_by_name(username)
 print(f"Gettng {player['name']} data statistics => {player['puuid']}")

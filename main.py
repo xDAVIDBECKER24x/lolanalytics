@@ -40,7 +40,7 @@ def check_match_settings(match, match_settings):
 
 def get_player_match_info_by_player_puuid(match, puuid):
 
-    print("Getting Match => "+match['metadata']['matchId'])
+    # print("Getting Match => "+match['metadata']['matchId'])
 
     participants_info = match['metadata']['participants']
     player_idx = participants_info.index(puuid)
@@ -97,29 +97,47 @@ def save_pings_overview(match_list, match_settings, puuid, save_file):
             match_creation = datetime.utcfromtimestamp(
                 match_creation).strftime('%d-%m-%Y')
 
-            print(match_creation)
+            all_in_pings = player_data['allInPings']
+            bait_pings = player_data['baitPings']
+            basic_pings = player_data['basicPings']
+            command_pings = player_data['commandPings']
+            danger_pings = player_data['dangerPings']
+            enemy_missing_pings = player_data['enemyMissingPings']
+            enemy_vision_pings = player_data['enemyVisionPings']
+            get_back_pings = player_data['getBackPings']
+            hold_pings = player_data['holdPings']
+            need_vision_pings = player_data['needVisionPings']
+            on_my_way_pings = player_data['onMyWayPings']
+            push_pings = player_data['pushPings']
+            total_pings = all_in_pings + bait_pings + basic_pings + command_pings + danger_pings + enemy_missing_pings + enemy_vision_pings + get_back_pings + hold_pings + need_vision_pings + on_my_way_pings + push_pings
+
             pings_overview['gameCreation'] = match_creation
             pings_overview['gameDuration'] = match_duration
             pings_overview['championName'] = player_data['championName']
             pings_overview['win'] = player_data['win']
-            pings_overview['allInPings'] = player_data['allInPings']
-            pings_overview['baitPings'] = player_data['baitPings']
-            pings_overview['basicPings'] = player_data['basicPings']
-            pings_overview['commandPings'] = player_data['commandPings']
-            pings_overview['dangerPings'] = player_data['dangerPings']
-            pings_overview['enemyMissingPings'] = player_data['enemyMissingPings']
-            pings_overview['enemyVisionPings'] = player_data['enemyVisionPings']
-            pings_overview['getBackPings'] = player_data['getBackPings']
-            pings_overview['holdPings'] = player_data['holdPings']
-            pings_overview['needVisionPings'] = player_data['needVisionPings']
-            pings_overview['onMyWayPings'] = player_data['onMyWayPings']
-            pings_overview['pushPings'] = player_data['pushPings']
+            pings_overview['totalPings'] = total_pings
+            pings_overview['allInPings'] = all_in_pings
+            pings_overview['baitPings'] = bait_pings
+            pings_overview['basicPings'] = basic_pings
+            pings_overview['commandPings'] = command_pings
+            pings_overview['dangerPings'] = danger_pings
+            pings_overview['enemyMissingPings'] = enemy_missing_pings
+            pings_overview['enemyVisionPings'] = enemy_vision_pings
+            pings_overview['getBackPings'] = get_back_pings
+            pings_overview['holdPings'] = hold_pings
+            pings_overview['needVisionPings'] = need_vision_pings
+            pings_overview['onMyWayPings'] = on_my_way_pings
+            pings_overview['pushPings'] = push_pings
 
             geral_pings_overview.append(pings_overview)
 
+    # df = pd.DataFrame(geral_pings_overview)
+    # print(df.mean())
+
+    geral_pings_overview = format_json(geral_pings_overview)
+
     with open(save_file, "w") as outfile:
 
-        geral_pings_overview = format_json(geral_pings_overview)
         outfile.write(geral_pings_overview)
 
     return
@@ -159,6 +177,8 @@ match_settings = {}
 match_settings['game_type'] = ["CUSTOM_GAME", "MATCHED_GAME"]
 match_settings['game_mode'] = ["CLASSIC"]
 
+
+# Load players puuid alias
 file_puuids_alias = open("players_puuids_alias.json", "r")
 puuids_alias = json.loads(file_puuids_alias.read())
 file_puuids_alias.close()
@@ -169,13 +189,14 @@ puuid = puuids_alias[player_type][player_alias]
 print("puuid => "+puuid)
 
 path = f"data/{player_type }/{player_alias}/"
-
 raw_data_matchs_file = f"{path}matchs_metadata_{player_alias}.json"
 
 # Load raw data from exported matches json
 raw_data_matchs_file = open(raw_data_matchs_file)
 raw_matches_data = json.load(raw_data_matchs_file)
 raw_data_matchs_file.close()
+
+
 
 save_file = path + f"ping_overview_{player_alias}.json"
 

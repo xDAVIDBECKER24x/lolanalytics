@@ -89,10 +89,11 @@ def save_pings_overview(match_list, match_settings, puuid, save_file):
 
             player_data = get_player_match_info_by_player_puuid(match, puuid)
 
+            # Convert miliseconds timestamp to seconds
             match_duration = match['info']['gameDuration']
             match_duration = strftime("%H:%M:%S", gmtime(match_duration))
 
-            # Convert miliseconds timestamp to seconds
+            # Convert miliseconds timestamp to date
             match_creation = int(match['info']['gameCreation']/1000)
             match_creation = datetime.utcfromtimestamp(
                 match_creation).strftime('%d-%m-%Y')
@@ -131,8 +132,11 @@ def save_pings_overview(match_list, match_settings, puuid, save_file):
 
             geral_pings_overview.append(pings_overview)
 
-    # df = pd.DataFrame(geral_pings_overview)
-    # print(df.mean())
+    df = pd.DataFrame(geral_pings_overview)
+    print(df['totalPings'].mean())
+    print(df['totalPings'].median())
+    print(df['totalPings'].count())
+    print(df['totalPings'].sum())
 
     geral_pings_overview = format_json(geral_pings_overview)
 

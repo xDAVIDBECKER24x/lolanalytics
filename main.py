@@ -10,6 +10,8 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import matplotlib.dates as dates
 from scipy.interpolate import make_interp_spline
+import decimal as dc
+
 
 def format_json(json_data):
 
@@ -157,37 +159,52 @@ def save_pings_overview(match_list, match_settings, puuid, save_path, player_ali
 
 def analysis_ping_overview(geral_pings_overview, save_path):
 
+    analysis_pings = {}
+
     df = pd.DataFrame(geral_pings_overview)
     df['gameCreation'] = pd.to_datetime(df['gameCreation'], unit='ms')
     df['gameCreation'] = df['gameCreation'].dt.strftime('%Y-%m-%d')
 
     df.sort_values(by=['gameCreation'], inplace=True)
 
-    # win_df = df[df["win"] == True]
-    # lose_df = df[df['win'] == False]
+    win_df = df[df["win"] == True]
+    lose_df = df[df['win'] == False]
 
-    # win_total_pings_mean = win_df['totalPings'].mean()
-    # win_total_pings_median = win_df['totalPings'].median()
-    # win_total_pings_count = win_df['totalPings'].count()
-    # win_total_pings_sum = win_df['totalPings'].sum()
-    # win_total_pings_std = win_df['totalPings'].std()
-    # win_total_pings_var = win_df['totalPings'].var()
+    win_pings_count = win_df['totalPings'].count() + 0.0
+    lose_pings_count = win_df['totalPings'].count()+0.0
 
-    # lose_total_pings_mean = lose_df['totalPings'].mean()
-    # lose_total_pings_median = lose_df['totalPings'].median()
-    # lose_total_pings_count = lose_df['totalPings'].count()
-    # lose_total_pings_sum = lose_df['totalPings'].sum()
-    # lose_total_pings_std = lose_df['totalPings'].std()
-    # lose_total_pings_var = lose_df['totalPings'].var()
+    analysis_pings['winrate'] = "Todo"
 
-    # total_pings_mean = df['totalPings'].mean()
-    # total_pings_median = df['totalPings'].median()
-    # total_pings_count = df['totalPings'].count()
-    # total_pings_sum = df['totalPings'].sum()
-    # total_pings_min = df['totalPings'].min()
-    # total_pings_max = df['totalPings'].max()
-    # total_pings_std = df['totalPings'].std()
-    # total_pings_var = df['totalPings'].var()
+    analysis_pings['pings_count'] = df['totalPings'].count()
+    analysis_pings['pings_mean'] = df['totalPings'].mean()
+    analysis_pings['pings_median'] = df['totalPings'].median()
+    analysis_pings['pings_sum'] = df['totalPings'].sum()
+    analysis_pings['pings_std'] = df['totalPings'].std()
+    analysis_pings['win_pings_count'] = win_df['totalPings'].count()
+    analysis_pings['win_pings_mean'] = win_df['totalPings'].mean()
+    analysis_pings['win_pings_median'] = win_df['totalPings'].median()
+    analysis_pings['win_pings_sum'] = win_df['totalPings'].sum()
+    analysis_pings['win_pings_std'] = win_df['totalPings'].std()
+    analysis_pings['win_pings_ratio_mean'] = win_df['ratioPings'].mean()
+    analysis_pings['win_pings_ratio_std'] = win_df['ratioPings'].std()
+    analysis_pings['lose_pings_count'] = lose_df['totalPings'].count()
+    analysis_pings['lose_pings_mean'] = lose_df['totalPings'].mean()
+    analysis_pings['lose_pings_median'] = lose_df['totalPings'].median()
+    analysis_pings['lose_pings_sum'] = lose_df['totalPings'].sum()
+    analysis_pings['lose_pings_std'] = lose_df['totalPings'].std()
+    analysis_pings['lose_pings_ratio_mean'] = lose_df['ratioPings'].mean()
+    analysis_pings['lose_pings_ratio_std'] = lose_df['ratioPings'].std()
+
+    print(analysis_pings)
+
+    total_pings_mean = df['totalPings'].mean()
+    total_pings_median = df['totalPings'].median()
+    total_pings_count = df['totalPings'].count()
+    total_pings_sum = df['totalPings'].sum()
+    total_pings_min = df['totalPings'].min()
+    total_pings_max = df['totalPings'].max()
+    total_pings_std = df['totalPings'].std()
+    total_pings_var = df['totalPings'].var()
 
     # date_start= df['gameCreation'].min()
     # date_end = df['gameCreation'].max()
@@ -195,34 +212,23 @@ def analysis_ping_overview(geral_pings_overview, save_path):
     # start_date = df['gameCreation'].min()
     # end_date = df['gameCreation'].max()
 
-    df_ratio_dates = df[['gameCreation', 'ratioPings']].copy()
-    df_ratio_dates= df_ratio_dates.groupby('gameCreation', as_index=False)['ratioPings'].mean()
-  
-    print(df_ratio_dates)
-    # create data
-    date_np = np.array(list(df_ratio_dates['gameCreation']))
-    value_np = np.array(list(df_ratio_dates['ratioPings']))
-    date_num = dates.date2num(date_np)
-    # smooth
-    date_num_smooth = np.linspace(date_num.min(), date_num.max(), 100) 
-    spl = make_interp_spline(date_num, value_np, k=3)
-    value_np_smooth = spl(date_num_smooth)
-    # print
-    plt.plot(date_np, value_np)
-    plt.plot(dates.num2date(date_num_smooth), value_np_smooth)
-    plt.show()
+    df_ratio_dates_mean = df[['gameCreation', 'ratioPings']].copy()
+    df_ratio_dates_mean = df_ratio_dates_mean.groupby(
+        'gameCreation', as_index=False)['ratioPings'].mean()
 
+    # print(df_ratio_dates_mean)
 
     max_date = df['gameCreation'].max()
     min_date = df['gameCreation'].min()
-    
+
     max_pings = df['totalPings'].max()
     max_ratio = df['ratioPings'].max()
 
     # Ping Total Overview Scatter Chart
     fig_total_pings, axs_total_pings = plt.subplots(figsize=(8, 4))
-    df.plot(kind='scatter', x='gameCreation', y='totalPings', ax=axs_total_pings)
-    
+    df.plot(kind='scatter', x='gameCreation',
+            y='totalPings', ax=axs_total_pings)
+
     axs_total_pings.set_ylim([0, max_pings+(max_pings/10)])
     axs_total_pings.set_xticks(df['gameCreation'])
     axs_total_pings.xaxis.set_major_locator(mdates.MonthLocator(interval=1))
@@ -230,24 +236,22 @@ def analysis_ping_overview(geral_pings_overview, save_path):
     axs_total_pings.set_ylabel("Quantidade de Pings")
     axs_total_pings.set_title(f"Dispersão Pings {player_alias.capitalize()}")
 
-    file_total_pings = save_path + f"ping_overview_total_{player_alias}_scatter"
+    file_total_pings = save_path + \
+        f"ping_overview_total_{player_alias}_scatter"
     fig_total_pings.savefig(file_total_pings)
 
     # Ping Per Minute Overview Line Chart
-
     fig_ratio_pings, axs_ratio_pings = plt.subplots(figsize=(8, 4))
-    df.plot(kind='line', x='gameCreation', y='ratioPings', ax=axs_ratio_pings)
-     
-    # axs_ratio_pings.set_ylim([0, max_ratio+(max_ratio/10)])
-    # axs_ratio_pings.set_xticks(df['gameCreation'])
-    # axs_ratio_pings.xaxis.set_major_locator(mdates.MonthLocator(interval=1))
-    # axs_ratio_pings.set_xlabel("")
+    df_ratio_dates_mean.plot(
+        kind='line', x='gameCreation', y='ratioPings', ax=axs_ratio_pings)
+
+    axs_ratio_pings.legend(['Frequência'])
+    axs_ratio_pings.set_xlabel("")
     axs_ratio_pings.set_ylabel("Pings/Minuto")
     axs_ratio_pings.set_title(f"Frequência Pings {player_alias.capitalize()}")
 
     file_ratio_pings = save_path + f"ping_overview_ratio_{player_alias}_line"
     fig_ratio_pings.savefig(file_ratio_pings)
-
 
     return
 

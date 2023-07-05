@@ -1,5 +1,6 @@
 import csv
 import json
+import string
 import pandas as pd
 import numpy as np
 from time import gmtime
@@ -80,7 +81,7 @@ def save_match_overview(match_list, puuid, save_file):
     return
 
 
-def save_pings_overview(match_list, match_settings, puuid, save_file):
+def save_pings_overview(match_list, match_settings, puuid, save_path,player_alias):
 
     geral_pings_overview = []
 
@@ -140,18 +141,19 @@ def save_pings_overview(match_list, match_settings, puuid, save_file):
 
             geral_pings_overview.append(pings_overview)
 
-    analysis_ping_overview(geral_pings_overview)
+    analysis_ping_overview(geral_pings_overview,save_path)
 
     geral_pings_overview = format_json(geral_pings_overview)
 
+    save_file = save_path + f"ping_overview_{player_alias}.json"
     with open(save_file, "w") as outfile:
-
+        
         outfile.write(geral_pings_overview)
 
     return
 
 
-def analysis_ping_overview(geral_pings_overview):
+def analysis_ping_overview(geral_pings_overview,save_path):
 
     df = pd.DataFrame(geral_pings_overview)
     df['gameCreation'] = pd.to_datetime(df['gameCreation'], unit='ms')
@@ -159,37 +161,38 @@ def analysis_ping_overview(geral_pings_overview):
     
     df.sort_values(by=['gameCreation'], inplace = True)
     print(df['ratioPings'].std())
-    win_df = df[df["win"] == True]
-    lose_df = df[df['win'] == False]
+    
+    # win_df = df[df["win"] == True]
+    # lose_df = df[df['win'] == False]
 
-    win_total_pings_mean = win_df['totalPings'].mean()
-    win_total_pings_median = win_df['totalPings'].median()
-    win_total_pings_count = win_df['totalPings'].count()
-    win_total_pings_sum = win_df['totalPings'].sum()
-    win_total_pings_std = win_df['totalPings'].std()
-    win_total_pings_var = win_df['totalPings'].var()
+    # win_total_pings_mean = win_df['totalPings'].mean()
+    # win_total_pings_median = win_df['totalPings'].median()
+    # win_total_pings_count = win_df['totalPings'].count()
+    # win_total_pings_sum = win_df['totalPings'].sum()
+    # win_total_pings_std = win_df['totalPings'].std()
+    # win_total_pings_var = win_df['totalPings'].var()
 
-    lose_total_pings_mean = lose_df['totalPings'].mean()
-    lose_total_pings_median = lose_df['totalPings'].median()
-    lose_total_pings_count = lose_df['totalPings'].count()
-    lose_total_pings_sum = lose_df['totalPings'].sum()
-    lose_total_pings_std = lose_df['totalPings'].std()
-    lose_total_pings_var = lose_df['totalPings'].var()
+    # lose_total_pings_mean = lose_df['totalPings'].mean()
+    # lose_total_pings_median = lose_df['totalPings'].median()
+    # lose_total_pings_count = lose_df['totalPings'].count()
+    # lose_total_pings_sum = lose_df['totalPings'].sum()
+    # lose_total_pings_std = lose_df['totalPings'].std()
+    # lose_total_pings_var = lose_df['totalPings'].var()
 
-    total_pings_mean = df['totalPings'].mean()
-    total_pings_median = df['totalPings'].median()
-    total_pings_count = df['totalPings'].count()
-    total_pings_sum = df['totalPings'].sum()
-    total_pings_min = df['totalPings'].min()
-    total_pings_max = df['totalPings'].max()
-    total_pings_std = df['totalPings'].std()
-    total_pings_var = df['totalPings'].var()
+    # total_pings_mean = df['totalPings'].mean()
+    # total_pings_median = df['totalPings'].median()
+    # total_pings_count = df['totalPings'].count()
+    # total_pings_sum = df['totalPings'].sum()
+    # total_pings_min = df['totalPings'].min()
+    # total_pings_max = df['totalPings'].max()
+    # total_pings_std = df['totalPings'].std()
+    # total_pings_var = df['totalPings'].var()
 
-    date_start= df['gameCreation'].min()
-    date_end = df['gameCreation'].max()
+    # date_start= df['gameCreation'].min()
+    # date_end = df['gameCreation'].max()
 
-    start_date = df['gameCreation'].min()
-    end_date = df['gameCreation'].max()
+    # start_date = df['gameCreation'].min()
+    # end_date = df['gameCreation'].max()
 
     max_pings = df['totalPings'].max()
     min_pings = df['totalPings'].min()
@@ -203,17 +206,11 @@ def analysis_ping_overview(geral_pings_overview):
     axs.xaxis.set_major_locator(mdates.MonthLocator(interval=1))
     axs.set_xlabel("")
     axs.set_ylabel("Quantidade de Pings")
-    axs.set_title(f"Dispersão Pings")
-    # axs.xaxis.set_major_formatter(mdates.DateFormatter('%d-%m-%Y'))
-   
-    # axs.ticklabel_format('dd-MM-YY')
-    # axs.set_xticks('')
-    # axs.xaxis.set_major_locator(mdates.MinuteLocator(interval=30))
-    # axs.set_xticks(np.arange(0, 1, step=0.2))
+    axs.set_title(f"Dispersão Pings {player_alias.capitalize()}")
 
-    fig.savefig("plot.png")
+    save_file = save_path + f"ping_overview_{player_alias}_scatter"
 
-    # plt.show()
+    fig.savefig(save_file)
 
     return
 
@@ -233,8 +230,8 @@ player_alias = 'akaashi'
 puuid = puuids_alias[player_type][player_alias]
 print("puuid => "+puuid)
 
-path = f"data/{player_type }/{player_alias}/"
-raw_data_matchs_file = f"{path}matchs_metadata_{player_alias}.json"
+save_path = f"data/{player_type }/{player_alias}/"
+raw_data_matchs_file = f"{save_path}matchs_metadata_{player_alias}.json"
 
 # Load raw data from exported matches json
 raw_data_matchs_file = open(raw_data_matchs_file)
@@ -242,7 +239,5 @@ raw_matches_data = json.load(raw_data_matchs_file)
 raw_data_matchs_file.close()
 
 
-save_file = path + f"ping_overview_{player_alias}.json"
-
 save_pings_overview(raw_matches_data, match_settings,
-                    puuid, save_file)
+                    puuid, save_path,player_alias)

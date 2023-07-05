@@ -1,6 +1,7 @@
 import csv
 import json
 import pandas as pd
+import numpy as np
 from time import gmtime
 from time import strftime
 from datetime import datetime
@@ -181,15 +182,25 @@ def analysis_ping_overview(geral_pings_overview):
     print(df['gameCreation'].min())
     print(df['gameCreation'].max())
 
+
+    start_date = df['gameCreation'].min()
+    end_date = df['gameCreation'].max()
+
+    geral_max_pings = df['totalPings'].max()
+    geral_min_pings = df['totalPings'].min()
+
     fig, axs = plt.subplots(figsize=(8, 4))
     
-    tics = [df['gameCreation'].min(), df['gameCreation'].max()]
+    tics = [start_date, end_date]
     
+    print(tics)
     
     df.plot(kind = 'scatter', x = 'gameCreation',y='totalPings',ax=axs)
    
-    axs.set_ylim([0, df['totalPings'].max()+df['totalPings'].max()/10])
-    axs.set_xticks(tics,tics)
+    axs.set_ylim([0, geral_max_pings+(geral_max_pings/10)])
+    axs.ticklabel_format('dd-MM-YY')
+    
+    # axs.set_xticks(np.arange(0, 1, step=0.2))
 
     fig.savefig("plot.png")
     

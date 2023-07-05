@@ -4,6 +4,7 @@ import pandas as pd
 from time import gmtime
 from time import strftime
 from datetime import datetime
+import matplotlib.pyplot as plt
 
 
 def format_json(json_data):
@@ -94,9 +95,10 @@ def save_pings_overview(match_list, match_settings, puuid, save_file):
             match_duration = strftime("%H:%M:%S", gmtime(match_duration))
 
             # Convert miliseconds timestamp to date
-            match_creation = int(match['info']['gameCreation']/1000)
-            match_creation = datetime.utcfromtimestamp(
-                match_creation).strftime('%d-%m-%Y')
+            # match_creation = int(match['info']['gameCreation']/1000)
+            # match_creation = datetime.utcfromtimestamp(
+            #     match_creation).strftime('%d-%m-%Y')
+            match_creation = match['info']['gameCreation']
 
             all_in_pings = player_data['allInPings']
             bait_pings = player_data['baitPings']
@@ -132,11 +134,7 @@ def save_pings_overview(match_list, match_settings, puuid, save_file):
 
             geral_pings_overview.append(pings_overview)
 
-    df = pd.DataFrame(geral_pings_overview)
-    print(df['totalPings'].mean())
-    print(df['totalPings'].median())
-    print(df['totalPings'].count())
-    print(df['totalPings'].sum())
+    analysis_ping_overview(geral_pings_overview)
 
     geral_pings_overview = format_json(geral_pings_overview)
 
@@ -146,35 +144,58 @@ def save_pings_overview(match_list, match_settings, puuid, save_file):
 
     return
 
+def analysis_ping_overview(geral_pings_overview):
+    
+    df = pd.DataFrame(geral_pings_overview)
+    df['gameCreation'] = pd.to_datetime(df['gameCreation'], unit='ms')
+    df['gameCreation'] = df['gameCreation'].dt.strftime('%d/%m/%Y')
+    df.sort_values(by=['gameCreation'],ascending=True)
 
-def save_date_matchs(match_list, save_file):
+    win_df = df[df["win"]==True]
+    lose_df = df[df['win'] == False] 
 
-    with open(save_file, "w") as outfile:
+    print("Win")
+    print(win_df['totalPings'].mean())
+    print(win_df['totalPings'].median())
+    print(win_df['totalPings'].count())
+    print(win_df['totalPings'].sum())
+    print(win_df['totalPings'].std())
+    print(win_df['totalPings'].var())
+    print("Lose")
+    print(lose_df['totalPings'].mean())
+    print(lose_df['totalPings'].median())
+    print(lose_df['totalPings'].count())
+    print(lose_df['totalPings'].sum())
+    print(lose_df['totalPings'].std())
+    print(lose_df['totalPings'].var())
+    print("Geral")
+    print(df['totalPings'].mean())
+    print(df['totalPings'].median())
+    print(df['totalPings'].count())
+    print(df['totalPings'].sum())
+    print(df['totalPings'].min())
+    print(df['totalPings'].max())
+    print(df['totalPings'].std())
+    print(df['totalPings'].var())
 
-        for match in match_list:
+    print(df['gameCreation'].min())
+    print(df['gameCreation'].max())
 
-            date_overview = {}
+    fig, axs = plt.subplots(figsize=(8, 4))
+    
+    tics = [df['gameCreation'].min(), df['gameCreation'].max()]
+    
+    
+    df.plot(kind = 'scatter', x = 'gameCreation',y='totalPings',ax=axs)
+   
+    axs.set_ylim([0, df['totalPings'].max()+df['totalPings'].max()/10])
+    axs.set_xticks(tics,tics)
 
-            date_overview['gameCreation'] = match['info']['gameCreation']
+    fig.savefig("plot.png")
+    
+    # plt.show()
 
-            date_overview = format_json(date_overview)
-
-            outfile.write(date_overview)
-
-    return
-
-
-def save_json_to_csv(data, file):
-
-    headers = data[0].keys()
-
-    with open(file, 'w') as f:
-        writer = csv.DictWriter(f, fieldnames=headers)
-        writer.writeheader()
-        writer.writerows(data)
-
-    return
-
+    return 
 
 # https://developer.riotgames.com/apis#match-v5/GET_getMatch
 match_settings = {}

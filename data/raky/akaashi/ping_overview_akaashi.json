@@ -1,6 +1,6 @@
 [
     {
-        "gameCreation": "27-06-2023",
+        "gameCreation": 1687896294336,
         "gameDuration": "00:28:05",
         "championName": "Aphelios",
         "win": false,
@@ -19,7 +19,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "27-06-2023",
+        "gameCreation": 1687825768194,
         "gameDuration": "00:30:15",
         "championName": "Samira",
         "win": false,
@@ -38,7 +38,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "26-06-2023",
+        "gameCreation": 1687821694656,
         "gameDuration": "00:27:24",
         "championName": "Draven",
         "win": true,
@@ -57,7 +57,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "26-06-2023",
+        "gameCreation": 1687749041549,
         "gameDuration": "00:31:25",
         "championName": "Milio",
         "win": false,
@@ -76,7 +76,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "25-06-2023",
+        "gameCreation": 1687734550015,
         "gameDuration": "00:22:51",
         "championName": "Xayah",
         "win": false,
@@ -95,7 +95,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "25-06-2023",
+        "gameCreation": 1687731002464,
         "gameDuration": "00:26:04",
         "championName": "Lucian",
         "win": true,
@@ -114,7 +114,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "25-06-2023",
+        "gameCreation": 1687661234720,
         "gameDuration": "00:28:40",
         "championName": "Varus",
         "win": false,
@@ -133,7 +133,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "25-06-2023",
+        "gameCreation": 1687658815331,
         "gameDuration": "00:25:34",
         "championName": "Kaisa",
         "win": false,
@@ -152,7 +152,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "25-06-2023",
+        "gameCreation": 1687656810586,
         "gameDuration": "00:27:53",
         "championName": "Kaisa",
         "win": false,
@@ -171,7 +171,7 @@
         "pushPings": 1
     },
     {
-        "gameCreation": "25-06-2023",
+        "gameCreation": 1687654639111,
         "gameDuration": "00:23:02",
         "championName": "Caitlyn",
         "win": true,
@@ -190,7 +190,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "24-06-2023",
+        "gameCreation": 1687631636256,
         "gameDuration": "00:24:04",
         "championName": "Aphelios",
         "win": false,
@@ -209,7 +209,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "24-06-2023",
+        "gameCreation": 1687583069164,
         "gameDuration": "00:29:38",
         "championName": "Varus",
         "win": false,
@@ -228,7 +228,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "23-06-2023",
+        "gameCreation": 1687494361734,
         "gameDuration": "00:20:26",
         "championName": "Lucian",
         "win": true,
@@ -247,7 +247,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "23-06-2023",
+        "gameCreation": 1687487132162,
         "gameDuration": "00:26:11",
         "championName": "Xayah",
         "win": false,
@@ -266,7 +266,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "23-06-2023",
+        "gameCreation": 1687483129159,
         "gameDuration": "00:29:24",
         "championName": "Varus",
         "win": true,
@@ -285,7 +285,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "23-06-2023",
+        "gameCreation": 1687480690594,
         "gameDuration": "00:32:09",
         "championName": "Xayah",
         "win": false,
@@ -304,7 +304,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "22-06-2023",
+        "gameCreation": 1687473348944,
         "gameDuration": "00:21:22",
         "championName": "Draven",
         "win": true,
@@ -323,7 +323,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "22-06-2023",
+        "gameCreation": 1687470072332,
         "gameDuration": "00:26:12",
         "championName": "Varus",
         "win": false,
@@ -342,7 +342,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "22-06-2023",
+        "gameCreation": 1687462784604,
         "gameDuration": "00:27:11",
         "championName": "Ezreal",
         "win": true,
@@ -361,7 +361,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "22-06-2023",
+        "gameCreation": 1687459876941,
         "gameDuration": "00:34:35",
         "championName": "Ezreal",
         "win": true,
@@ -380,7 +380,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "22-06-2023",
+        "gameCreation": 1687458091706,
         "gameDuration": "00:21:27",
         "championName": "Caitlyn",
         "win": false,
@@ -399,7 +399,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "22-06-2023",
+        "gameCreation": 1687453375667,
         "gameDuration": "00:25:25",
         "championName": "Kaisa",
         "win": false,
@@ -418,7 +418,7 @@
         "pushPings": 1
     },
     {
-        "gameCreation": "22-06-2023",
+        "gameCreation": 1687450802838,
         "gameDuration": "00:26:13",
         "championName": "Xayah",
         "win": true,
@@ -437,7 +437,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "22-06-2023",
+        "gameCreation": 1687449166090,
         "gameDuration": "00:15:34",
         "championName": "Kaisa",
         "win": true,
@@ -456,7 +456,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "22-06-2023",
+        "gameCreation": 1687411241368,
         "gameDuration": "00:24:26",
         "championName": "Xayah",
         "win": false,
@@ -475,7 +475,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "22-06-2023",
+        "gameCreation": 1687398858594,
         "gameDuration": "00:32:14",
         "championName": "Xayah",
         "win": true,
@@ -494,7 +494,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "22-06-2023",
+        "gameCreation": 1687395061362,
         "gameDuration": "00:32:28",
         "championName": "Varus",
         "win": true,
@@ -513,7 +513,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "22-06-2023",
+        "gameCreation": 1687393516692,
         "gameDuration": "00:15:22",
         "championName": "Ezreal",
         "win": false,
@@ -532,7 +532,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "21-06-2023",
+        "gameCreation": 1687391129716,
         "gameDuration": "00:23:27",
         "championName": "Vi",
         "win": true,
@@ -551,7 +551,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "21-06-2023",
+        "gameCreation": 1687388806521,
         "gameDuration": "00:32:01",
         "championName": "Ezreal",
         "win": false,
@@ -570,7 +570,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "21-06-2023",
+        "gameCreation": 1687385183076,
         "gameDuration": "00:33:40",
         "championName": "KSante",
         "win": false,
@@ -589,7 +589,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "21-06-2023",
+        "gameCreation": 1687382826854,
         "gameDuration": "00:28:21",
         "championName": "Caitlyn",
         "win": true,
@@ -608,7 +608,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "21-06-2023",
+        "gameCreation": 1687374617748,
         "gameDuration": "00:23:31",
         "championName": "Kaisa",
         "win": false,
@@ -627,7 +627,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "21-06-2023",
+        "gameCreation": 1687372561137,
         "gameDuration": "00:28:32",
         "championName": "Karma",
         "win": false,
@@ -646,7 +646,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "20-06-2023",
+        "gameCreation": 1687290032900,
         "gameDuration": "00:32:30",
         "championName": "Xayah",
         "win": true,
@@ -665,7 +665,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "20-06-2023",
+        "gameCreation": 1687234419335,
         "gameDuration": "00:15:42",
         "championName": "Ezreal",
         "win": false,
@@ -684,7 +684,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "20-06-2023",
+        "gameCreation": 1687224232894,
         "gameDuration": "00:39:01",
         "championName": "Aphelios",
         "win": true,
@@ -703,7 +703,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "19-06-2023",
+        "gameCreation": 1687140644693,
         "gameDuration": "00:32:24",
         "championName": "Ashe",
         "win": true,
@@ -722,7 +722,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "19-06-2023",
+        "gameCreation": 1687138093858,
         "gameDuration": "00:20:32",
         "championName": "Sivir",
         "win": true,
@@ -741,7 +741,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "19-06-2023",
+        "gameCreation": 1687133829563,
         "gameDuration": "00:26:24",
         "championName": "Kaisa",
         "win": true,
@@ -760,7 +760,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "17-06-2023",
+        "gameCreation": 1687029441456,
         "gameDuration": "00:24:25",
         "championName": "Lucian",
         "win": false,
@@ -779,7 +779,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "12-06-2023",
+        "gameCreation": 1686610626993,
         "gameDuration": "00:25:49",
         "championName": "Lucian",
         "win": false,
@@ -798,7 +798,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "12-06-2023",
+        "gameCreation": 1686608965850,
         "gameDuration": "00:15:15",
         "championName": "Lucian",
         "win": true,
@@ -817,7 +817,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "12-06-2023",
+        "gameCreation": 1686601908844,
         "gameDuration": "00:28:19",
         "championName": "Seraphine",
         "win": true,
@@ -836,7 +836,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "11-06-2023",
+        "gameCreation": 1686455796485,
         "gameDuration": "00:32:09",
         "championName": "Lucian",
         "win": false,
@@ -855,7 +855,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "11-06-2023",
+        "gameCreation": 1686453577203,
         "gameDuration": "00:22:01",
         "championName": "Ezreal",
         "win": true,
@@ -874,7 +874,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "10-06-2023",
+        "gameCreation": 1686379835128,
         "gameDuration": "00:32:50",
         "championName": "LeeSin",
         "win": true,
@@ -893,7 +893,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "10-06-2023",
+        "gameCreation": 1686378217336,
         "gameDuration": "00:15:10",
         "championName": "Nilah",
         "win": false,
@@ -912,7 +912,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "10-06-2023",
+        "gameCreation": 1686375387122,
         "gameDuration": "00:31:30",
         "championName": "Varus",
         "win": true,
@@ -931,7 +931,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "10-06-2023",
+        "gameCreation": 1686372235562,
         "gameDuration": "00:37:28",
         "championName": "Zeri",
         "win": true,
@@ -950,7 +950,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "10-06-2023",
+        "gameCreation": 1686369388246,
         "gameDuration": "00:22:31",
         "championName": "Vayne",
         "win": true,
@@ -969,7 +969,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "09-06-2023",
+        "gameCreation": 1686341725259,
         "gameDuration": "00:33:08",
         "championName": "Zeri",
         "win": false,
@@ -988,7 +988,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "09-06-2023",
+        "gameCreation": 1686338236447,
         "gameDuration": "00:38:55",
         "championName": "Xayah",
         "win": true,
@@ -1007,7 +1007,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "09-06-2023",
+        "gameCreation": 1686336444505,
         "gameDuration": "00:14:04",
         "championName": "Lucian",
         "win": false,
@@ -1026,7 +1026,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "09-06-2023",
+        "gameCreation": 1686284276987,
         "gameDuration": "00:30:59",
         "championName": "Lucian",
         "win": false,
@@ -1045,7 +1045,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "09-06-2023",
+        "gameCreation": 1686282259495,
         "gameDuration": "00:20:53",
         "championName": "Varus",
         "win": false,
@@ -1064,7 +1064,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "09-06-2023",
+        "gameCreation": 1686280311661,
         "gameDuration": "00:15:11",
         "championName": "Lucian",
         "win": true,
@@ -1083,7 +1083,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "09-06-2023",
+        "gameCreation": 1686277541427,
         "gameDuration": "00:25:35",
         "championName": "Lucian",
         "win": true,
@@ -1102,7 +1102,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "08-06-2023",
+        "gameCreation": 1686263678371,
         "gameDuration": "00:28:22",
         "championName": "Ezreal",
         "win": false,
@@ -1121,7 +1121,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "08-06-2023",
+        "gameCreation": 1686260465880,
         "gameDuration": "00:35:04",
         "championName": "Lucian",
         "win": true,
@@ -1140,7 +1140,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "08-06-2023",
+        "gameCreation": 1686258611966,
         "gameDuration": "00:20:47",
         "championName": "Lucian",
         "win": true,
@@ -1159,7 +1159,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "07-06-2023",
+        "gameCreation": 1686168591734,
         "gameDuration": "00:25:30",
         "championName": "Lucian",
         "win": false,
@@ -1178,7 +1178,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "07-06-2023",
+        "gameCreation": 1686166544489,
         "gameDuration": "00:25:56",
         "championName": "Lucian",
         "win": true,
@@ -1197,7 +1197,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "07-06-2023",
+        "gameCreation": 1686099673419,
         "gameDuration": "00:19:54",
         "championName": "Lucian",
         "win": false,
@@ -1216,7 +1216,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "07-06-2023",
+        "gameCreation": 1686097826490,
         "gameDuration": "00:19:08",
         "championName": "Lucian",
         "win": true,
@@ -1235,7 +1235,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "07-06-2023",
+        "gameCreation": 1686096146387,
         "gameDuration": "00:15:21",
         "championName": "Nilah",
         "win": true,
@@ -1254,7 +1254,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "06-06-2023",
+        "gameCreation": 1686087861309,
         "gameDuration": "00:29:25",
         "championName": "Varus",
         "win": false,
@@ -1273,7 +1273,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "06-06-2023",
+        "gameCreation": 1686013606169,
         "gameDuration": "00:18:24",
         "championName": "Nilah",
         "win": false,
@@ -1292,7 +1292,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "05-06-2023",
+        "gameCreation": 1685999380664,
         "gameDuration": "00:30:58",
         "championName": "TwistedFate",
         "win": false,
@@ -1311,7 +1311,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "05-06-2023",
+        "gameCreation": 1685996989280,
         "gameDuration": "00:30:14",
         "championName": "Zed",
         "win": true,
@@ -1330,7 +1330,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "05-06-2023",
+        "gameCreation": 1685993645435,
         "gameDuration": "00:26:33",
         "championName": "Nilah",
         "win": true,
@@ -1349,7 +1349,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "05-06-2023",
+        "gameCreation": 1685991213113,
         "gameDuration": "00:26:07",
         "championName": "Neeko",
         "win": true,
@@ -1368,7 +1368,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "05-06-2023",
+        "gameCreation": 1685928902822,
         "gameDuration": "00:25:11",
         "championName": "Ahri",
         "win": false,
@@ -1387,7 +1387,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "04-06-2023",
+        "gameCreation": 1685921890321,
         "gameDuration": "00:27:22",
         "championName": "Lucian",
         "win": false,
@@ -1406,7 +1406,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "04-06-2023",
+        "gameCreation": 1685910831415,
         "gameDuration": "00:24:42",
         "championName": "Lucian",
         "win": true,
@@ -1425,7 +1425,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "04-06-2023",
+        "gameCreation": 1685908282313,
         "gameDuration": "00:26:41",
         "championName": "Lucian",
         "win": true,
@@ -1444,7 +1444,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "04-06-2023",
+        "gameCreation": 1685855260857,
         "gameDuration": "00:27:26",
         "championName": "KSante",
         "win": true,
@@ -1463,7 +1463,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "04-06-2023",
+        "gameCreation": 1685844114418,
         "gameDuration": "00:27:18",
         "championName": "Annie",
         "win": false,
@@ -1482,7 +1482,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "04-06-2023",
+        "gameCreation": 1685841560418,
         "gameDuration": "00:17:54",
         "championName": "Sylas",
         "win": true,
@@ -1501,7 +1501,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "03-06-2023",
+        "gameCreation": 1685835282199,
         "gameDuration": "00:15:33",
         "championName": "Lucian",
         "win": true,
@@ -1520,7 +1520,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "03-06-2023",
+        "gameCreation": 1685825652567,
         "gameDuration": "00:15:15",
         "championName": "Lucian",
         "win": true,
@@ -1539,7 +1539,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "03-06-2023",
+        "gameCreation": 1685763312512,
         "gameDuration": "00:24:32",
         "championName": "Zeri",
         "win": false,
@@ -1558,7 +1558,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "03-06-2023",
+        "gameCreation": 1685760409300,
         "gameDuration": "00:28:42",
         "championName": "Aphelios",
         "win": true,
@@ -1577,7 +1577,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "03-06-2023",
+        "gameCreation": 1685757926819,
         "gameDuration": "00:23:24",
         "championName": "Zeri",
         "win": true,
@@ -1596,7 +1596,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "03-06-2023",
+        "gameCreation": 1685755321678,
         "gameDuration": "00:20:23",
         "championName": "Aphelios",
         "win": true,
@@ -1615,7 +1615,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "03-06-2023",
+        "gameCreation": 1685752578625,
         "gameDuration": "00:20:44",
         "championName": "Zeri",
         "win": true,
@@ -1634,7 +1634,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "02-06-2023",
+        "gameCreation": 1685670993499,
         "gameDuration": "00:43:07",
         "championName": "KSante",
         "win": false,
@@ -1653,7 +1653,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "01-06-2023",
+        "gameCreation": 1685646465268,
         "gameDuration": "00:27:17",
         "championName": "Kalista",
         "win": false,
@@ -1672,7 +1672,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "31-05-2023",
+        "gameCreation": 1685570729897,
         "gameDuration": "00:22:22",
         "championName": "Zeri",
         "win": true,
@@ -1691,7 +1691,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "31-05-2023",
+        "gameCreation": 1685561913397,
         "gameDuration": "00:24:58",
         "championName": "Lucian",
         "win": true,
@@ -1710,7 +1710,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "31-05-2023",
+        "gameCreation": 1685491253012,
         "gameDuration": "00:30:05",
         "championName": "Nilah",
         "win": false,
@@ -1729,7 +1729,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "30-05-2023",
+        "gameCreation": 1685410616152,
         "gameDuration": "00:30:44",
         "championName": "Lucian",
         "win": true,
@@ -1748,7 +1748,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "28-05-2023",
+        "gameCreation": 1685304276908,
         "gameDuration": "00:45:19",
         "championName": "Graves",
         "win": false,
@@ -1767,7 +1767,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "28-05-2023",
+        "gameCreation": 1685301507893,
         "gameDuration": "00:31:24",
         "championName": "Ezreal",
         "win": false,
@@ -1786,7 +1786,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "28-05-2023",
+        "gameCreation": 1685299240293,
         "gameDuration": "00:25:14",
         "championName": "Kayn",
         "win": true,
@@ -1805,7 +1805,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "28-05-2023",
+        "gameCreation": 1685293577215,
         "gameDuration": "00:25:07",
         "championName": "Zeri",
         "win": false,
@@ -1824,7 +1824,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "28-05-2023",
+        "gameCreation": 1685291739202,
         "gameDuration": "00:23:03",
         "championName": "Neeko",
         "win": true,
@@ -1843,7 +1843,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "28-05-2023",
+        "gameCreation": 1685247620896,
         "gameDuration": "00:27:05",
         "championName": "Ezreal",
         "win": false,
@@ -1862,7 +1862,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "28-05-2023",
+        "gameCreation": 1685245721120,
         "gameDuration": "00:19:22",
         "championName": "Vayne",
         "win": true,
@@ -1881,7 +1881,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "28-05-2023",
+        "gameCreation": 1685242660121,
         "gameDuration": "00:31:37",
         "championName": "Lucian",
         "win": false,
@@ -1900,7 +1900,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "27-05-2023",
+        "gameCreation": 1685213772603,
         "gameDuration": "00:27:58",
         "championName": "Varus",
         "win": false,
@@ -1919,7 +1919,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "27-05-2023",
+        "gameCreation": 1685211510927,
         "gameDuration": "00:27:54",
         "championName": "Lucian",
         "win": true,
@@ -1938,7 +1938,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "27-05-2023",
+        "gameCreation": 1685149624110,
         "gameDuration": "00:25:11",
         "championName": "Zeri",
         "win": false,
@@ -1957,7 +1957,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "26-05-2023",
+        "gameCreation": 1685143664146,
         "gameDuration": "00:24:38",
         "championName": "Lucian",
         "win": true,
@@ -1976,7 +1976,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "26-05-2023",
+        "gameCreation": 1685128899983,
         "gameDuration": "00:25:38",
         "championName": "Lucian",
         "win": true,
@@ -1995,7 +1995,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "26-05-2023",
+        "gameCreation": 1685072632553,
         "gameDuration": "00:32:24",
         "championName": "Zed",
         "win": false,
@@ -2014,7 +2014,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "26-05-2023",
+        "gameCreation": 1685070110672,
         "gameDuration": "00:30:25",
         "championName": "Kayn",
         "win": true,
@@ -2033,7 +2033,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "25-05-2023",
+        "gameCreation": 1685052089796,
         "gameDuration": "00:25:55",
         "championName": "Zeri",
         "win": false,
@@ -2052,7 +2052,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "25-05-2023",
+        "gameCreation": 1685041856213,
         "gameDuration": "00:27:11",
         "championName": "Zeri",
         "win": true,
@@ -2071,7 +2071,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "25-05-2023",
+        "gameCreation": 1685039825124,
         "gameDuration": "00:27:40",
         "championName": "Zeri",
         "win": true,
@@ -2090,7 +2090,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "24-05-2023",
+        "gameCreation": 1684964461234,
         "gameDuration": "00:17:15",
         "championName": "Zeri",
         "win": true,
@@ -2109,7 +2109,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "24-05-2023",
+        "gameCreation": 1684963924028,
         "gameDuration": "00:02:52",
         "championName": "Draven",
         "win": true,
@@ -2128,7 +2128,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "24-05-2023",
+        "gameCreation": 1684960260038,
         "gameDuration": "00:27:27",
         "championName": "Ekko",
         "win": false,
@@ -2147,7 +2147,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "24-05-2023",
+        "gameCreation": 1684957765975,
         "gameDuration": "00:30:37",
         "championName": "Zeri",
         "win": false,
@@ -2166,7 +2166,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "24-05-2023",
+        "gameCreation": 1684956437881,
         "gameDuration": "00:15:16",
         "championName": "Zeri",
         "win": true,
@@ -2185,7 +2185,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "24-05-2023",
+        "gameCreation": 1684954428236,
         "gameDuration": "00:23:40",
         "championName": "Zeri",
         "win": true,
@@ -2204,7 +2204,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "23-05-2023",
+        "gameCreation": 1684873710087,
         "gameDuration": "00:23:13",
         "championName": "Jinx",
         "win": true,
@@ -2223,7 +2223,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "22-05-2023",
+        "gameCreation": 1684796024810,
         "gameDuration": "00:25:42",
         "championName": "KSante",
         "win": true,
@@ -2242,7 +2242,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "22-05-2023",
+        "gameCreation": 1684793284163,
         "gameDuration": "00:35:21",
         "championName": "Akshan",
         "win": false,
@@ -2261,7 +2261,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "22-05-2023",
+        "gameCreation": 1684784963078,
         "gameDuration": "00:18:28",
         "championName": "Jinx",
         "win": false,
@@ -2280,7 +2280,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "21-05-2023",
+        "gameCreation": 1684700763573,
         "gameDuration": "00:23:29",
         "championName": "Zeri",
         "win": false,
@@ -2299,7 +2299,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "21-05-2023",
+        "gameCreation": 1684698596425,
         "gameDuration": "00:29:53",
         "championName": "Akshan",
         "win": true,
@@ -2318,7 +2318,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "21-05-2023",
+        "gameCreation": 1684694147059,
         "gameDuration": "00:27:29",
         "championName": "Akshan",
         "win": true,
@@ -2337,7 +2337,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "21-05-2023",
+        "gameCreation": 1684635042188,
         "gameDuration": "00:28:51",
         "championName": "Zeri",
         "win": false,
@@ -2356,7 +2356,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "21-05-2023",
+        "gameCreation": 1684632608615,
         "gameDuration": "00:28:06",
         "championName": "Graves",
         "win": false,
@@ -2375,7 +2375,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "21-05-2023",
+        "gameCreation": 1684630253599,
         "gameDuration": "00:27:30",
         "championName": "Varus",
         "win": true,
@@ -2394,7 +2394,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "20-05-2023",
+        "gameCreation": 1684625602394,
         "gameDuration": "00:29:46",
         "championName": "KogMaw",
         "win": false,
@@ -2413,7 +2413,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "20-05-2023",
+        "gameCreation": 1684607023180,
         "gameDuration": "00:22:01",
         "championName": "Caitlyn",
         "win": false,
@@ -2432,7 +2432,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "20-05-2023",
+        "gameCreation": 1684604775316,
         "gameDuration": "00:22:57",
         "championName": "Malphite",
         "win": true,
@@ -2451,7 +2451,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "19-05-2023",
+        "gameCreation": 1684538706621,
         "gameDuration": "00:33:18",
         "championName": "Milio",
         "win": false,
@@ -2470,7 +2470,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "19-05-2023",
+        "gameCreation": 1684529266493,
         "gameDuration": "00:26:31",
         "championName": "Nidalee",
         "win": false,
@@ -2489,7 +2489,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "19-05-2023",
+        "gameCreation": 1684526169796,
         "gameDuration": "00:31:57",
         "championName": "Jhin",
         "win": true,
@@ -2508,7 +2508,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "19-05-2023",
+        "gameCreation": 1684519404981,
         "gameDuration": "00:26:20",
         "championName": "Vayne",
         "win": false,
@@ -2527,7 +2527,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "19-05-2023",
+        "gameCreation": 1684517153450,
         "gameDuration": "00:17:45",
         "championName": "Aphelios",
         "win": true,
@@ -2546,7 +2546,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "19-05-2023",
+        "gameCreation": 1684472686108,
         "gameDuration": "00:44:07",
         "championName": "Varus",
         "win": false,
@@ -2565,7 +2565,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "19-05-2023",
+        "gameCreation": 1684469861504,
         "gameDuration": "00:27:34",
         "championName": "Aphelios",
         "win": true,
@@ -2584,7 +2584,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "19-05-2023",
+        "gameCreation": 1684467206818,
         "gameDuration": "00:26:38",
         "championName": "KogMaw",
         "win": true,
@@ -2603,7 +2603,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "18-05-2023",
+        "gameCreation": 1684448845903,
         "gameDuration": "00:39:56",
         "championName": "Jinx",
         "win": true,
@@ -2622,7 +2622,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "18-05-2023",
+        "gameCreation": 1684438422832,
         "gameDuration": "00:25:57",
         "championName": "Varus",
         "win": false,
@@ -2641,7 +2641,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "18-05-2023",
+        "gameCreation": 1684435965574,
         "gameDuration": "00:33:02",
         "championName": "Kaisa",
         "win": true,
@@ -2660,7 +2660,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "18-05-2023",
+        "gameCreation": 1684430800541,
         "gameDuration": "00:28:20",
         "championName": "Kaisa",
         "win": true,
@@ -2679,7 +2679,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "17-05-2023",
+        "gameCreation": 1684356797520,
         "gameDuration": "00:23:29",
         "championName": "Jinx",
         "win": true,
@@ -2698,7 +2698,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "17-05-2023",
+        "gameCreation": 1684297559136,
         "gameDuration": "00:28:33",
         "championName": "Samira",
         "win": false,
@@ -2717,7 +2717,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "17-05-2023",
+        "gameCreation": 1684294586673,
         "gameDuration": "00:36:02",
         "championName": "Sett",
         "win": true,
@@ -2736,7 +2736,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "17-05-2023",
+        "gameCreation": 1684291689871,
         "gameDuration": "00:28:44",
         "championName": "Jinx",
         "win": true,
@@ -2755,7 +2755,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "16-05-2023",
+        "gameCreation": 1684281537343,
         "gameDuration": "00:36:05",
         "championName": "Sion",
         "win": false,
@@ -2774,7 +2774,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "16-05-2023",
+        "gameCreation": 1684280097259,
         "gameDuration": "00:16:46",
         "championName": "Gnar",
         "win": true,
@@ -2793,7 +2793,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "16-05-2023",
+        "gameCreation": 1684270967180,
         "gameDuration": "00:27:32",
         "championName": "Aphelios",
         "win": true,
@@ -2812,7 +2812,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "15-05-2023",
+        "gameCreation": 1684187546100,
         "gameDuration": "00:29:33",
         "championName": "Aphelios",
         "win": true,
@@ -2831,7 +2831,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "15-05-2023",
+        "gameCreation": 1684117899444,
         "gameDuration": "00:34:34",
         "championName": "Zed",
         "win": false,
@@ -2850,7 +2850,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "15-05-2023",
+        "gameCreation": 1684115371176,
         "gameDuration": "00:34:29",
         "championName": "LeeSin",
         "win": false,
@@ -2869,7 +2869,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "15-05-2023",
+        "gameCreation": 1684110783927,
         "gameDuration": "00:24:50",
         "championName": "Zeri",
         "win": true,
@@ -2888,7 +2888,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "14-05-2023",
+        "gameCreation": 1684107662584,
         "gameDuration": "00:37:43",
         "championName": "Lucian",
         "win": true,
@@ -2907,7 +2907,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "14-05-2023",
+        "gameCreation": 1684104338618,
         "gameDuration": "00:31:43",
         "championName": "Ezreal",
         "win": true,
@@ -2926,7 +2926,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "14-05-2023",
+        "gameCreation": 1684098515916,
         "gameDuration": "00:34:26",
         "championName": "Aphelios",
         "win": false,
@@ -2945,7 +2945,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "14-05-2023",
+        "gameCreation": 1684038798874,
         "gameDuration": "00:27:28",
         "championName": "Aphelios",
         "win": false,
@@ -2964,7 +2964,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "14-05-2023",
+        "gameCreation": 1684036183103,
         "gameDuration": "00:23:58",
         "championName": "Aphelios",
         "win": true,
@@ -2983,7 +2983,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "14-05-2023",
+        "gameCreation": 1684033557182,
         "gameDuration": "00:18:41",
         "championName": "Zeri",
         "win": true,
@@ -3002,7 +3002,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "14-05-2023",
+        "gameCreation": 1684030710373,
         "gameDuration": "00:37:20",
         "championName": "Vayne",
         "win": false,
@@ -3021,7 +3021,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "14-05-2023",
+        "gameCreation": 1684026979393,
         "gameDuration": "00:29:17",
         "championName": "Ezreal",
         "win": true,
@@ -3040,7 +3040,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "14-05-2023",
+        "gameCreation": 1684025336348,
         "gameDuration": "00:15:17",
         "championName": "Jinx",
         "win": true,
@@ -3059,7 +3059,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "13-05-2023",
+        "gameCreation": 1684006238127,
         "gameDuration": "00:23:34",
         "championName": "Aphelios",
         "win": false,
@@ -3078,7 +3078,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "13-05-2023",
+        "gameCreation": 1683954573931,
         "gameDuration": "00:26:14",
         "championName": "Samira",
         "win": false,
@@ -3097,7 +3097,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "13-05-2023",
+        "gameCreation": 1683951475612,
         "gameDuration": "00:23:38",
         "championName": "Jinx",
         "win": true,
@@ -3116,7 +3116,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "13-05-2023",
+        "gameCreation": 1683949222948,
         "gameDuration": "00:20:50",
         "championName": "Kaisa",
         "win": true,
@@ -3135,7 +3135,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "12-05-2023",
+        "gameCreation": 1683915105640,
         "gameDuration": "00:33:44",
         "championName": "Twitch",
         "win": false,
@@ -3154,7 +3154,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "12-05-2023",
+        "gameCreation": 1683912998478,
         "gameDuration": "00:28:10",
         "championName": "Aphelios",
         "win": true,
@@ -3173,7 +3173,7 @@
         "pushPings": 1
     },
     {
-        "gameCreation": "12-05-2023",
+        "gameCreation": 1683862985482,
         "gameDuration": "00:43:43",
         "championName": "Lux",
         "win": false,
@@ -3192,7 +3192,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "12-05-2023",
+        "gameCreation": 1683860123475,
         "gameDuration": "00:39:55",
         "championName": "LeeSin",
         "win": false,
@@ -3211,7 +3211,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "12-05-2023",
+        "gameCreation": 1683857042689,
         "gameDuration": "00:37:59",
         "championName": "Yasuo",
         "win": false,
@@ -3230,7 +3230,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "11-05-2023",
+        "gameCreation": 1683848539627,
         "gameDuration": "00:26:08",
         "championName": "Kaisa",
         "win": false,
@@ -3249,7 +3249,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "11-05-2023",
+        "gameCreation": 1683833452313,
         "gameDuration": "00:24:05",
         "championName": "Rakan",
         "win": false,
@@ -3268,7 +3268,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "11-05-2023",
+        "gameCreation": 1683771379290,
         "gameDuration": "00:24:44",
         "championName": "Thresh",
         "win": false,
@@ -3287,7 +3287,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "09-05-2023",
+        "gameCreation": 1683659856519,
         "gameDuration": "00:31:17",
         "championName": "Ezreal",
         "win": false,
@@ -3306,7 +3306,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "09-05-2023",
+        "gameCreation": 1683652668718,
         "gameDuration": "00:22:15",
         "championName": "Kaisa",
         "win": true,
@@ -3325,7 +3325,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "09-05-2023",
+        "gameCreation": 1683639415601,
         "gameDuration": "00:27:37",
         "championName": "Kaisa",
         "win": false,
@@ -3344,7 +3344,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "08-05-2023",
+        "gameCreation": 1683585517662,
         "gameDuration": "00:22:10",
         "championName": "Thresh",
         "win": false,
@@ -3363,7 +3363,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "08-05-2023",
+        "gameCreation": 1683574407323,
         "gameDuration": "00:26:48",
         "championName": "Pyke",
         "win": true,
@@ -3382,7 +3382,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "08-05-2023",
+        "gameCreation": 1683571209791,
         "gameDuration": "00:30:23",
         "championName": "Jinx",
         "win": false,
@@ -3401,7 +3401,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "07-05-2023",
+        "gameCreation": 1683439816028,
         "gameDuration": "00:26:40",
         "championName": "Gragas",
         "win": true,
@@ -3420,7 +3420,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "07-05-2023",
+        "gameCreation": 1683438006102,
         "gameDuration": "00:23:47",
         "championName": "Irelia",
         "win": false,
@@ -3439,7 +3439,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "04-05-2023",
+        "gameCreation": 1683170643436,
         "gameDuration": "00:29:44",
         "championName": "Thresh",
         "win": false,
@@ -3458,7 +3458,7 @@
         "pushPings": 1
     },
     {
-        "gameCreation": "03-05-2023",
+        "gameCreation": 1683087200179,
         "gameDuration": "00:28:02",
         "championName": "Twitch",
         "win": true,
@@ -3477,7 +3477,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "03-05-2023",
+        "gameCreation": 1683083710481,
         "gameDuration": "00:15:31",
         "championName": "Jinx",
         "win": true,
@@ -3496,7 +3496,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "02-05-2023",
+        "gameCreation": 1683062713859,
         "gameDuration": "00:33:11",
         "championName": "Kaisa",
         "win": false,
@@ -3515,7 +3515,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "02-05-2023",
+        "gameCreation": 1682990390228,
         "gameDuration": "00:33:02",
         "championName": "Ekko",
         "win": false,
@@ -3534,7 +3534,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "02-05-2023",
+        "gameCreation": 1682989070721,
         "gameDuration": "00:15:54",
         "championName": "Talon",
         "win": true,
@@ -3553,7 +3553,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "01-05-2023",
+        "gameCreation": 1682970362765,
         "gameDuration": "00:18:43",
         "championName": "Zeri",
         "win": true,
@@ -3572,7 +3572,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "01-05-2023",
+        "gameCreation": 1682968004690,
         "gameDuration": "00:29:49",
         "championName": "Jinx",
         "win": true,
@@ -3591,7 +3591,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "01-05-2023",
+        "gameCreation": 1682966296891,
         "gameDuration": "00:19:03",
         "championName": "Xayah",
         "win": true,
@@ -3610,7 +3610,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "01-05-2023",
+        "gameCreation": 1682914351058,
         "gameDuration": "00:34:21",
         "championName": "KSante",
         "win": true,
@@ -3629,7 +3629,7 @@
         "pushPings": 1
     },
     {
-        "gameCreation": "30-04-2023",
+        "gameCreation": 1682880021902,
         "gameDuration": "00:34:33",
         "championName": "Zeri",
         "win": true,
@@ -3648,7 +3648,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "28-04-2023",
+        "gameCreation": 1682712464183,
         "gameDuration": "00:35:02",
         "championName": "Gragas",
         "win": false,
@@ -3667,7 +3667,7 @@
         "pushPings": 1
     },
     {
-        "gameCreation": "28-04-2023",
+        "gameCreation": 1682710248785,
         "gameDuration": "00:22:33",
         "championName": "Jinx",
         "win": true,
@@ -3686,7 +3686,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "26-04-2023",
+        "gameCreation": 1682510939971,
         "gameDuration": "00:28:42",
         "championName": "Jinx",
         "win": false,
@@ -3705,7 +3705,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "25-04-2023",
+        "gameCreation": 1682458874457,
         "gameDuration": "00:33:01",
         "championName": "Vayne",
         "win": false,
@@ -3724,7 +3724,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "25-04-2023",
+        "gameCreation": 1682456404540,
         "gameDuration": "00:30:35",
         "championName": "Ezreal",
         "win": false,
@@ -3743,7 +3743,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "25-04-2023",
+        "gameCreation": 1682454843048,
         "gameDuration": "00:11:34",
         "championName": "Jinx",
         "win": true,
@@ -3762,7 +3762,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "24-04-2023",
+        "gameCreation": 1682369831028,
         "gameDuration": "00:31:48",
         "championName": "Jinx",
         "win": false,
@@ -3781,7 +3781,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "23-04-2023",
+        "gameCreation": 1682279203596,
         "gameDuration": "00:19:39",
         "championName": "Ezreal",
         "win": false,
@@ -3800,7 +3800,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "20-04-2023",
+        "gameCreation": 1681967382763,
         "gameDuration": "00:24:02",
         "championName": "Irelia",
         "win": false,
@@ -3819,7 +3819,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "19-04-2023",
+        "gameCreation": 1681930008512,
         "gameDuration": "00:26:59",
         "championName": "Draven",
         "win": false,
@@ -3838,7 +3838,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "18-04-2023",
+        "gameCreation": 1681859170482,
         "gameDuration": "00:34:05",
         "championName": "Kaisa",
         "win": false,
@@ -3857,7 +3857,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "18-04-2023",
+        "gameCreation": 1681850257289,
         "gameDuration": "00:28:45",
         "championName": "Aphelios",
         "win": true,
@@ -3876,7 +3876,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "18-04-2023",
+        "gameCreation": 1681847942772,
         "gameDuration": "00:26:49",
         "championName": "Ashe",
         "win": true,
@@ -3895,7 +3895,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "18-04-2023",
+        "gameCreation": 1681844638424,
         "gameDuration": "00:23:27",
         "championName": "Lucian",
         "win": true,
@@ -3914,7 +3914,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "18-04-2023",
+        "gameCreation": 1681837453530,
         "gameDuration": "00:28:27",
         "championName": "Varus",
         "win": false,
@@ -3933,7 +3933,7 @@
         "pushPings": 1
     },
     {
-        "gameCreation": "18-04-2023",
+        "gameCreation": 1681835646384,
         "gameDuration": "00:15:14",
         "championName": "Varus",
         "win": true,
@@ -3952,7 +3952,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "18-04-2023",
+        "gameCreation": 1681798020398,
         "gameDuration": "00:15:36",
         "championName": "Draven",
         "win": true,
@@ -3971,7 +3971,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "18-04-2023",
+        "gameCreation": 1681795898945,
         "gameDuration": "00:28:29",
         "championName": "Pyke",
         "win": true,
@@ -3990,7 +3990,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "18-04-2023",
+        "gameCreation": 1681793423794,
         "gameDuration": "00:36:16",
         "championName": "Vayne",
         "win": true,
@@ -4009,7 +4009,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "17-04-2023",
+        "gameCreation": 1681764412741,
         "gameDuration": "00:28:46",
         "championName": "Jinx",
         "win": false,
@@ -4028,7 +4028,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "17-04-2023",
+        "gameCreation": 1681753924675,
         "gameDuration": "00:24:42",
         "championName": "Varus",
         "win": false,
@@ -4047,7 +4047,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "16-04-2023",
+        "gameCreation": 1681668969646,
         "gameDuration": "00:27:42",
         "championName": "Ezreal",
         "win": true,
@@ -4066,7 +4066,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "16-04-2023",
+        "gameCreation": 1681628779382,
         "gameDuration": "00:21:34",
         "championName": "Gwen",
         "win": false,
@@ -4085,7 +4085,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "16-04-2023",
+        "gameCreation": 1681625476787,
         "gameDuration": "00:38:08",
         "championName": "Malphite",
         "win": false,
@@ -4104,7 +4104,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "16-04-2023",
+        "gameCreation": 1681621874529,
         "gameDuration": "00:19:55",
         "championName": "Olaf",
         "win": true,
@@ -4123,7 +4123,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "16-04-2023",
+        "gameCreation": 1681617787753,
         "gameDuration": "00:27:27",
         "championName": "Jax",
         "win": true,
@@ -4142,7 +4142,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "16-04-2023",
+        "gameCreation": 1681614188328,
         "gameDuration": "00:38:48",
         "championName": "Olaf",
         "win": true,
@@ -4161,7 +4161,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "15-04-2023",
+        "gameCreation": 1681586592004,
         "gameDuration": "00:37:06",
         "championName": "Nilah",
         "win": true,
@@ -4180,7 +4180,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "14-04-2023",
+        "gameCreation": 1681444161143,
         "gameDuration": "00:42:03",
         "championName": "Milio",
         "win": true,
@@ -4199,7 +4199,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "14-04-2023",
+        "gameCreation": 1681441712417,
         "gameDuration": "00:34:44",
         "championName": "Braum",
         "win": false,
@@ -4218,7 +4218,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "13-04-2023",
+        "gameCreation": 1681417395267,
         "gameDuration": "00:16:17",
         "championName": "Jinx",
         "win": true,
@@ -4237,7 +4237,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "13-04-2023",
+        "gameCreation": 1681415332514,
         "gameDuration": "00:22:53",
         "championName": "Xayah",
         "win": true,
@@ -4256,7 +4256,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "13-04-2023",
+        "gameCreation": 1681408835767,
         "gameDuration": "00:24:02",
         "championName": "Jhin",
         "win": false,
@@ -4275,7 +4275,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "13-04-2023",
+        "gameCreation": 1681406946423,
         "gameDuration": "00:16:01",
         "championName": "KSante",
         "win": true,
@@ -4294,7 +4294,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "13-04-2023",
+        "gameCreation": 1681348729221,
         "gameDuration": "00:30:01",
         "championName": "Seraphine",
         "win": true,
@@ -4313,7 +4313,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "11-04-2023",
+        "gameCreation": 1681254574210,
         "gameDuration": "00:31:24",
         "championName": "Varus",
         "win": true,
@@ -4332,7 +4332,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "11-04-2023",
+        "gameCreation": 1681250767202,
         "gameDuration": "00:21:22",
         "championName": "Varus",
         "win": true,
@@ -4351,7 +4351,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "11-04-2023",
+        "gameCreation": 1681248674856,
         "gameDuration": "00:15:12",
         "championName": "Ezreal",
         "win": true,
@@ -4370,7 +4370,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "11-04-2023",
+        "gameCreation": 1681235860403,
         "gameDuration": "00:30:10",
         "championName": "Varus",
         "win": true,
@@ -4389,7 +4389,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "10-04-2023",
+        "gameCreation": 1681154726944,
         "gameDuration": "00:15:11",
         "championName": "Syndra",
         "win": true,
@@ -4408,7 +4408,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "10-04-2023",
+        "gameCreation": 1681146490749,
         "gameDuration": "00:19:29",
         "championName": "Xayah",
         "win": true,
@@ -4427,7 +4427,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "09-04-2023",
+        "gameCreation": 1681078547121,
         "gameDuration": "00:25:28",
         "championName": "JarvanIV",
         "win": false,
@@ -4446,7 +4446,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "09-04-2023",
+        "gameCreation": 1681073138844,
         "gameDuration": "00:31:18",
         "championName": "Varus",
         "win": false,
@@ -4465,7 +4465,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "09-04-2023",
+        "gameCreation": 1681070979017,
         "gameDuration": "00:25:25",
         "championName": "Gragas",
         "win": true,
@@ -4484,7 +4484,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "09-04-2023",
+        "gameCreation": 1681062925729,
         "gameDuration": "00:25:56",
         "championName": "Varus",
         "win": true,
@@ -4503,7 +4503,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "09-04-2023",
+        "gameCreation": 1681060721246,
         "gameDuration": "00:25:08",
         "championName": "Zeri",
         "win": true,
@@ -4522,7 +4522,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "09-04-2023",
+        "gameCreation": 1681058864149,
         "gameDuration": "00:16:06",
         "championName": "Aphelios",
         "win": false,
@@ -4541,7 +4541,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "07-04-2023",
+        "gameCreation": 1680892173708,
         "gameDuration": "00:23:15",
         "championName": "Ashe",
         "win": true,
@@ -4560,7 +4560,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "05-04-2023",
+        "gameCreation": 1680699929651,
         "gameDuration": "00:28:04",
         "championName": "Caitlyn",
         "win": false,
@@ -4579,7 +4579,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "04-04-2023",
+        "gameCreation": 1680645291132,
         "gameDuration": "00:25:44",
         "championName": "Zeri",
         "win": false,
@@ -4598,7 +4598,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "04-04-2023",
+        "gameCreation": 1680582453843,
         "gameDuration": "00:26:26",
         "championName": "Vayne",
         "win": false,
@@ -4617,7 +4617,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "03-04-2023",
+        "gameCreation": 1680489410430,
         "gameDuration": "00:36:41",
         "championName": "Jhin",
         "win": true,
@@ -4636,7 +4636,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "03-04-2023",
+        "gameCreation": 1680480302858,
         "gameDuration": "00:34:30",
         "championName": "Kaisa",
         "win": false,
@@ -4655,7 +4655,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "31-03-2023",
+        "gameCreation": 1680292824204,
         "gameDuration": "00:32:00",
         "championName": "LeeSin",
         "win": false,
@@ -4674,7 +4674,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "31-03-2023",
+        "gameCreation": 1680290369927,
         "gameDuration": "00:31:05",
         "championName": "Ezreal",
         "win": false,
@@ -4693,7 +4693,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "30-03-2023",
+        "gameCreation": 1680199125250,
         "gameDuration": "00:32:17",
         "championName": "Ezreal",
         "win": true,
@@ -4712,7 +4712,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "30-03-2023",
+        "gameCreation": 1680147785275,
         "gameDuration": "00:23:09",
         "championName": "Zeri",
         "win": true,
@@ -4731,7 +4731,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "30-03-2023",
+        "gameCreation": 1680145668289,
         "gameDuration": "00:23:30",
         "championName": "Ezreal",
         "win": true,
@@ -4750,7 +4750,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "28-03-2023",
+        "gameCreation": 1679974744891,
         "gameDuration": "00:32:33",
         "championName": "Ezreal",
         "win": true,
@@ -4769,7 +4769,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "27-03-2023",
+        "gameCreation": 1679953793100,
         "gameDuration": "00:22:15",
         "championName": "Kaisa",
         "win": false,
@@ -4788,7 +4788,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "27-03-2023",
+        "gameCreation": 1679950577499,
         "gameDuration": "00:24:54",
         "championName": "Xayah",
         "win": true,
@@ -4807,7 +4807,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "27-03-2023",
+        "gameCreation": 1679942349693,
         "gameDuration": "00:34:14",
         "championName": "Xayah",
         "win": true,
@@ -4826,7 +4826,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "27-03-2023",
+        "gameCreation": 1679940451036,
         "gameDuration": "00:24:15",
         "championName": "Aphelios",
         "win": false,
@@ -4845,7 +4845,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "27-03-2023",
+        "gameCreation": 1679938299382,
         "gameDuration": "00:23:34",
         "championName": "Zeri",
         "win": true,
@@ -4864,7 +4864,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "27-03-2023",
+        "gameCreation": 1679925151065,
         "gameDuration": "00:32:53",
         "championName": "Ezreal",
         "win": false,
@@ -4883,7 +4883,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "26-03-2023",
+        "gameCreation": 1679874498562,
         "gameDuration": "00:20:56",
         "championName": "Veigar",
         "win": false,
@@ -4902,7 +4902,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "26-03-2023",
+        "gameCreation": 1679871351632,
         "gameDuration": "00:37:14",
         "championName": "Xayah",
         "win": true,
@@ -4921,7 +4921,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "25-03-2023",
+        "gameCreation": 1679785458008,
         "gameDuration": "00:25:28",
         "championName": "Lucian",
         "win": false,
@@ -4940,7 +4940,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "25-03-2023",
+        "gameCreation": 1679775446178,
         "gameDuration": "00:04:07",
         "championName": "Caitlyn",
         "win": true,
@@ -4959,7 +4959,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "25-03-2023",
+        "gameCreation": 1679773126681,
         "gameDuration": "00:25:18",
         "championName": "Caitlyn",
         "win": false,
@@ -4978,7 +4978,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "25-03-2023",
+        "gameCreation": 1679770180905,
         "gameDuration": "00:33:44",
         "championName": "Ezreal",
         "win": true,
@@ -4997,7 +4997,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "25-03-2023",
+        "gameCreation": 1679703811613,
         "gameDuration": "00:20:23",
         "championName": "Caitlyn",
         "win": false,
@@ -5016,7 +5016,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "24-03-2023",
+        "gameCreation": 1679700270528,
         "gameDuration": "00:24:34",
         "championName": "Lucian",
         "win": true,
@@ -5035,7 +5035,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "23-03-2023",
+        "gameCreation": 1679603111654,
         "gameDuration": "00:30:31",
         "championName": "Ashe",
         "win": true,
@@ -5054,7 +5054,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "23-03-2023",
+        "gameCreation": 1679600548935,
         "gameDuration": "00:26:29",
         "championName": "Vayne",
         "win": true,
@@ -5073,7 +5073,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "23-03-2023",
+        "gameCreation": 1679595589862,
         "gameDuration": "00:35:57",
         "championName": "Aphelios",
         "win": false,
@@ -5092,7 +5092,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "23-03-2023",
+        "gameCreation": 1679593142970,
         "gameDuration": "00:29:35",
         "championName": "Ezreal",
         "win": true,
@@ -5111,7 +5111,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "22-03-2023",
+        "gameCreation": 1679518699293,
         "gameDuration": "00:24:10",
         "championName": "Karma",
         "win": false,
@@ -5130,7 +5130,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "21-03-2023",
+        "gameCreation": 1679422161584,
         "gameDuration": "00:17:21",
         "championName": "Kaisa",
         "win": true,
@@ -5149,7 +5149,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "20-03-2023",
+        "gameCreation": 1679320113394,
         "gameDuration": "00:26:35",
         "championName": "Jinx",
         "win": false,
@@ -5168,7 +5168,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "20-03-2023",
+        "gameCreation": 1679280706615,
         "gameDuration": "00:30:47",
         "championName": "Jinx",
         "win": true,
@@ -5187,7 +5187,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "19-03-2023",
+        "gameCreation": 1679270241847,
         "gameDuration": "00:19:18",
         "championName": "Zeri",
         "win": false,
@@ -5206,7 +5206,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "17-03-2023",
+        "gameCreation": 1679096351971,
         "gameDuration": "00:27:04",
         "championName": "Jinx",
         "win": false,
@@ -5225,7 +5225,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "17-03-2023",
+        "gameCreation": 1679078136100,
         "gameDuration": "00:35:06",
         "championName": "Sivir",
         "win": true,
@@ -5244,7 +5244,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "16-03-2023",
+        "gameCreation": 1679005084151,
         "gameDuration": "00:19:51",
         "championName": "Ezreal",
         "win": true,
@@ -5263,7 +5263,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "16-03-2023",
+        "gameCreation": 1678995766153,
         "gameDuration": "00:24:04",
         "championName": "Sylas",
         "win": true,
@@ -5282,7 +5282,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "13-03-2023",
+        "gameCreation": 1678744513841,
         "gameDuration": "00:30:14",
         "championName": "Samira",
         "win": false,
@@ -5301,7 +5301,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "13-03-2023",
+        "gameCreation": 1678667053235,
         "gameDuration": "00:37:12",
         "championName": "Kalista",
         "win": false,
@@ -5320,7 +5320,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "12-03-2023",
+        "gameCreation": 1678659627068,
         "gameDuration": "00:25:41",
         "championName": "Zeri",
         "win": false,
@@ -5339,7 +5339,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "12-03-2023",
+        "gameCreation": 1678592647990,
         "gameDuration": "00:25:20",
         "championName": "Vi",
         "win": false,
@@ -5358,7 +5358,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "12-03-2023",
+        "gameCreation": 1678590185247,
         "gameDuration": "00:26:13",
         "championName": "Samira",
         "win": true,
@@ -5377,7 +5377,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "12-03-2023",
+        "gameCreation": 1678580685551,
         "gameDuration": "00:30:33",
         "championName": "Samira",
         "win": true,
@@ -5396,7 +5396,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "11-03-2023",
+        "gameCreation": 1678574971760,
         "gameDuration": "00:37:33",
         "championName": "Caitlyn",
         "win": true,
@@ -5415,7 +5415,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "11-03-2023",
+        "gameCreation": 1678571207084,
         "gameDuration": "00:30:27",
         "championName": "Zeri",
         "win": true,
@@ -5434,7 +5434,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "09-03-2023",
+        "gameCreation": 1678393219566,
         "gameDuration": "00:27:12",
         "championName": "Zeri",
         "win": true,
@@ -5453,7 +5453,7 @@
         "pushPings": 1
     },
     {
-        "gameCreation": "09-03-2023",
+        "gameCreation": 1678372110678,
         "gameDuration": "00:18:27",
         "championName": "Ezreal",
         "win": false,
@@ -5472,7 +5472,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "08-03-2023",
+        "gameCreation": 1678305006208,
         "gameDuration": "00:21:32",
         "championName": "Aphelios",
         "win": false,
@@ -5491,7 +5491,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "08-03-2023",
+        "gameCreation": 1678304185625,
         "gameDuration": "00:03:43",
         "championName": "Caitlyn",
         "win": false,
@@ -5510,7 +5510,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "08-03-2023",
+        "gameCreation": 1678290651975,
         "gameDuration": "00:34:41",
         "championName": "Jinx",
         "win": false,
@@ -5529,7 +5529,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "07-03-2023",
+        "gameCreation": 1678212204187,
         "gameDuration": "00:38:53",
         "championName": "Varus",
         "win": false,
@@ -5548,7 +5548,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "07-03-2023",
+        "gameCreation": 1678209410507,
         "gameDuration": "00:24:17",
         "championName": "Ezreal",
         "win": true,
@@ -5567,7 +5567,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "06-03-2023",
+        "gameCreation": 1678125427043,
         "gameDuration": "00:24:29",
         "championName": "Varus",
         "win": false,
@@ -5586,7 +5586,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "06-03-2023",
+        "gameCreation": 1678120304702,
         "gameDuration": "00:33:38",
         "championName": "Alistar",
         "win": false,
@@ -5605,7 +5605,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "06-03-2023",
+        "gameCreation": 1678116066015,
         "gameDuration": "00:34:19",
         "championName": "Caitlyn",
         "win": true,
@@ -5624,7 +5624,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "05-03-2023",
+        "gameCreation": 1678048005475,
         "gameDuration": "00:26:53",
         "championName": "Varus",
         "win": true,
@@ -5643,7 +5643,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "05-03-2023",
+        "gameCreation": 1678045397891,
         "gameDuration": "00:25:09",
         "championName": "Xayah",
         "win": true,
@@ -5662,7 +5662,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "05-03-2023",
+        "gameCreation": 1678044986110,
         "gameDuration": "00:01:50",
         "championName": "Senna",
         "win": true,
@@ -5681,7 +5681,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "04-03-2023",
+        "gameCreation": 1677959917227,
         "gameDuration": "00:23:46",
         "championName": "Varus",
         "win": true,
@@ -5700,7 +5700,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "04-03-2023",
+        "gameCreation": 1677957126389,
         "gameDuration": "00:34:41",
         "championName": "Rakan",
         "win": true,
@@ -5719,7 +5719,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "04-03-2023",
+        "gameCreation": 1677953562725,
         "gameDuration": "00:32:42",
         "championName": "Jhin",
         "win": true,
@@ -5738,7 +5738,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "04-03-2023",
+        "gameCreation": 1677951093267,
         "gameDuration": "00:32:26",
         "championName": "Xayah",
         "win": true,
@@ -5757,7 +5757,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "04-03-2023",
+        "gameCreation": 1677949101836,
         "gameDuration": "00:26:08",
         "championName": "Varus",
         "win": true,
@@ -5776,7 +5776,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "04-03-2023",
+        "gameCreation": 1677945422112,
         "gameDuration": "00:26:15",
         "championName": "Varus",
         "win": true,
@@ -5795,7 +5795,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "04-03-2023",
+        "gameCreation": 1677941970964,
         "gameDuration": "00:23:11",
         "championName": "Sivir",
         "win": true,
@@ -5814,7 +5814,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "04-03-2023",
+        "gameCreation": 1677939751422,
         "gameDuration": "00:28:37",
         "championName": "Senna",
         "win": true,
@@ -5833,7 +5833,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "04-03-2023",
+        "gameCreation": 1677890148496,
         "gameDuration": "00:34:14",
         "championName": "Caitlyn",
         "win": false,
@@ -5852,7 +5852,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "03-03-2023",
+        "gameCreation": 1677887220006,
         "gameDuration": "00:28:18",
         "championName": "Jhin",
         "win": true,
@@ -5871,7 +5871,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "02-03-2023",
+        "gameCreation": 1677785726635,
         "gameDuration": "00:22:41",
         "championName": "Varus",
         "win": false,
@@ -5890,7 +5890,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "02-03-2023",
+        "gameCreation": 1677769671076,
         "gameDuration": "00:23:25",
         "championName": "Thresh",
         "win": false,
@@ -5909,7 +5909,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "27-02-2023",
+        "gameCreation": 1677527047379,
         "gameDuration": "00:49:54",
         "championName": "Rakan",
         "win": false,
@@ -5928,7 +5928,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "26-02-2023",
+        "gameCreation": 1677428749045,
         "gameDuration": "00:29:29",
         "championName": "Xayah",
         "win": false,
@@ -5947,7 +5947,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "26-02-2023",
+        "gameCreation": 1677423858744,
         "gameDuration": "00:30:42",
         "championName": "Varus",
         "win": false,
@@ -5966,7 +5966,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "26-02-2023",
+        "gameCreation": 1677370163348,
         "gameDuration": "00:25:20",
         "championName": "Varus",
         "win": true,
@@ -5985,7 +5985,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "25-02-2023",
+        "gameCreation": 1677361728795,
         "gameDuration": "00:35:53",
         "championName": "Varus",
         "win": false,
@@ -6004,7 +6004,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "25-02-2023",
+        "gameCreation": 1677359132576,
         "gameDuration": "00:33:45",
         "championName": "Nautilus",
         "win": true,
@@ -6023,7 +6023,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "25-02-2023",
+        "gameCreation": 1677341181438,
         "gameDuration": "00:23:31",
         "championName": "Xayah",
         "win": false,
@@ -6042,7 +6042,7 @@
         "pushPings": 1
     },
     {
-        "gameCreation": "24-02-2023",
+        "gameCreation": 1677266028550,
         "gameDuration": "00:27:18",
         "championName": "Caitlyn",
         "win": true,
@@ -6061,7 +6061,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "24-02-2023",
+        "gameCreation": 1677264045520,
         "gameDuration": "00:21:56",
         "championName": "Kalista",
         "win": false,
@@ -6080,7 +6080,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "24-02-2023",
+        "gameCreation": 1677255339623,
         "gameDuration": "00:22:59",
         "championName": "Varus",
         "win": true,
@@ -6099,7 +6099,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "24-02-2023",
+        "gameCreation": 1677253519252,
         "gameDuration": "00:22:25",
         "championName": "Nilah",
         "win": true,
@@ -6118,7 +6118,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "24-02-2023",
+        "gameCreation": 1677203485133,
         "gameDuration": "00:32:54",
         "championName": "Caitlyn",
         "win": false,
@@ -6137,7 +6137,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "24-02-2023",
+        "gameCreation": 1677201112742,
         "gameDuration": "00:32:49",
         "championName": "Caitlyn",
         "win": true,
@@ -6156,7 +6156,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "23-02-2023",
+        "gameCreation": 1677167341314,
         "gameDuration": "00:20:11",
         "championName": "Aphelios",
         "win": true,
@@ -6175,7 +6175,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "22-02-2023",
+        "gameCreation": 1677098901597,
         "gameDuration": "00:22:00",
         "championName": "Rakan",
         "win": false,
@@ -6194,7 +6194,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "22-02-2023",
+        "gameCreation": 1677091710933,
         "gameDuration": "00:33:57",
         "championName": "Rakan",
         "win": true,
@@ -6213,7 +6213,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "22-02-2023",
+        "gameCreation": 1677089370955,
         "gameDuration": "00:01:48",
         "championName": "Ezreal",
         "win": true,
@@ -6232,7 +6232,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "22-02-2023",
+        "gameCreation": 1677087499773,
         "gameDuration": "00:20:42",
         "championName": "Rakan",
         "win": false,
@@ -6251,7 +6251,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "22-02-2023",
+        "gameCreation": 1677083161045,
         "gameDuration": "00:23:38",
         "championName": "Caitlyn",
         "win": true,
@@ -6270,7 +6270,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "21-02-2023",
+        "gameCreation": 1677006734731,
         "gameDuration": "00:18:16",
         "championName": "Varus",
         "win": false,
@@ -6289,7 +6289,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "21-02-2023",
+        "gameCreation": 1677004284890,
         "gameDuration": "00:18:31",
         "championName": "Kalista",
         "win": true,
@@ -6308,7 +6308,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "21-02-2023",
+        "gameCreation": 1676997252256,
         "gameDuration": "00:30:47",
         "championName": "Caitlyn",
         "win": false,
@@ -6327,7 +6327,7 @@
         "pushPings": 1
     },
     {
-        "gameCreation": "21-02-2023",
+        "gameCreation": 1676995240790,
         "gameDuration": "00:24:03",
         "championName": "Xayah",
         "win": true,
@@ -6346,7 +6346,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "21-02-2023",
+        "gameCreation": 1676949948727,
         "gameDuration": "00:25:31",
         "championName": "Kalista",
         "win": false,
@@ -6365,7 +6365,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "21-02-2023",
+        "gameCreation": 1676947934667,
         "gameDuration": "00:23:08",
         "championName": "Caitlyn",
         "win": true,
@@ -6384,7 +6384,7 @@
         "pushPings": 1
     },
     {
-        "gameCreation": "20-02-2023",
+        "gameCreation": 1676927665376,
         "gameDuration": "00:26:30",
         "championName": "Caitlyn",
         "win": false,
@@ -6403,7 +6403,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "20-02-2023",
+        "gameCreation": 1676923936450,
         "gameDuration": "00:20:48",
         "championName": "Lucian",
         "win": true,
@@ -6422,7 +6422,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "20-02-2023",
+        "gameCreation": 1676921432985,
         "gameDuration": "00:27:37",
         "championName": "Jhin",
         "win": true,
@@ -6441,7 +6441,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "20-02-2023",
+        "gameCreation": 1676918925470,
         "gameDuration": "00:28:15",
         "championName": "Caitlyn",
         "win": true,
@@ -6460,7 +6460,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "20-02-2023",
+        "gameCreation": 1676914516671,
         "gameDuration": "00:30:09",
         "championName": "Caitlyn",
         "win": true,
@@ -6479,7 +6479,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "20-02-2023",
+        "gameCreation": 1676908873453,
         "gameDuration": "00:31:32",
         "championName": "Braum",
         "win": true,
@@ -6498,7 +6498,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "20-02-2023",
+        "gameCreation": 1676862126972,
         "gameDuration": "00:30:49",
         "championName": "Varus",
         "win": false,
@@ -6517,7 +6517,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "20-02-2023",
+        "gameCreation": 1676859403980,
         "gameDuration": "00:25:37",
         "championName": "Varus",
         "win": true,
@@ -6536,7 +6536,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "20-02-2023",
+        "gameCreation": 1676856020404,
         "gameDuration": "00:31:34",
         "championName": "Ezreal",
         "win": true,
@@ -6555,7 +6555,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "20-02-2023",
+        "gameCreation": 1676852281413,
         "gameDuration": "00:17:56",
         "championName": "Xayah",
         "win": true,
@@ -6574,7 +6574,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "19-02-2023",
+        "gameCreation": 1676849218463,
         "gameDuration": "00:29:42",
         "championName": "Caitlyn",
         "win": true,
@@ -6593,7 +6593,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "19-02-2023",
+        "gameCreation": 1676778479033,
         "gameDuration": "00:31:54",
         "championName": "Xayah",
         "win": false,
@@ -6612,7 +6612,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "19-02-2023",
+        "gameCreation": 1676775295372,
         "gameDuration": "00:24:53",
         "championName": "Lucian",
         "win": true,
@@ -6631,7 +6631,7 @@
         "pushPings": 1
     },
     {
-        "gameCreation": "18-02-2023",
+        "gameCreation": 1676762407840,
         "gameDuration": "00:31:47",
         "championName": "Varus",
         "win": false,
@@ -6650,7 +6650,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "18-02-2023",
+        "gameCreation": 1676697993156,
         "gameDuration": "00:27:08",
         "championName": "Yasuo",
         "win": false,
@@ -6669,7 +6669,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "18-02-2023",
+        "gameCreation": 1676697327778,
         "gameDuration": "00:02:11",
         "championName": "Yasuo",
         "win": true,
@@ -6688,7 +6688,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "17-02-2023",
+        "gameCreation": 1676667789447,
         "gameDuration": "00:17:40",
         "championName": "Fiora",
         "win": true,
@@ -6707,7 +6707,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "17-02-2023",
+        "gameCreation": 1676654987807,
         "gameDuration": "00:18:23",
         "championName": "Tristana",
         "win": false,
@@ -6726,7 +6726,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "16-02-2023",
+        "gameCreation": 1676583221080,
         "gameDuration": "00:28:06",
         "championName": "Lucian",
         "win": true,
@@ -6745,7 +6745,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "16-02-2023",
+        "gameCreation": 1676517449637,
         "gameDuration": "00:32:35",
         "championName": "Caitlyn",
         "win": true,
@@ -6764,7 +6764,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "14-02-2023",
+        "gameCreation": 1676410822196,
         "gameDuration": "00:15:24",
         "championName": "Xayah",
         "win": false,
@@ -6783,7 +6783,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "14-02-2023",
+        "gameCreation": 1676408210663,
         "gameDuration": "00:20:59",
         "championName": "Xayah",
         "win": true,
@@ -6802,7 +6802,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "14-02-2023",
+        "gameCreation": 1676405168789,
         "gameDuration": "00:32:26",
         "championName": "Xayah",
         "win": true,
@@ -6821,7 +6821,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "14-02-2023",
+        "gameCreation": 1676401636456,
         "gameDuration": "00:21:13",
         "championName": "Lucian",
         "win": false,
@@ -6840,7 +6840,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "14-02-2023",
+        "gameCreation": 1676393240666,
         "gameDuration": "00:23:55",
         "championName": "Caitlyn",
         "win": false,
@@ -6859,7 +6859,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "14-02-2023",
+        "gameCreation": 1676351157771,
         "gameDuration": "00:25:30",
         "championName": "Caitlyn",
         "win": false,
@@ -6878,7 +6878,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "13-02-2023",
+        "gameCreation": 1676320012429,
         "gameDuration": "00:22:34",
         "championName": "Varus",
         "win": true,
@@ -6897,7 +6897,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "12-02-2023",
+        "gameCreation": 1676244434466,
         "gameDuration": "00:33:35",
         "championName": "Jhin",
         "win": false,
@@ -6916,7 +6916,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "12-02-2023",
+        "gameCreation": 1676242351504,
         "gameDuration": "00:23:24",
         "championName": "Lucian",
         "win": true,
@@ -6935,7 +6935,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "12-02-2023",
+        "gameCreation": 1676239267857,
         "gameDuration": "00:30:44",
         "championName": "Varus",
         "win": true,
@@ -6954,7 +6954,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "12-02-2023",
+        "gameCreation": 1676236153620,
         "gameDuration": "00:37:42",
         "championName": "Lucian",
         "win": true,
@@ -6973,7 +6973,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "12-02-2023",
+        "gameCreation": 1676217786791,
         "gameDuration": "00:24:24",
         "championName": "Varus",
         "win": false,
@@ -6992,7 +6992,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "12-02-2023",
+        "gameCreation": 1676215475820,
         "gameDuration": "00:31:22",
         "championName": "Sivir",
         "win": true,
@@ -7011,7 +7011,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "12-02-2023",
+        "gameCreation": 1676165299589,
         "gameDuration": "00:28:37",
         "championName": "Zeri",
         "win": false,
@@ -7030,7 +7030,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "11-02-2023",
+        "gameCreation": 1676153514800,
         "gameDuration": "00:21:46",
         "championName": "Ashe",
         "win": false,
@@ -7049,7 +7049,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "11-02-2023",
+        "gameCreation": 1676143911588,
         "gameDuration": "00:32:38",
         "championName": "Caitlyn",
         "win": false,
@@ -7068,7 +7068,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "11-02-2023",
+        "gameCreation": 1676131554581,
         "gameDuration": "00:33:54",
         "championName": "KSante",
         "win": false,
@@ -7087,7 +7087,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "10-02-2023",
+        "gameCreation": 1676060286419,
         "gameDuration": "00:26:40",
         "championName": "Ezreal",
         "win": false,
@@ -7106,7 +7106,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "10-02-2023",
+        "gameCreation": 1676051734094,
         "gameDuration": "00:23:46",
         "championName": "Ashe",
         "win": false,
@@ -7125,7 +7125,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "10-02-2023",
+        "gameCreation": 1675989891704,
         "gameDuration": "00:28:36",
         "championName": "Kaisa",
         "win": true,
@@ -7144,7 +7144,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "09-02-2023",
+        "gameCreation": 1675980799504,
         "gameDuration": "00:32:08",
         "championName": "Jhin",
         "win": false,
@@ -7163,7 +7163,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "09-02-2023",
+        "gameCreation": 1675977512970,
         "gameDuration": "00:29:04",
         "championName": "Caitlyn",
         "win": true,
@@ -7182,7 +7182,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "09-02-2023",
+        "gameCreation": 1675955484659,
         "gameDuration": "00:21:36",
         "championName": "Kaisa",
         "win": false,
@@ -7201,7 +7201,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "09-02-2023",
+        "gameCreation": 1675953063952,
         "gameDuration": "00:32:19",
         "championName": "Xayah",
         "win": false,
@@ -7220,7 +7220,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "08-02-2023",
+        "gameCreation": 1675884485247,
         "gameDuration": "00:30:32",
         "championName": "Xayah",
         "win": false,
@@ -7239,7 +7239,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "08-02-2023",
+        "gameCreation": 1675882829443,
         "gameDuration": "00:15:27",
         "championName": "Jhin",
         "win": true,
@@ -7258,7 +7258,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "08-02-2023",
+        "gameCreation": 1675880025749,
         "gameDuration": "00:27:16",
         "championName": "Caitlyn",
         "win": true,
@@ -7277,7 +7277,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "08-02-2023",
+        "gameCreation": 1675877715157,
         "gameDuration": "00:31:05",
         "championName": "Tristana",
         "win": true,
@@ -7296,7 +7296,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "08-02-2023",
+        "gameCreation": 1675875705810,
         "gameDuration": "00:26:58",
         "championName": "Ashe",
         "win": true,
@@ -7315,7 +7315,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "08-02-2023",
+        "gameCreation": 1675873741852,
         "gameDuration": "00:19:07",
         "championName": "Tristana",
         "win": true,
@@ -7334,7 +7334,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "08-02-2023",
+        "gameCreation": 1675873097341,
         "gameDuration": "00:05:12",
         "championName": "Caitlyn",
         "win": false,
@@ -7353,7 +7353,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "08-02-2023",
+        "gameCreation": 1675866616978,
         "gameDuration": "00:27:42",
         "championName": "Caitlyn",
         "win": false,
@@ -7372,7 +7372,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "08-02-2023",
+        "gameCreation": 1675864861615,
         "gameDuration": "00:14:30",
         "championName": "Caitlyn",
         "win": true,
@@ -7391,7 +7391,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "08-02-2023",
+        "gameCreation": 1675862764974,
         "gameDuration": "00:26:55",
         "championName": "Caitlyn",
         "win": true,
@@ -7410,7 +7410,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "08-02-2023",
+        "gameCreation": 1675826210924,
         "gameDuration": "00:17:29",
         "championName": "Caitlyn",
         "win": false,
@@ -7429,7 +7429,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "08-02-2023",
+        "gameCreation": 1675824170137,
         "gameDuration": "00:23:53",
         "championName": "Lucian",
         "win": false,
@@ -7448,7 +7448,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "07-02-2023",
+        "gameCreation": 1675813926585,
         "gameDuration": "00:19:15",
         "championName": "Tristana",
         "win": false,
@@ -7467,7 +7467,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "07-02-2023",
+        "gameCreation": 1675811491588,
         "gameDuration": "00:31:59",
         "championName": "Jhin",
         "win": false,
@@ -7486,7 +7486,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "07-02-2023",
+        "gameCreation": 1675808578743,
         "gameDuration": "00:15:25",
         "championName": "Jhin",
         "win": true,
@@ -7505,7 +7505,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "07-02-2023",
+        "gameCreation": 1675804911290,
         "gameDuration": "00:48:08",
         "championName": "Jhin",
         "win": true,
@@ -7524,7 +7524,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "07-02-2023",
+        "gameCreation": 1675802389048,
         "gameDuration": "00:31:49",
         "championName": "Jhin",
         "win": false,
@@ -7543,7 +7543,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "07-02-2023",
+        "gameCreation": 1675799512351,
         "gameDuration": "00:22:31",
         "championName": "Caitlyn",
         "win": true,
@@ -7562,7 +7562,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "07-02-2023",
+        "gameCreation": 1675796666415,
         "gameDuration": "00:36:24",
         "championName": "Jhin",
         "win": true,
@@ -7581,7 +7581,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "07-02-2023",
+        "gameCreation": 1675739394949,
         "gameDuration": "00:13:54",
         "championName": "Caitlyn",
         "win": false,
@@ -7600,7 +7600,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "07-02-2023",
+        "gameCreation": 1675738825253,
         "gameDuration": "00:02:01",
         "championName": "Jhin",
         "win": false,
@@ -7619,7 +7619,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "06-02-2023",
+        "gameCreation": 1675721050294,
         "gameDuration": "00:29:29",
         "championName": "Ezreal",
         "win": false,
@@ -7638,7 +7638,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "06-02-2023",
+        "gameCreation": 1675719056753,
         "gameDuration": "00:27:06",
         "championName": "Karma",
         "win": true,
@@ -7657,7 +7657,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "06-02-2023",
+        "gameCreation": 1675714699503,
         "gameDuration": "00:24:38",
         "championName": "Amumu",
         "win": false,
@@ -7676,7 +7676,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "06-02-2023",
+        "gameCreation": 1675707716761,
         "gameDuration": "00:30:07",
         "championName": "Caitlyn",
         "win": false,
@@ -7695,7 +7695,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "06-02-2023",
+        "gameCreation": 1675705796233,
         "gameDuration": "00:23:55",
         "championName": "Jhin",
         "win": true,
@@ -7714,7 +7714,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "06-02-2023",
+        "gameCreation": 1675703396296,
         "gameDuration": "00:31:39",
         "championName": "Caitlyn",
         "win": false,
@@ -7733,7 +7733,7 @@
         "pushPings": 2
     },
     {
-        "gameCreation": "06-02-2023",
+        "gameCreation": 1675700838700,
         "gameDuration": "00:34:11",
         "championName": "Caitlyn",
         "win": true,
@@ -7752,7 +7752,7 @@
         "pushPings": 1
     },
     {
-        "gameCreation": "06-02-2023",
+        "gameCreation": 1675694861489,
         "gameDuration": "00:30:02",
         "championName": "Jhin",
         "win": false,
@@ -7771,7 +7771,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "06-02-2023",
+        "gameCreation": 1675692816588,
         "gameDuration": "00:26:28",
         "championName": "Ashe",
         "win": true,
@@ -7790,7 +7790,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "06-02-2023",
+        "gameCreation": 1675661202923,
         "gameDuration": "00:39:38",
         "championName": "Varus",
         "win": false,
@@ -7809,7 +7809,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "06-02-2023",
+        "gameCreation": 1675655921299,
         "gameDuration": "00:29:36",
         "championName": "Jhin",
         "win": false,
@@ -7828,7 +7828,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "06-02-2023",
+        "gameCreation": 1675654251659,
         "gameDuration": "00:21:21",
         "championName": "Caitlyn",
         "win": false,
@@ -7847,7 +7847,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "05-02-2023",
+        "gameCreation": 1675616839754,
         "gameDuration": "00:31:23",
         "championName": "Jhin",
         "win": true,
@@ -7866,7 +7866,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "05-02-2023",
+        "gameCreation": 1675614821222,
         "gameDuration": "00:23:45",
         "championName": "Lux",
         "win": true,
@@ -7885,7 +7885,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "05-02-2023",
+        "gameCreation": 1675612281601,
         "gameDuration": "00:32:34",
         "championName": "Karma",
         "win": true,
@@ -7904,7 +7904,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "05-02-2023",
+        "gameCreation": 1675575155883,
         "gameDuration": "00:31:17",
         "championName": "Jhin",
         "win": true,
@@ -7923,7 +7923,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "05-02-2023",
+        "gameCreation": 1675567617462,
         "gameDuration": "00:24:40",
         "championName": "Jhin",
         "win": true,
@@ -7942,7 +7942,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "05-02-2023",
+        "gameCreation": 1675555802472,
         "gameDuration": "00:30:11",
         "championName": "Caitlyn",
         "win": false,
@@ -7961,7 +7961,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "04-02-2023",
+        "gameCreation": 1675550599693,
         "gameDuration": "00:30:56",
         "championName": "Caitlyn",
         "win": false,
@@ -7980,7 +7980,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "04-02-2023",
+        "gameCreation": 1675548041187,
         "gameDuration": "00:31:41",
         "championName": "Karma",
         "win": false,
@@ -7999,7 +7999,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "04-02-2023",
+        "gameCreation": 1675545034388,
         "gameDuration": "00:39:09",
         "championName": "Jhin",
         "win": true,
@@ -8018,7 +8018,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "04-02-2023",
+        "gameCreation": 1675542216599,
         "gameDuration": "00:36:09",
         "championName": "Jhin",
         "win": true,
@@ -8037,7 +8037,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "04-02-2023",
+        "gameCreation": 1675538435910,
         "gameDuration": "00:29:54",
         "championName": "Jhin",
         "win": false,
@@ -8056,7 +8056,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "04-02-2023",
+        "gameCreation": 1675536006279,
         "gameDuration": "00:19:25",
         "championName": "Xayah",
         "win": true,
@@ -8075,7 +8075,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "04-02-2023",
+        "gameCreation": 1675531402851,
         "gameDuration": "00:29:17",
         "championName": "Jhin",
         "win": true,
@@ -8094,7 +8094,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "04-02-2023",
+        "gameCreation": 1675529843635,
         "gameDuration": "00:20:10",
         "championName": "Caitlyn",
         "win": true,
@@ -8113,7 +8113,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "04-02-2023",
+        "gameCreation": 1675527474796,
         "gameDuration": "00:29:39",
         "championName": "Caitlyn",
         "win": true,
@@ -8132,7 +8132,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "04-02-2023",
+        "gameCreation": 1675484327811,
         "gameDuration": "00:34:56",
         "championName": "Kaisa",
         "win": true,
@@ -8151,7 +8151,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "04-02-2023",
+        "gameCreation": 1675482104194,
         "gameDuration": "00:23:21",
         "championName": "Jhin",
         "win": true,
@@ -8170,7 +8170,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "04-02-2023",
+        "gameCreation": 1675479639704,
         "gameDuration": "00:27:19",
         "championName": "Ezreal",
         "win": false,
@@ -8189,7 +8189,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "04-02-2023",
+        "gameCreation": 1675477808606,
         "gameDuration": "00:21:05",
         "championName": "Ezreal",
         "win": true,
@@ -8208,7 +8208,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "03-02-2023",
+        "gameCreation": 1675454760881,
         "gameDuration": "00:26:14",
         "championName": "Jhin",
         "win": false,
@@ -8227,7 +8227,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "03-02-2023",
+        "gameCreation": 1675439957985,
         "gameDuration": "00:20:58",
         "championName": "Caitlyn",
         "win": false,
@@ -8246,7 +8246,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "03-02-2023",
+        "gameCreation": 1675397000107,
         "gameDuration": "00:34:10",
         "championName": "Jhin",
         "win": true,
@@ -8265,7 +8265,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "02-02-2023",
+        "gameCreation": 1675374595869,
         "gameDuration": "00:38:12",
         "championName": "Caitlyn",
         "win": true,
@@ -8284,7 +8284,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "02-02-2023",
+        "gameCreation": 1675372362562,
         "gameDuration": "00:20:32",
         "championName": "Caitlyn",
         "win": true,
@@ -8303,7 +8303,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "02-02-2023",
+        "gameCreation": 1675370742233,
         "gameDuration": "00:15:20",
         "championName": "Lulu",
         "win": true,
@@ -8322,7 +8322,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "02-02-2023",
+        "gameCreation": 1675368700703,
         "gameDuration": "00:22:52",
         "championName": "Caitlyn",
         "win": true,
@@ -8341,7 +8341,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "02-02-2023",
+        "gameCreation": 1675361515656,
         "gameDuration": "00:01:43",
         "championName": "Caitlyn",
         "win": false,
@@ -8360,7 +8360,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "02-02-2023",
+        "gameCreation": 1675359380704,
         "gameDuration": "00:29:11",
         "championName": "Jhin",
         "win": false,
@@ -8379,7 +8379,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "02-02-2023",
+        "gameCreation": 1675311497228,
         "gameDuration": "00:22:59",
         "championName": "Caitlyn",
         "win": true,
@@ -8398,7 +8398,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "01-02-2023",
+        "gameCreation": 1675271291969,
         "gameDuration": "00:15:52",
         "championName": "Lucian",
         "win": false,
@@ -8417,7 +8417,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "31-01-2023",
+        "gameCreation": 1675196331899,
         "gameDuration": "00:22:26",
         "championName": "Sivir",
         "win": false,
@@ -8436,7 +8436,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "31-01-2023",
+        "gameCreation": 1675192302264,
         "gameDuration": "00:24:10",
         "championName": "Lucian",
         "win": true,
@@ -8455,7 +8455,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "31-01-2023",
+        "gameCreation": 1675189505785,
         "gameDuration": "00:28:53",
         "championName": "Caitlyn",
         "win": true,
@@ -8474,7 +8474,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "31-01-2023",
+        "gameCreation": 1675182472421,
         "gameDuration": "00:30:35",
         "championName": "Jhin",
         "win": false,
@@ -8493,7 +8493,7 @@
         "pushPings": 1
     },
     {
-        "gameCreation": "31-01-2023",
+        "gameCreation": 1675179938620,
         "gameDuration": "00:34:56",
         "championName": "Soraka",
         "win": false,
@@ -8512,7 +8512,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "31-01-2023",
+        "gameCreation": 1675140432466,
         "gameDuration": "00:33:55",
         "championName": "Ashe",
         "win": true,
@@ -8531,7 +8531,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "30-01-2023",
+        "gameCreation": 1675108200246,
         "gameDuration": "00:27:27",
         "championName": "Samira",
         "win": false,
@@ -8550,7 +8550,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "30-01-2023",
+        "gameCreation": 1675106225474,
         "gameDuration": "00:23:16",
         "championName": "Caitlyn",
         "win": false,
@@ -8569,7 +8569,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "30-01-2023",
+        "gameCreation": 1675103461032,
         "gameDuration": "00:32:10",
         "championName": "Jhin",
         "win": true,
@@ -8588,7 +8588,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "30-01-2023",
+        "gameCreation": 1675101204881,
         "gameDuration": "00:29:01",
         "championName": "Xayah",
         "win": true,
@@ -8607,7 +8607,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "30-01-2023",
+        "gameCreation": 1675096744729,
         "gameDuration": "00:28:42",
         "championName": "Jinx",
         "win": true,
@@ -8626,7 +8626,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "30-01-2023",
+        "gameCreation": 1675093958438,
         "gameDuration": "00:36:11",
         "championName": "Ashe",
         "win": true,
@@ -8645,7 +8645,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "30-01-2023",
+        "gameCreation": 1675050664219,
         "gameDuration": "00:30:40",
         "championName": "Jhin",
         "win": true,
@@ -8664,7 +8664,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "30-01-2023",
+        "gameCreation": 1675049261178,
         "gameDuration": "00:18:08",
         "championName": "Caitlyn",
         "win": false,
@@ -8683,7 +8683,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "29-01-2023",
+        "gameCreation": 1675024778812,
         "gameDuration": "00:30:50",
         "championName": "Caitlyn",
         "win": false,
@@ -8702,7 +8702,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "29-01-2023",
+        "gameCreation": 1675022656217,
         "gameDuration": "00:28:43",
         "championName": "Jinx",
         "win": false,
@@ -8721,7 +8721,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "29-01-2023",
+        "gameCreation": 1675020155141,
         "gameDuration": "00:35:42",
         "championName": "Ashe",
         "win": false,
@@ -8740,7 +8740,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "29-01-2023",
+        "gameCreation": 1675018394556,
         "gameDuration": "00:19:32",
         "championName": "Jhin",
         "win": true,
@@ -8759,7 +8759,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "29-01-2023",
+        "gameCreation": 1675014765020,
         "gameDuration": "00:28:25",
         "championName": "Karma",
         "win": false,
@@ -8778,7 +8778,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "29-01-2023",
+        "gameCreation": 1675012448026,
         "gameDuration": "00:25:45",
         "championName": "Fiora",
         "win": false,
@@ -8797,7 +8797,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "29-01-2023",
+        "gameCreation": 1675010467397,
         "gameDuration": "00:21:08",
         "championName": "Fiora",
         "win": true,
@@ -8816,7 +8816,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "29-01-2023",
+        "gameCreation": 1675008360344,
         "gameDuration": "00:27:08",
         "championName": "Xayah",
         "win": true,
@@ -8835,7 +8835,7 @@
         "pushPings": 1
     },
     {
-        "gameCreation": "29-01-2023",
+        "gameCreation": 1675007523416,
         "gameDuration": "00:04:47",
         "championName": "Caitlyn",
         "win": true,
@@ -8854,7 +8854,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "29-01-2023",
+        "gameCreation": 1674966399495,
         "gameDuration": "00:25:08",
         "championName": "Yone",
         "win": false,
@@ -8873,7 +8873,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "29-01-2023",
+        "gameCreation": 1674964223014,
         "gameDuration": "00:25:55",
         "championName": "Caitlyn",
         "win": false,
@@ -8892,7 +8892,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "29-01-2023",
+        "gameCreation": 1674961671322,
         "gameDuration": "00:32:18",
         "championName": "Caitlyn",
         "win": false,
@@ -8911,7 +8911,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "29-01-2023",
+        "gameCreation": 1674958316190,
         "gameDuration": "00:23:00",
         "championName": "Jinx",
         "win": false,
@@ -8930,7 +8930,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "28-01-2023",
+        "gameCreation": 1674944476756,
         "gameDuration": "00:30:09",
         "championName": "Caitlyn",
         "win": false,
@@ -8949,7 +8949,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "28-01-2023",
+        "gameCreation": 1674940599611,
         "gameDuration": "00:31:38",
         "championName": "Sivir",
         "win": true,
@@ -8968,7 +8968,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "28-01-2023",
+        "gameCreation": 1674935028760,
         "gameDuration": "00:19:49",
         "championName": "Aphelios",
         "win": false,
@@ -8987,7 +8987,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "28-01-2023",
+        "gameCreation": 1674882011401,
         "gameDuration": "00:34:40",
         "championName": "Samira",
         "win": false,
@@ -9006,7 +9006,7 @@
         "pushPings": 1
     },
     {
-        "gameCreation": "28-01-2023",
+        "gameCreation": 1674877874080,
         "gameDuration": "00:26:22",
         "championName": "Xayah",
         "win": true,
@@ -9025,7 +9025,7 @@
         "pushPings": 1
     },
     {
-        "gameCreation": "27-01-2023",
+        "gameCreation": 1674855814784,
         "gameDuration": "00:33:15",
         "championName": "Jinx",
         "win": false,
@@ -9044,7 +9044,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "27-01-2023",
+        "gameCreation": 1674852761734,
         "gameDuration": "00:35:37",
         "championName": "Caitlyn",
         "win": true,
@@ -9063,7 +9063,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "27-01-2023",
+        "gameCreation": 1674850211839,
         "gameDuration": "00:32:30",
         "championName": "Tristana",
         "win": false,
@@ -9082,7 +9082,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "27-01-2023",
+        "gameCreation": 1674847841180,
         "gameDuration": "00:32:25",
         "championName": "Sett",
         "win": false,
@@ -9101,7 +9101,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "27-01-2023",
+        "gameCreation": 1674843352716,
         "gameDuration": "00:26:05",
         "championName": "Fiora",
         "win": false,
@@ -9120,7 +9120,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "27-01-2023",
+        "gameCreation": 1674840948398,
         "gameDuration": "00:31:57",
         "championName": "KSante",
         "win": false,
@@ -9139,7 +9139,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "27-01-2023",
+        "gameCreation": 1674838623310,
         "gameDuration": "00:22:08",
         "championName": "Tristana",
         "win": true,
@@ -9158,7 +9158,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "27-01-2023",
+        "gameCreation": 1674787752764,
         "gameDuration": "00:33:01",
         "championName": "KSante",
         "win": false,
@@ -9177,7 +9177,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "27-01-2023",
+        "gameCreation": 1674784111716,
         "gameDuration": "00:28:27",
         "championName": "KSante",
         "win": true,
@@ -9196,7 +9196,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "27-01-2023",
+        "gameCreation": 1674780138205,
         "gameDuration": "00:24:41",
         "championName": "Jhin",
         "win": false,
@@ -9215,7 +9215,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "26-01-2023",
+        "gameCreation": 1674776530274,
         "gameDuration": "00:16:06",
         "championName": "Jhin",
         "win": true,
@@ -9234,7 +9234,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "26-01-2023",
+        "gameCreation": 1674772277001,
         "gameDuration": "00:18:57",
         "championName": "Lucian",
         "win": true,
@@ -9253,7 +9253,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "26-01-2023",
+        "gameCreation": 1674768774268,
         "gameDuration": "00:41:37",
         "championName": "Zeri",
         "win": true,
@@ -9272,7 +9272,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "26-01-2023",
+        "gameCreation": 1674761238506,
         "gameDuration": "00:16:08",
         "championName": "Xayah",
         "win": false,
@@ -9291,7 +9291,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "26-01-2023",
+        "gameCreation": 1674758046628,
         "gameDuration": "00:24:58",
         "championName": "Kaisa",
         "win": true,
@@ -9310,7 +9310,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "26-01-2023",
+        "gameCreation": 1674757461552,
         "gameDuration": "00:02:06",
         "championName": "Caitlyn",
         "win": false,
@@ -9329,7 +9329,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "26-01-2023",
+        "gameCreation": 1674754514470,
         "gameDuration": "00:26:24",
         "championName": "Sivir",
         "win": true,
@@ -9348,7 +9348,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "26-01-2023",
+        "gameCreation": 1674749761166,
         "gameDuration": "00:27:54",
         "championName": "Jhin",
         "win": true,
@@ -9367,7 +9367,7 @@
         "pushPings": 1
     },
     {
-        "gameCreation": "26-01-2023",
+        "gameCreation": 1674707054354,
         "gameDuration": "00:20:33",
         "championName": "KSante",
         "win": false,
@@ -9386,7 +9386,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "26-01-2023",
+        "gameCreation": 1674704351284,
         "gameDuration": "00:28:10",
         "championName": "KSante",
         "win": true,
@@ -9405,7 +9405,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "25-01-2023",
+        "gameCreation": 1674677473057,
         "gameDuration": "00:24:27",
         "championName": "Lucian",
         "win": true,
@@ -9424,7 +9424,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "25-01-2023",
+        "gameCreation": 1674675260454,
         "gameDuration": "00:25:33",
         "championName": "Ezreal",
         "win": true,
@@ -9443,7 +9443,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "25-01-2023",
+        "gameCreation": 1674672368373,
         "gameDuration": "00:22:12",
         "championName": "Jhin",
         "win": true,
@@ -9462,7 +9462,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "25-01-2023",
+        "gameCreation": 1674669460757,
         "gameDuration": "00:32:04",
         "championName": "Caitlyn",
         "win": true,
@@ -9481,7 +9481,7 @@
         "pushPings": 0
     },
     {
-        "gameCreation": "25-01-2023",
+        "gameCreation": 1674623521652,
         "gameDuration": "00:29:09",
         "championName": "Kaisa",
         "win": true,

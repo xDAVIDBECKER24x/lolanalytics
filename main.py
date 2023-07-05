@@ -8,7 +8,8 @@ from time import strftime
 from datetime import datetime
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
-
+import matplotlib.dates as dates
+from scipy.interpolate import make_interp_spline
 
 def format_json(json_data):
 
@@ -81,7 +82,7 @@ def save_match_overview(match_list, puuid, save_file):
     return
 
 
-def save_pings_overview(match_list, match_settings, puuid, save_path,player_alias):
+def save_pings_overview(match_list, match_settings, puuid, save_path, player_alias):
 
     geral_pings_overview = []
 
@@ -95,7 +96,8 @@ def save_pings_overview(match_list, match_settings, puuid, save_path,player_alia
 
             # Convert miliseconds timestamp to seconds
             match_duration_seconds = match['info']['gameDuration']
-            match_duration = strftime("%H:%M:%S", gmtime(match_duration_seconds))
+            match_duration = strftime(
+                "%H:%M:%S", gmtime(match_duration_seconds))
 
             # Convert miliseconds timestamp to date
             # match_creation = int(match['info']['gameCreation']/1000)
@@ -141,27 +143,26 @@ def save_pings_overview(match_list, match_settings, puuid, save_path,player_alia
 
             geral_pings_overview.append(pings_overview)
 
-    analysis_ping_overview(geral_pings_overview,save_path)
+    analysis_ping_overview(geral_pings_overview, save_path)
 
     geral_pings_overview = format_json(geral_pings_overview)
 
     save_file = save_path + f"ping_overview_{player_alias}.json"
     with open(save_file, "w") as outfile:
-        
+
         outfile.write(geral_pings_overview)
 
     return
 
 
-def analysis_ping_overview(geral_pings_overview,save_path):
+def analysis_ping_overview(geral_pings_overview, save_path):
 
     df = pd.DataFrame(geral_pings_overview)
     df['gameCreation'] = pd.to_datetime(df['gameCreation'], unit='ms')
-    df['gameCreation'] = df['gameCreation'].dt.strftime('%d/%m/%Y')
-    
-    df.sort_values(by=['gameCreation'], inplace = True)
-    print(df['ratioPings'].std())
-    
+    df['gameCreation'] = df['gameCreation'].dt.strftime('%Y-%m-%d')
+
+    df.sort_values(by=['gameCreation'], inplace=True)
+
     # win_df = df[df["win"] == True]
     # lose_df = df[df['win'] == False]
 
@@ -194,27 +195,64 @@ def analysis_ping_overview(geral_pings_overview,save_path):
     # start_date = df['gameCreation'].min()
     # end_date = df['gameCreation'].max()
 
+    df_ratio_dates = df[['gameCreation', 'ratioPings']].copy()
+    df_ratio_dates= df_ratio_dates.groupby('gameCreation', as_index=False)['ratioPings'].mean()
+  
+    print(df_ratio_dates)
+    # create data
+    date_np = np.array(list(df_ratio_dates['gameCreation']))
+    value_np = np.array(list(df_ratio_dates['ratioPings']))
+    date_num = dates.date2num(date_np)
+    # smooth
+    date_num_smooth = np.linspace(date_num.min(), date_num.max(), 100) 
+    spl = make_interp_spline(date_num, value_np, k=3)
+    value_np_smooth = spl(date_num_smooth)
+    # print
+    plt.plot(date_np, value_np)
+    plt.plot(dates.num2date(date_num_smooth), value_np_smooth)
+    plt.show()
+
+
+    max_date = df['gameCreation'].max()
+    min_date = df['gameCreation'].min()
+    
     max_pings = df['totalPings'].max()
-    min_pings = df['totalPings'].min()
+    max_ratio = df['ratioPings'].max()
 
-    fig, axs = plt.subplots(figsize=(8, 4))
+    # Ping Total Overview Scatter Chart
+    fig_total_pings, axs_total_pings = plt.subplots(figsize=(8, 4))
+    df.plot(kind='scatter', x='gameCreation', y='totalPings', ax=axs_total_pings)
+    
+    axs_total_pings.set_ylim([0, max_pings+(max_pings/10)])
+    axs_total_pings.set_xticks(df['gameCreation'])
+    axs_total_pings.xaxis.set_major_locator(mdates.MonthLocator(interval=1))
+    axs_total_pings.set_xlabel("")
+    axs_total_pings.set_ylabel("Quantidade de Pings")
+    axs_total_pings.set_title(f"Dispersão Pings {player_alias.capitalize()}")
 
-    df.plot(kind='scatter', x='gameCreation', y='totalPings', ax=axs)
+    file_total_pings = save_path + f"ping_overview_total_{player_alias}_scatter"
+    fig_total_pings.savefig(file_total_pings)
 
-    axs.set_ylim([0, max_pings+(min_pings/10)])
-    axs.set_xticks(df['gameCreation'])
-    axs.xaxis.set_major_locator(mdates.MonthLocator(interval=1))
-    axs.set_xlabel("")
-    axs.set_ylabel("Quantidade de Pings")
-    axs.set_title(f"Dispersão Pings {player_alias.capitalize()}")
+    # Ping Per Minute Overview Line Chart
 
-    save_file = save_path + f"ping_overview_{player_alias}_scatter"
+    fig_ratio_pings, axs_ratio_pings = plt.subplots(figsize=(8, 4))
+    df.plot(kind='line', x='gameCreation', y='ratioPings', ax=axs_ratio_pings)
+     
+    # axs_ratio_pings.set_ylim([0, max_ratio+(max_ratio/10)])
+    # axs_ratio_pings.set_xticks(df['gameCreation'])
+    # axs_ratio_pings.xaxis.set_major_locator(mdates.MonthLocator(interval=1))
+    # axs_ratio_pings.set_xlabel("")
+    axs_ratio_pings.set_ylabel("Pings/Minuto")
+    axs_ratio_pings.set_title(f"Frequência Pings {player_alias.capitalize()}")
 
-    fig.savefig(save_file)
+    file_ratio_pings = save_path + f"ping_overview_ratio_{player_alias}_line"
+    fig_ratio_pings.savefig(file_ratio_pings)
+
 
     return
 
-# https://developer.riotgames.com/apis#match-v5/GET_getMatch
+
+# Set matchs settings search
 match_settings = {}
 match_settings['game_type'] = ["CUSTOM_GAME", "MATCHED_GAME"]
 match_settings['game_mode'] = ["CLASSIC"]
@@ -225,19 +263,21 @@ file_puuids_alias = open("players_puuids_alias.json", "r")
 puuids_alias = json.loads(file_puuids_alias.read())
 file_puuids_alias.close()
 
+# Select player type and alias
 player_type = 'raky'
 player_alias = 'akaashi'
 puuid = puuids_alias[player_type][player_alias]
 print("puuid => "+puuid)
 
+# Set path to save player analysis
 save_path = f"data/{player_type }/{player_alias}/"
-raw_data_matchs_file = f"{save_path}matchs_metadata_{player_alias}.json"
 
 # Load raw data from exported matches json
+raw_data_matchs_file = f"{save_path}matchs_metadata_{player_alias}.json"
 raw_data_matchs_file = open(raw_data_matchs_file)
 raw_matches_data = json.load(raw_data_matchs_file)
 raw_data_matchs_file.close()
 
-
+# Do little things
 save_pings_overview(raw_matches_data, match_settings,
-                    puuid, save_path,player_alias)
+                    puuid, save_path, player_alias)

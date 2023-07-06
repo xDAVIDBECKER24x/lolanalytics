@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import matplotlib.dates as dates
 from scipy.interpolate import make_interp_spline
-
+from numpyencoder import NumpyEncoder
 
 
 def format_json(json_data):
@@ -176,7 +176,12 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
     win_df = df[df["win"] == True]
     lose_df = df[df['win'] == False]
 
+    start_date = df['gameCreation'].min()
+    end_date = df['gameCreation'].max()
+
     analysis_pings['player_alias'] = player_alias
+    analysis_pings['start_date'] = start_date
+    analysis_pings['end_date'] = end_date
     analysis_pings['pings_count'] = df['totalPings'].count()
     analysis_pings['pings_mean'] = df['totalPings'].mean()
     analysis_pings['pings_median'] = df['totalPings'].median()
@@ -196,11 +201,26 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
     analysis_pings['lose_pings_std'] = lose_df['totalPings'].std()
     analysis_pings['lose_pings_ratio_mean'] = lose_df['ratioPings'].mean()
     analysis_pings['lose_pings_ratio_std'] = lose_df['ratioPings'].std()
+ 
 
+    analysis_pings = json.dumps(analysis_pings, default=str,indent=4)
+    save_file = f"{save_path}ping_overview_analysis_{player_alias}.json"
+    with open(save_file, "w") as outfile:
+        outfile.write(analysis_pings)
+
+    # print(f"Player mean => {analysis_pings['pings_mean']}")
+
+    # analysis_pings = format_json(analysis_pings)
+    
+    # save_file = f"{save_path}ping_overview_analysis_{player_alias}.json"
+    # with open(save_file, "w") as outfile:
+
+    #     outfile.write(analysis_pings)
+
+    
     print(analysis_pings)
 
-    start_date = df['gameCreation'].min()
-    end_date = df['gameCreation'].max()
+    
 
     df_ratio_dates_mean = df[['gameCreation', 'ratioPings']].copy()
     df_ratio_dates_mean = df_ratio_dates_mean.groupby(
@@ -222,8 +242,7 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
     axs_total_pings.set_ylabel("Quantidade de Pings")
     axs_total_pings.set_title(f"Dispersão Pings {player_alias.capitalize()}")
 
-    file_total_pings = save_path + \
-        f"ping_overview_total_{player_alias}_scatter"
+    file_total_pings = f"{save_path}ping_overview_total_{player_alias}_scatter"
     fig_total_pings.savefig(file_total_pings)
 
     # Ping Per Minute Overview Line Chart
@@ -236,7 +255,7 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
     axs_ratio_pings.set_ylabel("Pings/Minuto")
     axs_ratio_pings.set_title(f"Frequência Pings {player_alias.capitalize()}")
 
-    file_ratio_pings = save_path + f"ping_overview_ratio_{player_alias}_line"
+    file_ratio_pings = f"{save_path}ping_overview_ratio_{player_alias}_line"
     fig_ratio_pings.savefig(file_ratio_pings)
 
     return
@@ -275,9 +294,9 @@ players_type_alias_puuid = json.loads(file_puuids_alias.read())
 file_puuids_alias.close()
 
 # Select player type and alias
-player_type = 'raky'
-player_alias = 'nataruk'
-puuid = players_type_alias_puuid[player_type][player_alias]
+player_type = 'proplayer'
+# player_alias = 'nataruk'
+# puuid = players_type_alias_puuid[player_type][player_alias]
 
 
 # # Set path to save player analysis
@@ -290,6 +309,8 @@ puuid = players_type_alias_puuid[player_type][player_alias]
 # raw_data_matchs_file.close()
 
 
+# All players type
 save_all_players_pings_overview(match_settings,player_type,players_type_alias_puuid)
-# Do little things
+
+# Only 1 player
 # save_pings_overview(raw_matches_data, match_settings,puuid, save_path, player_alias)

@@ -176,11 +176,7 @@ def analysis_ping_overview(geral_pings_overview, save_path):
     win_df = df[df["win"] == True]
     lose_df = df[df['win'] == False]
 
-    win_pings_count = win_df['totalPings'].count() + 0.0
-    lose_pings_count = win_df['totalPings'].count()+0.0
-
-    analysis_pings['winrate'] = "Todo"
-
+    analysis_pings['player_alias'] = player_alias
     analysis_pings['pings_count'] = df['totalPings'].count()
     analysis_pings['pings_mean'] = df['totalPings'].mean()
     analysis_pings['pings_median'] = df['totalPings'].median()

@@ -299,7 +299,7 @@ players_type_alias_puuid = json.loads(file_puuids_alias.read())
 file_puuids_alias.close()
 
 # Select player type
-player_type = 'proplayer'
+player_type = 'raky'
 
 # Select player alias
 # player_alias = 'nataruk'

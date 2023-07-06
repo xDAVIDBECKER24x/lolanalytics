@@ -1,9 +1,10 @@
 {
     "player_alias": "nataruk",
+    "matchs_count": 674,
     "start_date": "2023-01-23",
     "end_date": "2023-06-28",
-    "pings_count": "674",
     "pings_mean": 7.371,
+    "pings_constancy": 6.047,
     "pings_ratio": 0.265,
     "pings_median": 6.0,
     "pings_sum": "4968",

@@ -1,9 +1,10 @@
 {
     "player_alias": "princess",
+    "matchs_count": 705,
     "start_date": "2022-11-02",
     "end_date": "2023-07-05",
-    "pings_count": "705",
     "pings_mean": 25.163,
+    "pings_constancy": 14.095,
     "pings_ratio": 0.892,
     "pings_median": 23.0,
     "pings_sum": "17740",

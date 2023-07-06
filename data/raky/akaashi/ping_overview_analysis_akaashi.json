@@ -1,9 +1,10 @@
 {
     "player_alias": "akaashi",
+    "matchs_count": 500,
     "start_date": "2023-01-25",
     "end_date": "2023-06-27",
-    "pings_count": "500",
     "pings_mean": 10.296,
+    "pings_constancy": 6.48,
     "pings_ratio": 0.379,
     "pings_median": 9.0,
     "pings_sum": "5148",

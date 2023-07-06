@@ -1,9 +1,10 @@
 {
     "player_alias": "tabrao",
+    "matchs_count": 768,
     "start_date": "2022-11-04",
     "end_date": "2023-07-02",
-    "pings_count": "768",
     "pings_mean": 14.941,
+    "pings_constancy": 10.209,
     "pings_ratio": 0.548,
     "pings_median": 13.0,
     "pings_sum": "11475",

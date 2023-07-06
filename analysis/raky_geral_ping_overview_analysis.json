@@ -1,9 +1,9 @@
 [
     {
         "player_alias": "akaashi",
+        "matchs_count": 500,
         "start_date": "2023-01-25",
         "end_date": "2023-06-27",
-        "pings_count": 500,
         "pings_mean": 10.296,
         "pings_ratio": 0.379,
         "pings_median": 9.0,
@@ -26,9 +26,9 @@
     },
     {
         "player_alias": "tekendol",
+        "matchs_count": 524,
         "start_date": "2023-04-13",
         "end_date": "2023-06-27",
-        "pings_count": 524,
         "pings_mean": 26.637,
         "pings_ratio": 0.965,
         "pings_median": 22.0,
@@ -51,9 +51,9 @@
     },
     {
         "player_alias": "nataruk",
+        "matchs_count": 674,
         "start_date": "2023-01-23",
         "end_date": "2023-06-28",
-        "pings_count": 674,
         "pings_mean": 7.371,
         "pings_ratio": 0.265,
         "pings_median": 6.0,
@@ -76,9 +76,9 @@
     },
     {
         "player_alias": "tabrao",
+        "matchs_count": 768,
         "start_date": "2022-11-04",
         "end_date": "2023-07-02",
-        "pings_count": 768,
         "pings_mean": 14.941,
         "pings_ratio": 0.548,
         "pings_median": 13.0,
@@ -101,9 +101,9 @@
     },
     {
         "player_alias": "fefo",
+        "matchs_count": 93,
         "start_date": "2022-12-29",
         "end_date": "2023-07-03",
-        "pings_count": 93,
         "pings_mean": 56.591,
         "pings_ratio": 1.992,
         "pings_median": 52.0,
@@ -126,9 +126,9 @@
     },
     {
         "player_alias": "mazemind",
+        "matchs_count": 598,
         "start_date": "2023-04-01",
         "end_date": "2023-07-04",
-        "pings_count": 598,
         "pings_mean": 26.637,
         "pings_ratio": 1.023,
         "pings_median": 23.0,
@@ -151,9 +151,9 @@
     },
     {
         "player_alias": "princess",
+        "matchs_count": 705,
         "start_date": "2022-11-02",
         "end_date": "2023-07-05",
-        "pings_count": 705,
         "pings_mean": 25.163,
         "pings_ratio": 0.892,
         "pings_median": 23.0,
@@ -176,9 +176,9 @@
     },
     {
         "player_alias": "luigi",
+        "matchs_count": 818,
         "start_date": "2023-01-28",
         "end_date": "2023-07-02",
-        "pings_count": 818,
         "pings_mean": 17.315,
         "pings_ratio": 0.627,
         "pings_median": 15.0,

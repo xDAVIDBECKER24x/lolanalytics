@@ -163,6 +163,7 @@ def save_ping_overview(match_list, match_settings, player_puuid, save_path, play
     return pings_overview_analysis
 
 
+
 def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
 
     analysis_pings = {}
@@ -171,6 +172,11 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
     df['gameCreation'] = pd.to_datetime(df['gameCreation'], unit='ms')
     df['gameCreation'] = df['gameCreation'].dt.strftime('%Y-%m-%d')
 
+    matchs_count = len(df.index)
+    pings_std = df['totalPings'].std()
+    pings_mean = df['totalPings'].mean()
+    pings_constancy = ((df['totalPings'] <= (pings_mean + pings_std)) & (df['totalPings']>=(pings_mean - pings_std)).sum())/matchs_count
+
     df.sort_values(by=['gameCreation'], inplace=True)
 
     win_df = df[df["win"] == True]
@@ -178,16 +184,19 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
 
     start_date = df['gameCreation'].min()
     end_date = df['gameCreation'].max()
+    
 
     analysis_pings['player_alias'] = player_alias
+    analysis_pings['matchs_count'] = matchs_count
     analysis_pings['start_date'] = start_date
     analysis_pings['end_date'] = end_date
-    analysis_pings['pings_count'] = df['totalPings'].count()
-    analysis_pings['pings_mean'] = df['totalPings'].mean()
+    analysis_pings['pings_mean'] = pings_mean 
+    analysis_pings['pings_constancy'] = pings_constancy 
     analysis_pings['pings_ratio'] = df['ratioPings'].mean()
     analysis_pings['pings_median'] = df['totalPings'].median()
     analysis_pings['pings_sum'] = df['totalPings'].sum()
-    analysis_pings['pings_std'] = df['totalPings'].std()
+    analysis_pings['pings_std'] = pings_std
+    analysis_pings['pings_constancy'] = pings_std
     analysis_pings['win_pings_count'] = win_df['totalPings'].count()
     analysis_pings['win_pings_mean'] = win_df['totalPings'].mean()
     analysis_pings['win_pings_median'] = win_df['totalPings'].median()

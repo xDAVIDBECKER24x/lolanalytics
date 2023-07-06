@@ -1,9 +1,10 @@
 {
     "player_alias": "fefo",
+    "matchs_count": 93,
     "start_date": "2022-12-29",
     "end_date": "2023-07-03",
-    "pings_count": "93",
     "pings_mean": 56.591,
+    "pings_constancy": 31.76,
     "pings_ratio": 1.992,
     "pings_median": 52.0,
     "pings_sum": "5263",

@@ -57,7 +57,8 @@ def get_player_match_info_by_player_puuid(match, puuid):
     return player_match_info
 
 
-def save_match_overview(match_list, puuid, save_file):
+def save_match_overview(match_list, player_puuid, save_file):
+   
 
     with open(save_file, "w") as outfile:
 
@@ -65,7 +66,7 @@ def save_match_overview(match_list, puuid, save_file):
 
             match_overview = {}
 
-            player_data = get_player_match_info_by_player_puuid(match, puuid)
+            player_data = get_player_match_info_by_player_puuid(match, player_puuid)
 
             match_duration = match['info']['gameDuration']
             match_duration = strftime("%H:%M:%S", gmtime(match_duration))
@@ -84,7 +85,9 @@ def save_match_overview(match_list, puuid, save_file):
     return
 
 
-def save_pings_overview(match_list, match_settings, puuid, save_path, player_alias):
+def save_pings_overview(match_list, match_settings, player_puuid, save_path, player_alias):
+
+    print(f"\nGetting : {player_alias}  puuid => {player_puuid}\n")
 
     geral_pings_overview = []
 
@@ -92,7 +95,7 @@ def save_pings_overview(match_list, match_settings, puuid, save_path, player_ali
 
         if (check_match_settings(match, match_settings) == True):
 
-            player_data = get_player_match_info_by_player_puuid(match, puuid)
+            player_data = get_player_match_info_by_player_puuid(match, player_puuid)
             
             if "allInPings" in player_data:
 
@@ -107,10 +110,8 @@ def save_pings_overview(match_list, match_settings, puuid, save_path, player_ali
                 # match_creation = int(match['info']['gameCreation']/1000)
                 # match_creation = datetime.utcfromtimestamp(
                 #     match_creation).strftime('%d-%m-%Y')
-                match_creation = match['info']['gameCreation']
-                
     
-            
+                match_creation = match['info']['gameCreation']
                 all_in_pings = player_data['allInPings']
                 bait_pings = player_data['baitPings']
                 command_pings = player_data['commandPings']
@@ -128,7 +129,6 @@ def save_pings_overview(match_list, match_settings, puuid, save_path, player_ali
                     enemy_vision_pings + get_back_pings + hold_pings + \
                     need_vision_pings + on_my_way_pings + push_pings
                 ratio_pings = (total_pings/match_duration_seconds)*60
-
 
                 pings_overview['gameCreation'] = match_creation
                 pings_overview['gameDuration'] = match_duration
@@ -151,7 +151,7 @@ def save_pings_overview(match_list, match_settings, puuid, save_path, player_ali
 
                 geral_pings_overview.append(pings_overview)
 
-    analysis_ping_overview(geral_pings_overview, save_path)
+    analysis_ping_overview(geral_pings_overview, save_path,player_alias)
 
     geral_pings_overview = format_json(geral_pings_overview)
 
@@ -163,7 +163,7 @@ def save_pings_overview(match_list, match_settings, puuid, save_path, player_ali
     return
 
 
-def analysis_ping_overview(geral_pings_overview, save_path):
+def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
 
     analysis_pings = {}
 
@@ -199,19 +199,12 @@ def analysis_ping_overview(geral_pings_overview, save_path):
 
     print(analysis_pings)
 
-
-
-    # date_start= df['gameCreation'].min()
-    # date_end = df['gameCreation'].max()
-
     start_date = df['gameCreation'].min()
     end_date = df['gameCreation'].max()
 
     df_ratio_dates_mean = df[['gameCreation', 'ratioPings']].copy()
     df_ratio_dates_mean = df_ratio_dates_mean.groupby(
         'gameCreation', as_index=False)['ratioPings'].mean()
-
-    # print(df_ratio_dates_mean)
 
     max_pings = df['totalPings'].max()
     max_ratio = df['ratioPings'].max()
@@ -223,7 +216,7 @@ def analysis_ping_overview(geral_pings_overview, save_path):
 
     axs_total_pings.set_ylim([0, max_pings+(max_pings/10)])
     axs_total_pings.set_xticks(df['gameCreation'])
-    axs_total_pings.set_xticklabels(df['gameCreation'],rotation=45)
+    axs_total_pings.set_xticklabels(df['gameCreation'])
     axs_total_pings.xaxis.set_major_locator(mdates.MonthLocator(interval=1))
     axs_total_pings.set_xlabel("")
     axs_total_pings.set_ylabel("Quantidade de Pings")
@@ -249,6 +242,27 @@ def analysis_ping_overview(geral_pings_overview, save_path):
     return
 
 
+def save_all_players_pings_overview(match_settings, player_type,players_type_alias_puuid):
+   
+
+    for player in  players_type_alias_puuid[player_type] :
+
+        player_alias = player
+        player_puuid = players_type_alias_puuid[player_type][player]
+
+        
+
+        save_path = f"data/{player_type}/{player_alias}/"
+
+        raw_data_matchs_file = f"{save_path}matchs_metadata_{player_alias}.json"
+        raw_data_matchs_file = open(raw_data_matchs_file)
+        raw_matches_data = json.load(raw_data_matchs_file)
+        raw_data_matchs_file.close()
+
+        save_pings_overview(raw_matches_data, match_settings, player_puuid, save_path, player_alias)
+
+    return
+
 # Set matchs settings search
 match_settings = {}
 match_settings['game_type'] = ["CUSTOM_GAME", "MATCHED_GAME"]
@@ -256,25 +270,26 @@ match_settings['game_mode'] = ["CLASSIC"]
 
 
 # Load players puuid alias
-file_puuids_alias = open("players_puuids_alias.json", "r")
-puuids_alias = json.loads(file_puuids_alias.read())
+file_puuids_alias = open("players_type_alias_puuid.json", "r")
+players_type_alias_puuid = json.loads(file_puuids_alias.read())
 file_puuids_alias.close()
 
 # Select player type and alias
-player_type = 'proplayer'
-player_alias = 'titan'
-puuid = puuids_alias[player_type][player_alias]
-print("puuid => "+puuid)
+player_type = 'raky'
+player_alias = 'nataruk'
+puuid = players_type_alias_puuid[player_type][player_alias]
 
-# Set path to save player analysis
-save_path = f"data/{player_type}/{player_alias}/"
 
-# Load raw data from exported matches json
-raw_data_matchs_file = f"{save_path}matchs_metadata_{player_alias}.json"
-raw_data_matchs_file = open(raw_data_matchs_file)
-raw_matches_data = json.load(raw_data_matchs_file)
-raw_data_matchs_file.close()
+# # Set path to save player analysis
+# save_path = f"data/{player_type}/{player_alias}/"
 
+# # Load raw data from exported matches json
+# raw_data_matchs_file = f"{save_path}matchs_metadata_{player_alias}.json"
+# raw_data_matchs_file = open(raw_data_matchs_file)
+# raw_matches_data = json.load(raw_data_matchs_file)
+# raw_data_matchs_file.close()
+
+
+save_all_players_pings_overview(match_settings,player_type,players_type_alias_puuid)
 # Do little things
-save_pings_overview(raw_matches_data, match_settings,
-                    puuid, save_path, player_alias)
+# save_pings_overview(raw_matches_data, match_settings,puuid, save_path, player_alias)

@@ -15,7 +15,7 @@ from numpyencoder import NumpyEncoder
 
 def format_json(json_data):
 
-    json_formatted = json.dumps(json_data, indent=4)
+    json_formatted = json.dumps(json_data, default=int,indent=4)
 
     return json_formatted
 
@@ -85,9 +85,9 @@ def save_match_overview(match_list, player_puuid, save_file):
     return
 
 
-def save_pings_overview(match_list, match_settings, player_puuid, save_path, player_alias):
+def save_ping_overview(match_list, match_settings, player_puuid, save_path, player_alias):
 
-    print(f"\nGetting : {player_alias}  puuid => {player_puuid}\n")
+    print(f"Getting : {player_alias}  puuid => {player_puuid}")
 
     geral_pings_overview = []
 
@@ -151,16 +151,16 @@ def save_pings_overview(match_list, match_settings, player_puuid, save_path, pla
 
                 geral_pings_overview.append(pings_overview)
 
-    analysis_ping_overview(geral_pings_overview, save_path,player_alias)
-
+    pings_overview_analysis = analysis_ping_overview(geral_pings_overview, save_path,player_alias)
+    
     geral_pings_overview = format_json(geral_pings_overview)
 
-    save_file = save_path + f"ping_overview_{player_alias}.json"
+    save_file = f"{save_path}ping_overview_{player_alias}.json"
     with open(save_file, "w") as outfile:
 
         outfile.write(geral_pings_overview)
 
-    return
+    return pings_overview_analysis
 
 
 def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
@@ -184,6 +184,7 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
     analysis_pings['end_date'] = end_date
     analysis_pings['pings_count'] = df['totalPings'].count()
     analysis_pings['pings_mean'] = df['totalPings'].mean()
+    analysis_pings['pings_ratio'] = df['ratioPings'].mean()
     analysis_pings['pings_median'] = df['totalPings'].median()
     analysis_pings['pings_sum'] = df['totalPings'].sum()
     analysis_pings['pings_std'] = df['totalPings'].std()
@@ -203,24 +204,12 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
     analysis_pings['lose_pings_ratio_std'] = lose_df['ratioPings'].std()
  
 
-    analysis_pings = json.dumps(analysis_pings, default=str,indent=4)
+    analysis_pings_formatted = json.dumps(analysis_pings, default=str,indent=4)
     save_file = f"{save_path}ping_overview_analysis_{player_alias}.json"
     with open(save_file, "w") as outfile:
-        outfile.write(analysis_pings)
+        outfile.write(analysis_pings_formatted)
 
-    # print(f"Player mean => {analysis_pings['pings_mean']}")
-
-    # analysis_pings = format_json(analysis_pings)
-    
-    # save_file = f"{save_path}ping_overview_analysis_{player_alias}.json"
-    # with open(save_file, "w") as outfile:
-
-    #     outfile.write(analysis_pings)
-
-    
-    print(analysis_pings)
-
-    
+    # print(analysis_pings)
 
     df_ratio_dates_mean = df[['gameCreation', 'ratioPings']].copy()
     df_ratio_dates_mean = df_ratio_dates_mean.groupby(
@@ -258,18 +247,17 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
     file_ratio_pings = f"{save_path}ping_overview_ratio_{player_alias}_line"
     fig_ratio_pings.savefig(file_ratio_pings)
 
-    return
+    return analysis_pings
 
 
 def save_all_players_pings_overview(match_settings, player_type,players_type_alias_puuid):
    
-
+    geral_pings_overview_analysis = []
+    
     for player in  players_type_alias_puuid[player_type] :
 
         player_alias = player
         player_puuid = players_type_alias_puuid[player_type][player]
-
-        
 
         save_path = f"data/{player_type}/{player_alias}/"
 
@@ -278,11 +266,21 @@ def save_all_players_pings_overview(match_settings, player_type,players_type_ali
         raw_matches_data = json.load(raw_data_matchs_file)
         raw_data_matchs_file.close()
 
-        save_pings_overview(raw_matches_data, match_settings, player_puuid, save_path, player_alias)
+        pings_overview_analysis = save_ping_overview(raw_matches_data, match_settings, player_puuid, save_path, player_alias)
+
+        geral_pings_overview_analysis.append(pings_overview_analysis)
+
+    
+    geral_pings_overview_analysis =format_json(geral_pings_overview_analysis)
+
+    save_file =  f"geral_ping_overview_analysis.json"
+    with open(save_file, "w") as outfile:
+
+        outfile.write(geral_pings_overview_analysis)
 
     return
 
-# Set matchs settings search
+# Set matchs settings filter search
 match_settings = {}
 match_settings['game_type'] = ["CUSTOM_GAME", "MATCHED_GAME"]
 match_settings['game_mode'] = ["CLASSIC"]
@@ -293,11 +291,14 @@ file_puuids_alias = open("players_type_alias_puuid.json", "r")
 players_type_alias_puuid = json.loads(file_puuids_alias.read())
 file_puuids_alias.close()
 
-# Select player type and alias
-player_type = 'proplayer'
-# player_alias = 'nataruk'
-# puuid = players_type_alias_puuid[player_type][player_alias]
+# Select player type
+player_type = 'geral'
 
+# Select player alias
+# player_alias = 'nataruk'
+
+# Get player puuid by alias
+# puuid = players_type_alias_puuid[player_type][player_alias]
 
 # # Set path to save player analysis
 # save_path = f"data/{player_type}/{player_alias}/"
@@ -308,9 +309,8 @@ player_type = 'proplayer'
 # raw_matches_data = json.load(raw_data_matchs_file)
 # raw_data_matchs_file.close()
 
-
-# All players type
+# Save all players type
 save_all_players_pings_overview(match_settings,player_type,players_type_alias_puuid)
 
-# Only 1 player
+# Save only 1 player
 # save_pings_overview(raw_matches_data, match_settings,puuid, save_path, player_alias)

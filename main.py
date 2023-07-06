@@ -175,7 +175,17 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
     matchs_count = len(df.index)
     pings_std = df['totalPings'].std()
     pings_mean = df['totalPings'].mean()
-    pings_constancy = ((df['totalPings'] <= (pings_mean + pings_std)) & (df['totalPings']>=(pings_mean - pings_std)).sum())/matchs_count
+    pings_constancy = len(df[
+        (df["totalPings"] <= (pings_mean + pings_std)) & 
+        (df["totalPings"] >= (pings_mean - pings_std))
+        ])
+    pings_constancy = pings_constancy/matchs_count
+    # print(matchs_count)
+    # pings_constancy = pings_constancy/matchs_count
+    # print(pings_constancy)
+    
+
+    
 
     df.sort_values(by=['gameCreation'], inplace=True)
 

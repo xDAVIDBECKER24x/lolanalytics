@@ -203,6 +203,11 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
     analysis_pings['lose_pings_ratio_mean'] = lose_df['ratioPings'].mean()
     analysis_pings['lose_pings_ratio_std'] = lose_df['ratioPings'].std()
  
+    for key in analysis_pings:
+        if(isinstance(analysis_pings[key], float)):
+            analysis_pings[key] = round(analysis_pings[key],3)
+        
+
 
     analysis_pings_formatted = json.dumps(analysis_pings, default=str,indent=4)
     save_file = f"{save_path}ping_overview_analysis_{player_alias}.json"
@@ -294,7 +299,7 @@ players_type_alias_puuid = json.loads(file_puuids_alias.read())
 file_puuids_alias.close()
 
 # Select player type
-player_type = 'alligators'
+player_type = 'proplayer'
 
 # Select player alias
 # player_alias = 'nataruk'

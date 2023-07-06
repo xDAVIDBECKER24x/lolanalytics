@@ -247,6 +247,8 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
     file_ratio_pings = f"{save_path}ping_overview_ratio_{player_alias}_line"
     fig_ratio_pings.savefig(file_ratio_pings)
 
+    plt.close()
+
     return analysis_pings
 
 
@@ -273,7 +275,7 @@ def save_all_players_pings_overview(match_settings, player_type,players_type_ali
     
     geral_pings_overview_analysis =format_json(geral_pings_overview_analysis)
 
-    save_file =  f"geral_ping_overview_analysis.json"
+    save_file =  f"analysis/{player_type}_geral_ping_overview_analysis.json"
     with open(save_file, "w") as outfile:
 
         outfile.write(geral_pings_overview_analysis)
@@ -292,7 +294,7 @@ players_type_alias_puuid = json.loads(file_puuids_alias.read())
 file_puuids_alias.close()
 
 # Select player type
-player_type = 'geral'
+player_type = 'alligators'
 
 # Select player alias
 # player_alias = 'nataruk'

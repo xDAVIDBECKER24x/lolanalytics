@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import matplotlib.dates as dates
 from scipy.interpolate import make_interp_spline
-import decimal as dc
+
 
 
 def format_json(json_data):
@@ -92,58 +92,64 @@ def save_pings_overview(match_list, match_settings, puuid, save_path, player_ali
 
         if (check_match_settings(match, match_settings) == True):
 
-            pings_overview = {}
-
             player_data = get_player_match_info_by_player_puuid(match, puuid)
+            
+            if "allInPings" in player_data:
 
-            # Convert miliseconds timestamp to seconds
-            match_duration_seconds = match['info']['gameDuration']
-            match_duration = strftime(
-                "%H:%M:%S", gmtime(match_duration_seconds))
+                pings_overview = {}
 
-            # Convert miliseconds timestamp to date
-            # match_creation = int(match['info']['gameCreation']/1000)
-            # match_creation = datetime.utcfromtimestamp(
-            #     match_creation).strftime('%d-%m-%Y')
-            match_creation = match['info']['gameCreation']
+                # Convert miliseconds timestamp to seconds
+                match_duration_seconds = match['info']['gameDuration']
+                match_duration = strftime(
+                    "%H:%M:%S", gmtime(match_duration_seconds))
 
-            all_in_pings = player_data['allInPings']
-            bait_pings = player_data['baitPings']
-            basic_pings = player_data['basicPings']
-            command_pings = player_data['commandPings']
-            danger_pings = player_data['dangerPings']
-            enemy_missing_pings = player_data['enemyMissingPings']
-            enemy_vision_pings = player_data['enemyVisionPings']
-            get_back_pings = player_data['getBackPings']
-            hold_pings = player_data['holdPings']
-            need_vision_pings = player_data['needVisionPings']
-            on_my_way_pings = player_data['onMyWayPings']
-            push_pings = player_data['pushPings']
-            total_pings = all_in_pings + bait_pings + basic_pings + command_pings + danger_pings + enemy_missing_pings + \
-                enemy_vision_pings + get_back_pings + hold_pings + \
-                need_vision_pings + on_my_way_pings + push_pings
-            ratio_pings = (total_pings/match_duration_seconds)*60
+                # Convert miliseconds timestamp to date
+                # match_creation = int(match['info']['gameCreation']/1000)
+                # match_creation = datetime.utcfromtimestamp(
+                #     match_creation).strftime('%d-%m-%Y')
+                match_creation = match['info']['gameCreation']
+                
+    
+            
+                all_in_pings = player_data['allInPings']
+                bait_pings = player_data['baitPings']
+                command_pings = player_data['commandPings']
+                danger_pings = player_data['dangerPings']  
+                enemy_missing_pings = player_data['enemyMissingPings']
+                enemy_vision_pings = player_data['enemyVisionPings']
+                get_back_pings = player_data['getBackPings'] 
+                hold_pings = player_data['getBackPings'] 
+                need_vision_pings = player_data['needVisionPings']
+                
+                basic_pings = player_data['basicPings']
+                on_my_way_pings = player_data['onMyWayPings']
+                push_pings = player_data['pushPings']
+                total_pings = all_in_pings + bait_pings + basic_pings + command_pings + danger_pings + enemy_missing_pings + \
+                    enemy_vision_pings + get_back_pings + hold_pings + \
+                    need_vision_pings + on_my_way_pings + push_pings
+                ratio_pings = (total_pings/match_duration_seconds)*60
 
-            pings_overview['gameCreation'] = match_creation
-            pings_overview['gameDuration'] = match_duration
-            pings_overview['championName'] = player_data['championName']
-            pings_overview['win'] = player_data['win']
-            pings_overview['totalPings'] = total_pings
-            pings_overview['ratioPings'] = ratio_pings
-            pings_overview['allInPings'] = all_in_pings
-            pings_overview['baitPings'] = bait_pings
-            pings_overview['basicPings'] = basic_pings
-            pings_overview['commandPings'] = command_pings
-            pings_overview['dangerPings'] = danger_pings
-            pings_overview['enemyMissingPings'] = enemy_missing_pings
-            pings_overview['enemyVisionPings'] = enemy_vision_pings
-            pings_overview['getBackPings'] = get_back_pings
-            pings_overview['holdPings'] = hold_pings
-            pings_overview['needVisionPings'] = need_vision_pings
-            pings_overview['onMyWayPings'] = on_my_way_pings
-            pings_overview['pushPings'] = push_pings
 
-            geral_pings_overview.append(pings_overview)
+                pings_overview['gameCreation'] = match_creation
+                pings_overview['gameDuration'] = match_duration
+                pings_overview['championName'] = player_data['championName']
+                pings_overview['win'] = player_data['win']
+                pings_overview['totalPings'] = total_pings
+                pings_overview['ratioPings'] = ratio_pings
+                pings_overview['allInPings'] = all_in_pings
+                pings_overview['baitPings'] = bait_pings
+                pings_overview['basicPings'] = basic_pings
+                pings_overview['commandPings'] = command_pings
+                pings_overview['dangerPings'] = danger_pings
+                pings_overview['enemyMissingPings'] = enemy_missing_pings
+                pings_overview['enemyVisionPings'] = enemy_vision_pings
+                pings_overview['getBackPings'] = get_back_pings
+                pings_overview['holdPings'] = hold_pings
+                pings_overview['needVisionPings'] = need_vision_pings
+                pings_overview['onMyWayPings'] = on_my_way_pings
+                pings_overview['pushPings'] = push_pings
+
+                geral_pings_overview.append(pings_overview)
 
     analysis_ping_overview(geral_pings_overview, save_path)
 
@@ -197,29 +203,19 @@ def analysis_ping_overview(geral_pings_overview, save_path):
 
     print(analysis_pings)
 
-    total_pings_mean = df['totalPings'].mean()
-    total_pings_median = df['totalPings'].median()
-    total_pings_count = df['totalPings'].count()
-    total_pings_sum = df['totalPings'].sum()
-    total_pings_min = df['totalPings'].min()
-    total_pings_max = df['totalPings'].max()
-    total_pings_std = df['totalPings'].std()
-    total_pings_var = df['totalPings'].var()
+
 
     # date_start= df['gameCreation'].min()
     # date_end = df['gameCreation'].max()
 
-    # start_date = df['gameCreation'].min()
-    # end_date = df['gameCreation'].max()
+    start_date = df['gameCreation'].min()
+    end_date = df['gameCreation'].max()
 
     df_ratio_dates_mean = df[['gameCreation', 'ratioPings']].copy()
     df_ratio_dates_mean = df_ratio_dates_mean.groupby(
         'gameCreation', as_index=False)['ratioPings'].mean()
 
     # print(df_ratio_dates_mean)
-
-    max_date = df['gameCreation'].max()
-    min_date = df['gameCreation'].min()
 
     max_pings = df['totalPings'].max()
     max_ratio = df['ratioPings'].max()
@@ -231,6 +227,7 @@ def analysis_ping_overview(geral_pings_overview, save_path):
 
     axs_total_pings.set_ylim([0, max_pings+(max_pings/10)])
     axs_total_pings.set_xticks(df['gameCreation'])
+    axs_total_pings.set_xticklabels(df['gameCreation'],rotation=45)
     axs_total_pings.xaxis.set_major_locator(mdates.MonthLocator(interval=1))
     axs_total_pings.set_xlabel("")
     axs_total_pings.set_ylabel("Quantidade de Pings")
@@ -244,7 +241,7 @@ def analysis_ping_overview(geral_pings_overview, save_path):
     fig_ratio_pings, axs_ratio_pings = plt.subplots(figsize=(8, 4))
     df_ratio_dates_mean.plot(
         kind='line', x='gameCreation', y='ratioPings', ax=axs_ratio_pings)
-
+    axs_ratio_pings.xaxis.set_major_locator(mdates.MonthLocator(interval=1))
     axs_ratio_pings.legend(['Frequência'])
     axs_ratio_pings.set_xlabel("")
     axs_ratio_pings.set_ylabel("Pings/Minuto")
@@ -268,13 +265,13 @@ puuids_alias = json.loads(file_puuids_alias.read())
 file_puuids_alias.close()
 
 # Select player type and alias
-player_type = 'raky'
-player_alias = 'akaashi'
+player_type = 'proplayer'
+player_alias = 'titan'
 puuid = puuids_alias[player_type][player_alias]
 print("puuid => "+puuid)
 
 # Set path to save player analysis
-save_path = f"data/{player_type }/{player_alias}/"
+save_path = f"data/{player_type}/{player_alias}/"
 
 # Load raw data from exported matches json
 raw_data_matchs_file = f"{save_path}matchs_metadata_{player_alias}.json"

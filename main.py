@@ -181,6 +181,8 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
     pings_constancy = pings_constancy/matchs_count
     
     pings_most_frequency = df["totalPings"].mode()
+    pings_most_frequency = df['totalPings'].value_counts()[:5].index.tolist()
+    # pings_most_frequency_count = len(df["totalPings"] == pings_most_frequency )
 
     # print(matchs_count)
     # pings_constancy = pings_constancy/matchs_count
@@ -200,7 +202,7 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
     analysis_pings['end_date'] = end_date
     analysis_pings['pings_mean'] = pings_mean 
     analysis_pings['pings_constancy'] = pings_constancy 
-    analysis_pings['pings_most_frequency'] = pings_most_frequency[0] 
+    analysis_pings['pings_most_frequency'] = pings_most_frequency
     analysis_pings['pings_ratio'] = df['ratioPings'].mean()
     analysis_pings['pings_median'] = df['totalPings'].median()
     analysis_pings['pings_sum'] = df['totalPings'].sum()

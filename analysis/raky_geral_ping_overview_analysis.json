@@ -6,7 +6,13 @@
         "end_date": "2023-06-27",
         "pings_mean": 10.296,
         "pings_constancy": 0.718,
-        "pings_most_frequency": 8,
+        "pings_most_frequency": [
+            8,
+            10,
+            9,
+            7,
+            6
+        ],
         "pings_ratio": 0.379,
         "pings_median": 9.0,
         "pings_sum": 5148,
@@ -33,7 +39,13 @@
         "end_date": "2023-06-27",
         "pings_mean": 26.637,
         "pings_constancy": 0.76,
-        "pings_most_frequency": 7,
+        "pings_most_frequency": [
+            7,
+            24,
+            14,
+            13,
+            16
+        ],
         "pings_ratio": 0.965,
         "pings_median": 22.0,
         "pings_sum": 13958,
@@ -60,7 +72,13 @@
         "end_date": "2023-06-28",
         "pings_mean": 7.371,
         "pings_constancy": 0.755,
-        "pings_most_frequency": 4,
+        "pings_most_frequency": [
+            4,
+            3,
+            6,
+            7,
+            5
+        ],
         "pings_ratio": 0.265,
         "pings_median": 6.0,
         "pings_sum": 4968,
@@ -87,7 +105,13 @@
         "end_date": "2023-07-02",
         "pings_mean": 14.941,
         "pings_constancy": 0.737,
-        "pings_most_frequency": 10,
+        "pings_most_frequency": [
+            10,
+            4,
+            11,
+            6,
+            7
+        ],
         "pings_ratio": 0.548,
         "pings_median": 13.0,
         "pings_sum": 11475,
@@ -114,7 +138,13 @@
         "end_date": "2023-07-03",
         "pings_mean": 56.591,
         "pings_constancy": 0.72,
-        "pings_most_frequency": 56,
+        "pings_most_frequency": [
+            56,
+            43,
+            61,
+            47,
+            44
+        ],
         "pings_ratio": 1.992,
         "pings_median": 52.0,
         "pings_sum": 5263,
@@ -141,7 +171,13 @@
         "end_date": "2023-07-04",
         "pings_mean": 26.637,
         "pings_constancy": 0.692,
-        "pings_most_frequency": 0,
+        "pings_most_frequency": [
+            16,
+            14,
+            0,
+            15,
+            19
+        ],
         "pings_ratio": 1.023,
         "pings_median": 23.0,
         "pings_sum": 15929,
@@ -168,7 +204,13 @@
         "end_date": "2023-07-05",
         "pings_mean": 25.163,
         "pings_constancy": 0.688,
-        "pings_most_frequency": 12,
+        "pings_most_frequency": [
+            22,
+            19,
+            12,
+            18,
+            27
+        ],
         "pings_ratio": 0.892,
         "pings_median": 23.0,
         "pings_sum": 17740,
@@ -195,7 +237,13 @@
         "end_date": "2023-07-02",
         "pings_mean": 17.315,
         "pings_constancy": 0.71,
-        "pings_most_frequency": 13,
+        "pings_most_frequency": [
+            14,
+            13,
+            12,
+            9,
+            11
+        ],
         "pings_ratio": 0.627,
         "pings_median": 15.0,
         "pings_sum": 14164,

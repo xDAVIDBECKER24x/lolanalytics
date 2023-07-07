@@ -5,7 +5,13 @@
     "end_date": "2023-07-02",
     "pings_mean": 17.315,
     "pings_constancy": 0.71,
-    "pings_most_frequency": "13",
+    "pings_most_frequency": [
+        14,
+        13,
+        12,
+        9,
+        11
+    ],
     "pings_ratio": 0.627,
     "pings_median": 15.0,
     "pings_sum": "14164",

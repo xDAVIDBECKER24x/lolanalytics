@@ -173,12 +173,36 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
     matchs_count = len(df.index)
     pings_std = df['totalPings'].std()
     pings_mean = df['totalPings'].mean()
-    pings_constancy = len(df[
+    pings_ratio_mean = df['ratioPings'].mean()
+    pings_ratio_std = df['ratioPings'].std()
+    pings_mean_constancy_indicator_1 = len(df[
         (df["totalPings"] <= (pings_mean + pings_std)) & 
         (df["totalPings"] >= (pings_mean - pings_std))
         ])
+    pings_mean_constancy_indicator_2 = len(df[
+        (df["totalPings"] <= (pings_mean + (2*pings_std))) & 
+        (df["totalPings"] >= (pings_mean - (2*pings_std)))
+        ])
+    pings_mean_constancy_indicator_3 = len(df[
+        (df["totalPings"] <= (pings_mean + (3*pings_std))) & 
+        (df["totalPings"] >= (pings_mean - (3*pings_std)))
+        ])
+    pings_ratio_constancy_indicator_1 = len(df[
+        (df["ratioPings"] <= (pings_ratio_mean + pings_ratio_std)) & 
+        (df["ratioPings"] >= (pings_ratio_mean - pings_ratio_std))
+        ])
+    pings_ratio_constancy_indicator_2 = len(df[
+        (df["ratioPings"] <= (pings_ratio_mean + (2*pings_ratio_std))) & 
+        (df["ratioPings"] >= (pings_ratio_mean - (2*pings_ratio_std)))
+        ])
+    pings_ratio_constancy_indicator_3 = len(df[
+        (df["ratioPings"] <= (pings_ratio_mean + (3*pings_ratio_std))) & 
+        (df["ratioPings"] >= (pings_ratio_mean - (3*pings_ratio_std)))
+        ])
   
-    pings_constancy = pings_constancy/matchs_count
+    pings_mean_constancy_indicator_1 = (pings_mean_constancy_indicator_1/matchs_count)*100
+    pings_mean_constancy_indicator_2 = (pings_mean_constancy_indicator_2/matchs_count)*100
+    pings_mean_constancy_indicator_3 = (pings_mean_constancy_indicator_3/matchs_count)*100
     
     pings_most_frequency = df["totalPings"].mode()
     pings_most_frequency = df['totalPings'].value_counts()[:5].index.tolist()
@@ -200,13 +224,19 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
     analysis_pings['matchs_count'] = matchs_count
     analysis_pings['start_date'] = start_date
     analysis_pings['end_date'] = end_date
-    analysis_pings['pings_mean'] = pings_mean 
-    analysis_pings['pings_constancy'] = pings_constancy 
-    analysis_pings['pings_most_frequency'] = pings_most_frequency
-    analysis_pings['pings_ratio'] = df['ratioPings'].mean()
-    analysis_pings['pings_median'] = df['totalPings'].median()
     analysis_pings['pings_sum'] = df['totalPings'].sum()
+    analysis_pings['pings_mean'] = pings_mean 
+    analysis_pings['pings_ratio'] = pings_ratio_mean
+    analysis_pings['pings_median'] = df['totalPings'].median()
+    analysis_pings['pings_most_frequency'] = pings_most_frequency
+    analysis_pings['pings_mean_constancy_indicator_1'] = pings_mean_constancy_indicator_1 
+    analysis_pings['pings_mean_constancy_indicator_2'] = pings_mean_constancy_indicator_2
+    analysis_pings['pings_mean_constancy_indicator_3'] = pings_mean_constancy_indicator_3
+    analysis_pings['pings_ratio_constancy_indicator_1'] = pings_ratio_constancy_indicator_1 
+    analysis_pings['pings_ratio_constancy_indicator_2'] = pings_ratio_constancy_indicator_2
+    analysis_pings['pings_ratio_constancy_indicator_3'] = pings_ratio_constancy_indicator_3
     analysis_pings['pings_std'] = pings_std
+    analysis_pings['pings_ratio_std'] = pings_ratio_std
     analysis_pings['win_pings_count'] = win_df['totalPings'].count()
     analysis_pings['win_pings_mean'] = win_df['totalPings'].mean()
     analysis_pings['win_pings_median'] = win_df['totalPings'].median()

@@ -1,6 +1,4 @@
-import csv
 import json
-import string
 import pandas as pd
 import numpy as np
 from time import gmtime
@@ -182,6 +180,8 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
   
     pings_constancy = pings_constancy/matchs_count
     
+    pings_most_frequency = df["totalPings"].mode()
+
     # print(matchs_count)
     # pings_constancy = pings_constancy/matchs_count
     # print(pings_constancy)
@@ -200,6 +200,7 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
     analysis_pings['end_date'] = end_date
     analysis_pings['pings_mean'] = pings_mean 
     analysis_pings['pings_constancy'] = pings_constancy 
+    analysis_pings['pings_most_frequency'] = pings_most_frequency[0] 
     analysis_pings['pings_ratio'] = df['ratioPings'].mean()
     analysis_pings['pings_median'] = df['totalPings'].median()
     analysis_pings['pings_sum'] = df['totalPings'].sum()
@@ -315,7 +316,7 @@ players_type_alias_puuid = json.loads(file_puuids_alias.read())
 file_puuids_alias.close()
 
 # Select player type
-player_type = 'geral'
+player_type = 'raky'
 
 # Select player alias
 # player_alias = 'nataruk'

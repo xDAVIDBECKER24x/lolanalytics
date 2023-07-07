@@ -204,6 +204,10 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
     pings_mean_constancy_indicator_2 = (pings_mean_constancy_indicator_2/matchs_count)*100
     pings_mean_constancy_indicator_3 = (pings_mean_constancy_indicator_3/matchs_count)*100
     
+    pings_ratio_constancy_indicator_1 = (pings_ratio_constancy_indicator_1/matchs_count)*100
+    pings_ratio_constancy_indicator_2 = (pings_ratio_constancy_indicator_2/matchs_count)*100
+    pings_ratio_constancy_indicator_3 = (pings_ratio_constancy_indicator_3/matchs_count)*100
+    
     pings_most_frequency = df["totalPings"].mode()
     pings_most_frequency = df['totalPings'].value_counts()[:5].index.tolist()
     # pings_most_frequency_count = len(df["totalPings"] == pings_most_frequency )

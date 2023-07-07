@@ -212,7 +212,8 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
     pings_most_frequency = df['totalPings'].value_counts()[:5].index.tolist()
    
     df_frequency = df['totalPings'].value_counts()
-    print(df_frequency)
+    print(df_frequency.values)
+    print(df_frequency.index.values)
     # print(df_frequency.index.value_counts())
     # print(df_frequency.tolist())
 
@@ -295,7 +296,9 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
 
     file_total_pings = f"{save_path}ping_overview_total_{player_alias}_scatter"
     fig_total_pings.savefig(file_total_pings)
-
+    
+    plt.close()
+    
     # Ping Ratio Overview Line Chart
     fig_ratio_pings, axs_ratio_pings = plt.subplots(figsize=(8, 4))
     df_ratio_dates_mean.plot(
@@ -309,18 +312,20 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
     file_ratio_pings = f"{save_path}ping_overview_ratio_{player_alias}_line"
     fig_ratio_pings.savefig(file_ratio_pings)
 
-    # Ping Ratio Overview Bar Chart
+    idx = df_frequency.index.values
+    frequency = df_frequency.values
 
-    # fig_ratio_pings, axs_ratio_pings = plt.subplots(figsize=(8, 4))
-    # df.plot(
-    #     kind='bar',  y='ratioPings', ax=axs_ratio_pings)
-    # axs_ratio_pings.set_xlabel("")
-    # axs_ratio_pings.set_ylabel("Pings/Minuto")
-    # axs_ratio_pings.set_title(f"Frequência Pings {player_alias.capitalize()}")
+    plt.close()
+    
+    #Ping Ratio Overview Bar Chart
+    fig_frequency_pings, axs_frequency_pings = plt.subplots(figsize=(8, 4))
+    df.plot(kind='bar',x=idx,  y=frequency, ax=axs_frequency_pings)
+    axs_frequency_pings.set_xlabel("")
+    axs_frequency_pings.set_ylabel("Pings")
+    axs_frequency_pings.set_title(f"Distrituição Frequência {player_alias.capitalize()}")
 
-    # file_ratio_pings = f"{save_path}ping_overview_ratio_{player_alias}_bar"
-    # fig_ratio_pings.savefig(file_ratio_pings)
-
+    file_frequency_pings = f"{save_path}ping_overview_ratio_{player_alias}_bar"
+    fig_frequency_pings.savefig(file_frequency_pings)
 
     plt.close()
 

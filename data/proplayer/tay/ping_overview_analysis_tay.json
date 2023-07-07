@@ -1,9 +1,10 @@
 {
     "player_alias": "tay",
+    "matchs_count": 615,
     "start_date": "2022-11-02",
     "end_date": "2023-07-01",
-    "pings_count": "615",
     "pings_mean": 20.933,
+    "pings_constancy": 0.712,
     "pings_ratio": 0.778,
     "pings_median": 19.0,
     "pings_sum": "12874",

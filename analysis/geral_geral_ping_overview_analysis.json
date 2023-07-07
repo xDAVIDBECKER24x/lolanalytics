@@ -1,10 +1,11 @@
 [
     {
         "player_alias": "trotzk",
+        "matchs_count": 66,
         "start_date": "2022-11-02",
         "end_date": "2023-06-25",
-        "pings_count": 66,
         "pings_mean": 9.909,
+        "pings_constancy": 0.742,
         "pings_ratio": 0.392,
         "pings_median": 8.0,
         "pings_sum": 654,
@@ -26,10 +27,11 @@
     },
     {
         "player_alias": "beckynho",
+        "matchs_count": 286,
         "start_date": "2022-11-11",
         "end_date": "2023-07-05",
-        "pings_count": 286,
         "pings_mean": 22.196,
+        "pings_constancy": 0.689,
         "pings_ratio": 0.779,
         "pings_median": 21.0,
         "pings_sum": 6348,
@@ -48,5 +50,31 @@
         "lose_pings_std": 12.131,
         "lose_pings_ratio_mean": 0.733,
         "lose_pings_ratio_std": 0.398
+    },
+    {
+        "player_alias": "bicullo",
+        "matchs_count": 76,
+        "start_date": "2022-11-05",
+        "end_date": "2023-07-06",
+        "pings_mean": 10.289,
+        "pings_constancy": 0.684,
+        "pings_ratio": 0.366,
+        "pings_median": 8.0,
+        "pings_sum": 782,
+        "pings_std": 7.444,
+        "win_pings_count": 39,
+        "win_pings_mean": 11.308,
+        "win_pings_median": 10.0,
+        "win_pings_sum": 441,
+        "win_pings_std": 8.144,
+        "win_pings_ratio_mean": 0.394,
+        "win_pings_ratio_std": 0.294,
+        "lose_pings_count": 37,
+        "lose_pings_mean": 9.216,
+        "lose_pings_median": 6.0,
+        "lose_pings_sum": 341,
+        "lose_pings_std": 6.566,
+        "lose_pings_ratio_mean": 0.336,
+        "lose_pings_ratio_std": 0.242
     }
 ]

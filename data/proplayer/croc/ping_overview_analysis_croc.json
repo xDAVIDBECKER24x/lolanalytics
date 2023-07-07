@@ -1,9 +1,10 @@
 {
     "player_alias": "croc",
+    "matchs_count": 563,
     "start_date": "2023-01-08",
     "end_date": "2023-06-30",
-    "pings_count": "563",
     "pings_mean": 42.108,
+    "pings_constancy": 0.698,
     "pings_ratio": 1.609,
     "pings_median": 38.0,
     "pings_sum": "23707",

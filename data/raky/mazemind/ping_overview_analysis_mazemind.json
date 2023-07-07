@@ -4,7 +4,7 @@
     "start_date": "2023-04-01",
     "end_date": "2023-07-04",
     "pings_mean": 26.637,
-    "pings_constancy": 19.096,
+    "pings_constancy": 0.692,
     "pings_ratio": 1.023,
     "pings_median": 23.0,
     "pings_sum": "15929",

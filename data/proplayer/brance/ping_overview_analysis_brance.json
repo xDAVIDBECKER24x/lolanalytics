@@ -1,9 +1,10 @@
 {
     "player_alias": "brance",
+    "matchs_count": 864,
     "start_date": "2023-01-25",
     "end_date": "2023-07-01",
-    "pings_count": "864",
     "pings_mean": 78.78,
+    "pings_constancy": 0.708,
     "pings_ratio": 3.133,
     "pings_median": 73.0,
     "pings_sum": "68066",

@@ -179,14 +179,13 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
         (df["totalPings"] <= (pings_mean + pings_std)) & 
         (df["totalPings"] >= (pings_mean - pings_std))
         ])
+  
     pings_constancy = pings_constancy/matchs_count
+    
     # print(matchs_count)
     # pings_constancy = pings_constancy/matchs_count
     # print(pings_constancy)
     
-
-    
-
     df.sort_values(by=['gameCreation'], inplace=True)
 
     win_df = df[df["win"] == True]
@@ -195,7 +194,6 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
     start_date = df['gameCreation'].min()
     end_date = df['gameCreation'].max()
     
-
     analysis_pings['player_alias'] = player_alias
     analysis_pings['matchs_count'] = matchs_count
     analysis_pings['start_date'] = start_date
@@ -206,7 +204,6 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
     analysis_pings['pings_median'] = df['totalPings'].median()
     analysis_pings['pings_sum'] = df['totalPings'].sum()
     analysis_pings['pings_std'] = pings_std
-    analysis_pings['pings_constancy'] = pings_std
     analysis_pings['win_pings_count'] = win_df['totalPings'].count()
     analysis_pings['win_pings_mean'] = win_df['totalPings'].mean()
     analysis_pings['win_pings_median'] = win_df['totalPings'].median()
@@ -318,7 +315,7 @@ players_type_alias_puuid = json.loads(file_puuids_alias.read())
 file_puuids_alias.close()
 
 # Select player type
-player_type = 'raky'
+player_type = 'geral'
 
 # Select player alias
 # player_alias = 'nataruk'

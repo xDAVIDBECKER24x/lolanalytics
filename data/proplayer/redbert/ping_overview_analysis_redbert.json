@@ -1,9 +1,10 @@
 {
     "player_alias": "redbert",
+    "matchs_count": 492,
     "start_date": "2022-11-03",
     "end_date": "2023-06-24",
-    "pings_count": "492",
     "pings_mean": 10.691,
+    "pings_constancy": 0.752,
     "pings_ratio": 0.416,
     "pings_median": 9.0,
     "pings_sum": "5260",

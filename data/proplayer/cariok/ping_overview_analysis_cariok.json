@@ -1,9 +1,10 @@
 {
     "player_alias": "cariok",
+    "matchs_count": 532,
     "start_date": "2022-11-03",
     "end_date": "2023-06-29",
-    "pings_count": "532",
     "pings_mean": 56.338,
+    "pings_constancy": 0.746,
     "pings_ratio": 2.161,
     "pings_median": 53.0,
     "pings_sum": "29972",

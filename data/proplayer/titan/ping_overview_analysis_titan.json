@@ -1,9 +1,10 @@
 {
     "player_alias": "titan",
+    "matchs_count": 651,
     "start_date": "2022-11-02",
     "end_date": "2023-06-27",
-    "pings_count": "651",
     "pings_mean": 33.227,
+    "pings_constancy": 0.742,
     "pings_ratio": 1.234,
     "pings_median": 29.0,
     "pings_sum": "21631",

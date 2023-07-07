@@ -1,9 +1,10 @@
 {
     "player_alias": "ninjakiwi",
+    "matchs_count": 803,
     "start_date": "2022-11-04",
     "end_date": "2023-07-01",
-    "pings_count": "803",
     "pings_mean": 62.166,
+    "pings_constancy": 0.689,
     "pings_ratio": 2.402,
     "pings_median": 59.0,
     "pings_sum": "49919",

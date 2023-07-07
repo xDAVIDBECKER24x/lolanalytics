@@ -1,9 +1,10 @@
 {
     "player_alias": "zay",
+    "matchs_count": 545,
     "start_date": "2022-11-02",
     "end_date": "2023-06-30",
-    "pings_count": "545",
     "pings_mean": 37.028,
+    "pings_constancy": 0.73,
     "pings_ratio": 1.419,
     "pings_median": 34.0,
     "pings_sum": "20180",

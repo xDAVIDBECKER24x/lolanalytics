@@ -1,6 +1,6 @@
 import requests
 
-api_key = "RGAPI-ac744354-31d1-45ac-80ad-164d76a16ba9"
+api_key = "RGAPI-506f17b4-53e2-4024-8147-1955e6c1fb56"
 
 def get_player_data_by_name(name):
 
@@ -17,7 +17,7 @@ def get_match_data_by_player_id(id):
 
 
 
-username = 'FAU Mackenzie'
+username = 'Bicullo'
 
 player = get_player_data_by_name(username)
 print(f"Gettng {player['name']} data statistics => {player['puuid']}")

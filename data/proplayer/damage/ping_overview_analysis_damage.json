@@ -1,9 +1,10 @@
 {
     "player_alias": "damage",
+    "matchs_count": 412,
     "start_date": "2023-01-09",
     "end_date": "2023-05-18",
-    "pings_count": "412",
     "pings_mean": 47.58,
+    "pings_constancy": 0.709,
     "pings_ratio": 1.819,
     "pings_median": 43.0,
     "pings_sum": "19603",

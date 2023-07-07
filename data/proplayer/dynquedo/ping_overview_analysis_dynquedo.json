@@ -1,9 +1,10 @@
 {
     "player_alias": "dynquedo",
+    "matchs_count": 367,
     "start_date": "2022-12-20",
     "end_date": "2023-06-30",
-    "pings_count": "367",
     "pings_mean": 44.629,
+    "pings_constancy": 0.678,
     "pings_ratio": 1.703,
     "pings_median": 42.0,
     "pings_sum": "16379",

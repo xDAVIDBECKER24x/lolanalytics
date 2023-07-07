@@ -1,9 +1,10 @@
 {
     "player_alias": "beckynho",
+    "matchs_count": 286,
     "start_date": "2022-11-11",
     "end_date": "2023-07-05",
-    "pings_count": "286",
     "pings_mean": 22.196,
+    "pings_constancy": 0.689,
     "pings_ratio": 0.779,
     "pings_median": 21.0,
     "pings_sum": "6348",

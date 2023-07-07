@@ -1,9 +1,10 @@
 {
     "player_alias": "aegis",
+    "matchs_count": 576,
     "start_date": "2022-11-03",
     "end_date": "2023-06-12",
-    "pings_count": "576",
     "pings_mean": 62.931,
+    "pings_constancy": 0.696,
     "pings_ratio": 2.292,
     "pings_median": 59.0,
     "pings_sum": "36248",

@@ -1,9 +1,10 @@
 {
     "player_alias": "robo",
+    "matchs_count": 523,
     "start_date": "2022-11-02",
     "end_date": "2023-06-29",
-    "pings_count": "523",
     "pings_mean": 18.474,
+    "pings_constancy": 0.683,
     "pings_ratio": 0.71,
     "pings_median": 17.0,
     "pings_sum": "9662",

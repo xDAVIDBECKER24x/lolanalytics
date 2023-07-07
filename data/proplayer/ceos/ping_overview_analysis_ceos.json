@@ -1,9 +1,10 @@
 {
     "player_alias": "ceos",
+    "matchs_count": 664,
     "start_date": "2022-11-07",
     "end_date": "2023-06-30",
-    "pings_count": "664",
     "pings_mean": 48.023,
+    "pings_constancy": 0.712,
     "pings_ratio": 1.888,
     "pings_median": 45.0,
     "pings_sum": "31887",

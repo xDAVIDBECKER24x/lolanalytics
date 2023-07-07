@@ -1,9 +1,10 @@
 {
     "player_alias": "trotzk",
+    "matchs_count": 66,
     "start_date": "2022-11-02",
     "end_date": "2023-06-25",
-    "pings_count": "66",
     "pings_mean": 9.909,
+    "pings_constancy": 0.742,
     "pings_ratio": 0.392,
     "pings_median": 8.0,
     "pings_sum": "654",

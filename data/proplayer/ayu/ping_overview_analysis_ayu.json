@@ -1,9 +1,10 @@
 {
     "player_alias": "ayu",
+    "matchs_count": 11,
     "start_date": "2023-03-27",
     "end_date": "2023-04-01",
-    "pings_count": "11",
     "pings_mean": 8.545,
+    "pings_constancy": 0.818,
     "pings_ratio": 0.361,
     "pings_median": 3.0,
     "pings_sum": "94",

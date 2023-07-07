@@ -1,9 +1,10 @@
 {
     "player_alias": "tinows",
+    "matchs_count": 719,
     "start_date": "2022-11-02",
     "end_date": "2023-06-29",
-    "pings_count": "719",
     "pings_mean": 27.451,
+    "pings_constancy": 0.694,
     "pings_ratio": 1.056,
     "pings_median": 26.0,
     "pings_sum": "19737",

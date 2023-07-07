@@ -210,16 +210,19 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
     
     pings_most_frequency = df["totalPings"].mode()
     pings_most_frequency = df['totalPings'].value_counts()[:5].index.tolist()
-    # pings_most_frequency_count = len(df["totalPings"] == pings_most_frequency )
+   
+    df_frequency = df['totalPings'].value_counts()
+    print(df_frequency)
+    # print(df_frequency.index.value_counts())
+    # print(df_frequency.tolist())
 
-    # print(matchs_count)
-    # pings_constancy = pings_constancy/matchs_count
-    # print(pings_constancy)
-    
     df.sort_values(by=['gameCreation'], inplace=True)
 
     win_df = df[df["win"] == True]
     lose_df = df[df['win'] == False]
+
+    wins = win_df['totalPings'].count()
+    winrate = (wins/matchs_count)*100
 
     start_date = df['gameCreation'].min()
     end_date = df['gameCreation'].max()
@@ -228,6 +231,7 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
     analysis_pings['matchs_count'] = matchs_count
     analysis_pings['start_date'] = start_date
     analysis_pings['end_date'] = end_date
+    analysis_pings['winrate'] = winrate
     analysis_pings['pings_sum'] = df['totalPings'].sum()
     analysis_pings['pings_mean'] = pings_mean 
     analysis_pings['pings_ratio'] = pings_ratio_mean
@@ -241,14 +245,14 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
     analysis_pings['pings_ratio_constancy_indicator_3'] = pings_ratio_constancy_indicator_3
     analysis_pings['pings_std'] = pings_std
     analysis_pings['pings_ratio_std'] = pings_ratio_std
-    analysis_pings['win_pings_count'] = win_df['totalPings'].count()
+    analysis_pings['wins_count'] = win_df['totalPings'].count() 
     analysis_pings['win_pings_mean'] = win_df['totalPings'].mean()
     analysis_pings['win_pings_median'] = win_df['totalPings'].median()
     analysis_pings['win_pings_sum'] = win_df['totalPings'].sum()
     analysis_pings['win_pings_std'] = win_df['totalPings'].std()
     analysis_pings['win_pings_ratio_mean'] = win_df['ratioPings'].mean()
     analysis_pings['win_pings_ratio_std'] = win_df['ratioPings'].std()
-    analysis_pings['lose_pings_count'] = lose_df['totalPings'].count()
+    analysis_pings['lose_count'] = lose_df['totalPings'].count()
     analysis_pings['lose_pings_mean'] = lose_df['totalPings'].mean()
     analysis_pings['lose_pings_median'] = lose_df['totalPings'].median()
     analysis_pings['lose_pings_sum'] = lose_df['totalPings'].sum()
@@ -267,13 +271,13 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
     with open(save_file, "w") as outfile:
         outfile.write(analysis_pings_formatted)
 
-    # print(analysis_pings)
 
     df_ratio_dates_mean = df[['gameCreation', 'ratioPings']].copy()
     df_ratio_dates_mean = df_ratio_dates_mean.groupby(
         'gameCreation', as_index=False)['ratioPings'].mean()
 
     max_pings = df['totalPings'].max()
+    min_pings = df['totalPings'].min()
     max_ratio = df['ratioPings'].max()
 
     # Ping Total Overview Scatter Chart
@@ -292,7 +296,7 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
     file_total_pings = f"{save_path}ping_overview_total_{player_alias}_scatter"
     fig_total_pings.savefig(file_total_pings)
 
-    # Ping Per Minute Overview Line Chart
+    # Ping Ratio Overview Line Chart
     fig_ratio_pings, axs_ratio_pings = plt.subplots(figsize=(8, 4))
     df_ratio_dates_mean.plot(
         kind='line', x='gameCreation', y='ratioPings', ax=axs_ratio_pings)
@@ -304,6 +308,19 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
 
     file_ratio_pings = f"{save_path}ping_overview_ratio_{player_alias}_line"
     fig_ratio_pings.savefig(file_ratio_pings)
+
+    # Ping Ratio Overview Bar Chart
+
+    # fig_ratio_pings, axs_ratio_pings = plt.subplots(figsize=(8, 4))
+    # df.plot(
+    #     kind='bar',  y='ratioPings', ax=axs_ratio_pings)
+    # axs_ratio_pings.set_xlabel("")
+    # axs_ratio_pings.set_ylabel("Pings/Minuto")
+    # axs_ratio_pings.set_title(f"Frequência Pings {player_alias.capitalize()}")
+
+    # file_ratio_pings = f"{save_path}ping_overview_ratio_{player_alias}_bar"
+    # fig_ratio_pings.savefig(file_ratio_pings)
+
 
     plt.close()
 
@@ -352,7 +369,7 @@ players_type_alias_puuid = json.loads(file_puuids_alias.read())
 file_puuids_alias.close()
 
 # Select player type
-player_type = 'raky'
+player_type = 'streamer'
 
 # Select player alias
 # player_alias = 'nataruk'

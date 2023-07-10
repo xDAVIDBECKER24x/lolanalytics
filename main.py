@@ -161,7 +161,6 @@ def save_ping_overview(match_list, match_settings, player_puuid, save_path, play
     return pings_overview_analysis
 
 
-
 def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
 
     analysis_pings = {}
@@ -212,8 +211,7 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
     pings_most_frequency = df['totalPings'].value_counts()[:5].index.tolist()
    
     df_frequency = df['totalPings'].value_counts()
-    print(df_frequency.values)
-    print(df_frequency.index.values)
+    # bECKYNH
     # print(df_frequency.index.value_counts())
     # print(df_frequency.tolist())
 
@@ -317,17 +315,17 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
 
     plt.close()
     
-    #Ping Ratio Overview Bar Chart
-    fig_frequency_pings, axs_frequency_pings = plt.subplots(figsize=(8, 4))
-    df.plot(kind='bar',x=idx,  y=frequency, ax=axs_frequency_pings)
-    axs_frequency_pings.set_xlabel("")
-    axs_frequency_pings.set_ylabel("Pings")
-    axs_frequency_pings.set_title(f"Distrituição Frequência {player_alias.capitalize()}")
+    # #Ping Ratio Overview Bar Chart
+    # fig_frequency_pings, axs_frequency_pings = plt.subplots(figsize=(8, 4))
+    # df.plot(kind='bar',x=idx,  y=frequency, ax=axs_frequency_pings)
+    # axs_frequency_pings.set_xlabel("")
+    # axs_frequency_pings.set_ylabel("Pings")
+    # axs_frequency_pings.set_title(f"Distrituição Frequência {player_alias.capitalize()}")
 
-    file_frequency_pings = f"{save_path}ping_overview_ratio_{player_alias}_bar"
-    fig_frequency_pings.savefig(file_frequency_pings)
+    # file_frequency_pings = f"{save_path}ping_overview_ratio_{player_alias}_bar"
+    # fig_frequency_pings.savefig(file_frequency_pings)
 
-    plt.close()
+    # plt.close()
 
     return analysis_pings
 
@@ -335,6 +333,7 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
 def save_all_players_pings_overview(match_settings, player_type,players_type_alias_puuid):
    
     geral_pings_overview_analysis = []
+   
     
     for player in  players_type_alias_puuid[player_type] :
 
@@ -374,7 +373,7 @@ players_type_alias_puuid = json.loads(file_puuids_alias.read())
 file_puuids_alias.close()
 
 # Select player type
-player_type = 'streamer'
+player_type = 'geral'
 
 # Select player alias
 # player_alias = 'nataruk'

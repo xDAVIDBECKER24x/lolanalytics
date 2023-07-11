@@ -4,9 +4,9 @@
     "start_date": "2022-11-02",
     "end_date": "2023-06-25",
     "winrate": 34.848,
-    "pings_sum": "654",
-    "pings_mean": 9.909,
-    "pings_ratio": 0.392,
+    "pings_sum": "658",
+    "pings_mean": 9.97,
+    "pings_ratio": 0.394,
     "pings_median": 8.0,
     "pings_most_frequency": [
         3,
@@ -21,7 +21,7 @@
     "pings_ratio_constancy_indicator_1": 98.485,
     "pings_ratio_constancy_indicator_2": 98.485,
     "pings_ratio_constancy_indicator_3": 98.485,
-    "pings_std": 7.281,
+    "pings_std": 7.29,
     "pings_ratio_std": 0.458,
     "wins_count": "23",
     "win_pings_mean": 9.478,
@@ -31,10 +31,10 @@
     "win_pings_ratio_mean": 0.522,
     "win_pings_ratio_std": 0.697,
     "lose_count": "43",
-    "lose_pings_mean": 10.14,
+    "lose_pings_mean": 10.233,
     "lose_pings_median": 8.0,
-    "lose_pings_sum": "436",
-    "lose_pings_std": 8.096,
-    "lose_pings_ratio_mean": 0.323,
-    "lose_pings_ratio_std": 0.238
+    "lose_pings_sum": "440",
+    "lose_pings_std": 8.106,
+    "lose_pings_ratio_mean": 0.325,
+    "lose_pings_ratio_std": 0.237
 }

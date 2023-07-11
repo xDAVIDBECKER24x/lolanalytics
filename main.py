@@ -338,63 +338,65 @@ def save_vision_overview(match_list, match_settings, player_puuid, save_path, pl
         if (check_match_settings(match, match_settings) == True):
 
             player_data = get_player_match_info_by_player_puuid(match, player_puuid)
+
+            if ("challenges"  in player_data) & ("allInPings" in player_alias):
             
-            vision_overview = {}
+                vision_overview = {}
 
-            # Convert miliseconds timestamp to seconds
-            match_duration_seconds = match['info']['gameDuration']
-            match_duration = strftime(
-                "%H:%M:%S", gmtime(match_duration_seconds))
+                # Convert miliseconds timestamp to seconds
+                match_duration_seconds = match['info']['gameDuration']
+                match_duration = strftime(
+                    "%H:%M:%S", gmtime(match_duration_seconds))
 
-            match_creation = match['info']['gameCreation']
-            vision_score = player_data['visionScore']
-            vision_score_per_minute = player_data['challenges']['visionScorePerMinute']
-            # ratio_vision_pings = (total_vision_pings/match_duration_seconds)*60
-            complete_support_quest_in_time = player_data['challenges']['completeSupportQuestInTime']
-            control_wards_placed = player_data['challenges']['controlWardsPlaced']
-            stealth_wards_placed = player_data['challenges']['stealthWardsPlaced']
-            detector_wards_placed = player_data['detectorWardsPlaced']
-            vision_wards_bought_in_game = player_data['visionWardsBoughtInGame']
+                match_creation = match['info']['gameCreation']
+                vision_score = player_data['visionScore']
+                vision_score_per_minute = player_data['challenges']['visionScorePerMinute']
+                # ratio_vision_pings = (total_vision_pings/match_duration_seconds)*60
+                complete_support_quest_in_time = player_data['challenges']['completeSupportQuestInTime']
+                control_wards_placed = player_data['challenges']['controlWardsPlaced']
+                stealth_wards_placed = player_data['challenges']['stealthWardsPlaced']
+                detector_wards_placed = player_data['detectorWardsPlaced']
+                vision_wards_bought_in_game = player_data['visionWardsBoughtInGame']
 
-            ward_takedowns = player_data['challenges']['wardTakedowns']
-            ward_takedowns_before_20M = player_data['challenges']['wardTakedownsBefore20M']
-            
-            vision_score_advantage_lane_opponent = player_data['challenges']['visionScoreAdvantageLaneOpponent']
-            control_ward_time_coverage_in_river_or_enemy_half = player_data['challenges']['controlWardTimeCoverageInRiverOrEnemyHalf']
-            
-            wards_killed = player_data['wardsKilled']
-            wards_placed = player_data['wardsPlaced']
+                ward_takedowns = player_data['challenges']['wardTakedowns']
+                ward_takedowns_before_20M = player_data['challenges']['wardTakedownsBefore20M']
+                
+                # vision_score_advantage_lane_opponent = player_data['challenges']['visionScoreAdvantageLaneOpponent']
+                # control_ward_time_coverage_in_river_or_enemy_half = player_data['challenges']['controlWardTimeCoverageInRiverOrEnemyHalf']
+                
+                wards_killed = player_data['wardsKilled']
+                wards_placed = player_data['wardsPlaced']
 
-            enemy_vision_pings = player_data['enemyVisionPings']
-            need_vision_pings = player_data['needVisionPings']
-            vision_cleared_pings = player_data['visionClearedPings']
-            total_vision_pings = enemy_vision_pings + need_vision_pings + vision_cleared_pings
+                enemy_vision_pings = player_data['enemyVisionPings']
+                need_vision_pings = player_data['needVisionPings']
+                vision_cleared_pings = player_data['visionClearedPings']
+                total_vision_pings = enemy_vision_pings + need_vision_pings + vision_cleared_pings
 
 
-            vision_overview['gameCreation'] = match_creation
-            vision_overview['gameDuration'] = match_duration
-            vision_overview['win'] = player_data['win']
-            vision_overview['championName'] = player_data['championName']
-            vision_overview['visionScore'] = vision_score
-            vision_overview['visionScorePerMinute'] = vision_score_per_minute
-            # vision_overview['ratioVisionPings'] = ratio_vision_pings
-            vision_overview['completeSupportQuestInTime'] = complete_support_quest_in_time
-            vision_overview['controlWardsPlaced'] = control_wards_placed
-            vision_overview['stealthWardsPlaced'] = stealth_wards_placed
-            vision_overview['detectorWardsPlaced'] = detector_wards_placed
-            vision_overview['visionWardsBoughtInGame'] = vision_wards_bought_in_game
-            vision_overview['wardsKilled'] = wards_killed
-            vision_overview['wardsPlaced'] = wards_placed
-            vision_overview['wardTakedowns'] = ward_takedowns
-            vision_overview['wardTakedownsBefore20M'] = ward_takedowns_before_20M
-            vision_overview['visionScoreAdvantageLaneOpponent'] = vision_score_advantage_lane_opponent
-            vision_overview['controlWardTimeCoverageInRiverOrEnemyHalf'] = control_ward_time_coverage_in_river_or_enemy_half
-            vision_overview['totalVisionPings'] = total_vision_pings
-            vision_overview['enemyVisionPings'] = enemy_vision_pings
-            vision_overview['needVisionPings'] = need_vision_pings
-            vision_overview['needVisionPings'] = need_vision_pings
-            
-            geral_vision_overview.append(vision_overview)
+                vision_overview['gameCreation'] = match_creation
+                vision_overview['gameDuration'] = match_duration
+                vision_overview['win'] = player_data['win']
+                vision_overview['championName'] = player_data['championName']
+                vision_overview['visionScore'] = vision_score
+                vision_overview['visionScorePerMinute'] = vision_score_per_minute
+                # vision_overview['ratioVisionPings'] = ratio_vision_pings
+                vision_overview['completeSupportQuestInTime'] = complete_support_quest_in_time
+                vision_overview['controlWardsPlaced'] = control_wards_placed
+                vision_overview['stealthWardsPlaced'] = stealth_wards_placed
+                vision_overview['detectorWardsPlaced'] = detector_wards_placed
+                vision_overview['visionWardsBoughtInGame'] = vision_wards_bought_in_game
+                vision_overview['wardsKilled'] = wards_killed
+                vision_overview['wardsPlaced'] = wards_placed
+                vision_overview['wardTakedowns'] = ward_takedowns
+                vision_overview['wardTakedownsBefore20M'] = ward_takedowns_before_20M
+                # vision_overview['visionScoreAdvantageLaneOpponent'] = vision_score_advantage_lane_opponent
+                # vision_overview['controlWardTimeCoverageInRiverOrEnemyHalf'] = control_ward_time_coverage_in_river_or_enemy_half
+                vision_overview['totalVisionPings'] = total_vision_pings
+                vision_overview['enemyVisionPings'] = enemy_vision_pings
+                vision_overview['needVisionPings'] = need_vision_pings
+                vision_overview['visionClearedPings'] = vision_cleared_pings
+                
+                geral_vision_overview.append(vision_overview)
 
     # vision_overview_analysis = analysis_ping_overview(geral_vision_overview, save_path,player_alias)
     
@@ -503,7 +505,7 @@ player_type = 'geral'
 # raw_data_matchs_file.close()
 
 # Save all players type
-save_all_players_pings_overview(match_settings,player_type,players_type_alias_puuid)
+# save_all_players_pings_overview(match_settings,player_type,players_type_alias_puuid)
 save_all_players_vision_overview(match_settings,player_type,players_type_alias_puuid)
 
 # Save only 1 player

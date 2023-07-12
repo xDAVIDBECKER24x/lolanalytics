@@ -13,25 +13,36 @@ from numpyencoder import NumpyEncoder
 
 def format_json(json_data):
 
-    json_formatted = json.dumps(json_data, default=int,indent=4)
+    json_formatted = json.dumps(json_data, default=int, indent=4)
 
     return json_formatted
 
-def filter_match_settings(match_list, match_settings):
+
+def filter_settings(match_list, settings, player_puuid):
 
     filtered_matches = []
-    
+
     for match in match_list:
 
         check_settings = True
 
-        for settings in match_settings:
-            
-            if match['info'][settings] not in match_settings[settings] :
+        for match_settings in settings['matchSettings']:
 
-              check_settings = False
-           
-        if check_settings == True :
+            if match['info'][match_settings] not in settings['matchSettings'][match_settings]:
+                check_settings = False
+
+        if check_settings == False:
+            continue
+
+        player_match_data = get_player_match_info_by_player_puuid(match, player_puuid)
+
+        for player_settings in settings['playerSettings']:
+
+            if player_match_data[player_settings] not in settings['playerSettings'][player_settings]:
+
+                check_settings = False
+
+        if check_settings == True:
 
             filtered_matches.append(match)
 
@@ -39,23 +50,11 @@ def filter_match_settings(match_list, match_settings):
 
     return filtered_matches
 
-def filter_player_settings(match_list, match_settings):
-    
-    for match in match_list:
 
-            if ((check_game_type(match, match_settings['game_type']) & check_game_mode(match, match_settings['game_mode'])) == True):
-
-                return True
-
-    return False
-
-
-def get_player_match_info_by_player_puuid(match, puuid):
-
-    # print("Getting Match => "+match['metadata']['matchId'])
+def get_player_match_info_by_player_puuid(match, player_puuid):
 
     participants_info = match['metadata']['participants']
-    player_idx = participants_info.index(puuid)
+    player_idx = participants_info.index(player_puuid)
 
     player_match_info = match['info']['participants'][player_idx]
 
@@ -63,7 +62,6 @@ def get_player_match_info_by_player_puuid(match, puuid):
 
 
 def save_match_overview(match_list, player_puuid, save_file):
-   
 
     with open(save_file, "w") as outfile:
 
@@ -71,7 +69,8 @@ def save_match_overview(match_list, player_puuid, save_file):
 
             match_overview = {}
 
-            player_data = get_player_match_info_by_player_puuid(match, player_puuid)
+            player_data = get_player_match_info_by_player_puuid(
+                match, player_puuid)
 
             match_duration = match['info']['gameDuration']
             match_duration = strftime("%H:%M:%S", gmtime(match_duration))
@@ -90,78 +89,75 @@ def save_match_overview(match_list, player_puuid, save_file):
     return
 
 
-def save_ping_overview(match_list, match_settings, player_puuid, save_path, player_alias):
+def save_ping_overview(match_list, settings, player_puuid, save_path, player_alias):
 
     print(f"Getting : {player_alias}  puuid => {player_puuid}")
 
     geral_pings_overview = []
 
-    # for match in match_list:
-
-    #     if (filter_match_settings(match, match_settings) == True):
-
-    #         player_data = get_player_match_info_by_player_puuid(match, player_puuid)
-    
-    filtered_mach_list = filter_match_settings(match_list, match_settings)
+    filtered_mach_list = filter_settings(match_list, settings, player_puuid)
+    # filtered_mach_list = filter_player_settings(filtered_mach_list,player_puuid,settings)
     # print(filtered_mach_list)
 
-    for match in filtered_mach_list: 
-        
-        player_data = get_player_match_info_by_player_puuid(match, player_puuid)
-        
-        if ("allInPings" in player_data) :
+    for match in filtered_mach_list:
 
-                pings_overview = {}
+        player_data = get_player_match_info_by_player_puuid(
+            match, player_puuid)
 
-                # Convert miliseconds timestamp to seconds
-                match_duration_seconds = match['info']['gameDuration']
-                match_duration = strftime(
-                    "%H:%M:%S", gmtime(match_duration_seconds))
+        if ("allInPings" in player_data):
 
-                match_creation = match['info']['gameCreation']
-                all_in_pings = player_data['allInPings']
-                bait_pings = player_data['baitPings']
-                command_pings = player_data['commandPings']
-                danger_pings = player_data['dangerPings']  
-                enemy_missing_pings = player_data['enemyMissingPings']
-                enemy_vision_pings = player_data['enemyVisionPings']
-                get_back_pings = player_data['getBackPings'] 
-                hold_pings = player_data['getBackPings'] 
-                need_vision_pings = player_data['needVisionPings']
-                vision_cleared_pings = player_data['visionClearedPings']
-                
-                basic_pings = player_data['basicPings']
-                on_my_way_pings = player_data['onMyWayPings']
-                push_pings = player_data['pushPings']
-                total_pings = all_in_pings + bait_pings + basic_pings + command_pings + danger_pings + enemy_missing_pings + \
-                    enemy_vision_pings + get_back_pings + hold_pings + vision_cleared_pings +\
-                    need_vision_pings + on_my_way_pings + push_pings
-                ratio_pings = (total_pings/match_duration_seconds)*60
+            pings_overview = {}
 
-                pings_overview['gameCreation'] = match_creation
-                pings_overview['gameDuration'] = match_duration
-                pings_overview['championName'] = player_data['championName']
-                pings_overview['win'] = player_data['win']
-                pings_overview['totalPings'] = total_pings
-                pings_overview['ratioPings'] = ratio_pings
-                pings_overview['allInPings'] = all_in_pings
-                pings_overview['baitPings'] = bait_pings
-                pings_overview['basicPings'] = basic_pings
-                pings_overview['commandPings'] = command_pings
-                pings_overview['dangerPings'] = danger_pings
-                pings_overview['enemyMissingPings'] = enemy_missing_pings
-                pings_overview['enemyVisionPings'] = enemy_vision_pings
-                pings_overview['visionClearedPings'] = vision_cleared_pings
-                pings_overview['getBackPings'] = get_back_pings
-                pings_overview['holdPings'] = hold_pings
-                pings_overview['needVisionPings'] = need_vision_pings
-                pings_overview['onMyWayPings'] = on_my_way_pings
-                pings_overview['pushPings'] = push_pings
+            # Convert miliseconds timestamp to seconds
+            match_duration_seconds = match['info']['gameDuration']
+            match_duration = strftime(
+                "%H:%M:%S", gmtime(match_duration_seconds))
 
-                geral_pings_overview.append(pings_overview)
+            match_creation = match['info']['gameCreation']
+            all_in_pings = player_data['allInPings']
+            bait_pings = player_data['baitPings']
+            command_pings = player_data['commandPings']
+            danger_pings = player_data['dangerPings']
+            enemy_missing_pings = player_data['enemyMissingPings']
+            enemy_vision_pings = player_data['enemyVisionPings']
+            get_back_pings = player_data['getBackPings']
+            hold_pings = player_data['getBackPings']
+            need_vision_pings = player_data['needVisionPings']
+            vision_cleared_pings = player_data['visionClearedPings']
 
-    pings_overview_analysis = analysis_ping_overview(geral_pings_overview, save_path,player_alias)
-    
+            basic_pings = player_data['basicPings']
+            on_my_way_pings = player_data['onMyWayPings']
+            push_pings = player_data['pushPings']
+            total_pings = all_in_pings + bait_pings + basic_pings + command_pings + danger_pings + enemy_missing_pings + \
+                enemy_vision_pings + get_back_pings + hold_pings + vision_cleared_pings +\
+                need_vision_pings + on_my_way_pings + push_pings
+            ratio_pings = (total_pings/match_duration_seconds)*60
+
+            pings_overview['gameCreation'] = match_creation
+            pings_overview['gameDuration'] = match_duration
+            pings_overview['championName'] = player_data['championName']
+            pings_overview['win'] = player_data['win']
+            pings_overview['totalPings'] = total_pings
+            pings_overview['ratioPings'] = ratio_pings
+            pings_overview['allInPings'] = all_in_pings
+            pings_overview['baitPings'] = bait_pings
+            pings_overview['basicPings'] = basic_pings
+            pings_overview['commandPings'] = command_pings
+            pings_overview['dangerPings'] = danger_pings
+            pings_overview['enemyMissingPings'] = enemy_missing_pings
+            pings_overview['enemyVisionPings'] = enemy_vision_pings
+            pings_overview['visionClearedPings'] = vision_cleared_pings
+            pings_overview['getBackPings'] = get_back_pings
+            pings_overview['holdPings'] = hold_pings
+            pings_overview['needVisionPings'] = need_vision_pings
+            pings_overview['onMyWayPings'] = on_my_way_pings
+            pings_overview['pushPings'] = push_pings
+
+            geral_pings_overview.append(pings_overview)
+
+    pings_overview_analysis = analysis_ping_overview(
+        geral_pings_overview, save_path, player_alias)
+
     geral_pings_overview = format_json(geral_pings_overview)
 
     save_file = f"{save_path}ping_overview_{player_alias}.json"
@@ -172,7 +168,7 @@ def save_ping_overview(match_list, match_settings, player_puuid, save_path, play
     return pings_overview_analysis
 
 
-def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
+def analysis_ping_overview(geral_pings_overview, save_path, player_alias):
 
     analysis_pings = {}
 
@@ -186,41 +182,47 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
     pings_ratio_mean = df['ratioPings'].mean()
     pings_ratio_std = df['ratioPings'].std()
     pings_mean_constancy_indicator_1 = len(df[
-        (df["totalPings"] <= (pings_mean + pings_std)) & 
+        (df["totalPings"] <= (pings_mean + pings_std)) &
         (df["totalPings"] >= (pings_mean - pings_std))
-        ])
+    ])
     pings_mean_constancy_indicator_2 = len(df[
-        (df["totalPings"] <= (pings_mean + (2*pings_std))) & 
+        (df["totalPings"] <= (pings_mean + (2*pings_std))) &
         (df["totalPings"] >= (pings_mean - (2*pings_std)))
-        ])
+    ])
     pings_mean_constancy_indicator_3 = len(df[
-        (df["totalPings"] <= (pings_mean + (3*pings_std))) & 
+        (df["totalPings"] <= (pings_mean + (3*pings_std))) &
         (df["totalPings"] >= (pings_mean - (3*pings_std)))
-        ])
+    ])
     pings_ratio_constancy_indicator_1 = len(df[
-        (df["ratioPings"] <= (pings_ratio_mean + pings_ratio_std)) & 
+        (df["ratioPings"] <= (pings_ratio_mean + pings_ratio_std)) &
         (df["ratioPings"] >= (pings_ratio_mean - pings_ratio_std))
-        ])
+    ])
     pings_ratio_constancy_indicator_2 = len(df[
-        (df["ratioPings"] <= (pings_ratio_mean + (2*pings_ratio_std))) & 
+        (df["ratioPings"] <= (pings_ratio_mean + (2*pings_ratio_std))) &
         (df["ratioPings"] >= (pings_ratio_mean - (2*pings_ratio_std)))
-        ])
+    ])
     pings_ratio_constancy_indicator_3 = len(df[
-        (df["ratioPings"] <= (pings_ratio_mean + (3*pings_ratio_std))) & 
+        (df["ratioPings"] <= (pings_ratio_mean + (3*pings_ratio_std))) &
         (df["ratioPings"] >= (pings_ratio_mean - (3*pings_ratio_std)))
-        ])
-  
-    pings_mean_constancy_indicator_1 = (pings_mean_constancy_indicator_1/matchs_count)*100
-    pings_mean_constancy_indicator_2 = (pings_mean_constancy_indicator_2/matchs_count)*100
-    pings_mean_constancy_indicator_3 = (pings_mean_constancy_indicator_3/matchs_count)*100
-    
-    pings_ratio_constancy_indicator_1 = (pings_ratio_constancy_indicator_1/matchs_count)*100
-    pings_ratio_constancy_indicator_2 = (pings_ratio_constancy_indicator_2/matchs_count)*100
-    pings_ratio_constancy_indicator_3 = (pings_ratio_constancy_indicator_3/matchs_count)*100
-    
+    ])
+
+    pings_mean_constancy_indicator_1 = (
+        pings_mean_constancy_indicator_1/matchs_count)*100
+    pings_mean_constancy_indicator_2 = (
+        pings_mean_constancy_indicator_2/matchs_count)*100
+    pings_mean_constancy_indicator_3 = (
+        pings_mean_constancy_indicator_3/matchs_count)*100
+
+    pings_ratio_constancy_indicator_1 = (
+        pings_ratio_constancy_indicator_1/matchs_count)*100
+    pings_ratio_constancy_indicator_2 = (
+        pings_ratio_constancy_indicator_2/matchs_count)*100
+    pings_ratio_constancy_indicator_3 = (
+        pings_ratio_constancy_indicator_3/matchs_count)*100
+
     pings_most_frequency = df["totalPings"].mode()
     pings_most_frequency = df['totalPings'].value_counts()[:5].index.tolist()
-   
+
     df_frequency = df['totalPings'].value_counts()
     # bECKYNH
     # print(df_frequency.index.value_counts())
@@ -236,26 +238,26 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
 
     start_date = df['gameCreation'].min()
     end_date = df['gameCreation'].max()
-    
+
     analysis_pings['player_alias'] = player_alias
     analysis_pings['matchs_count'] = matchs_count
     analysis_pings['start_date'] = start_date
     analysis_pings['end_date'] = end_date
     analysis_pings['winrate'] = winrate
     analysis_pings['pings_sum'] = df['totalPings'].sum()
-    analysis_pings['pings_mean'] = pings_mean 
+    analysis_pings['pings_mean'] = pings_mean
     analysis_pings['pings_ratio'] = pings_ratio_mean
     analysis_pings['pings_median'] = df['totalPings'].median()
     analysis_pings['pings_most_frequency'] = pings_most_frequency
-    analysis_pings['pings_mean_constancy_indicator_1'] = pings_mean_constancy_indicator_1 
+    analysis_pings['pings_mean_constancy_indicator_1'] = pings_mean_constancy_indicator_1
     analysis_pings['pings_mean_constancy_indicator_2'] = pings_mean_constancy_indicator_2
     analysis_pings['pings_mean_constancy_indicator_3'] = pings_mean_constancy_indicator_3
-    analysis_pings['pings_ratio_constancy_indicator_1'] = pings_ratio_constancy_indicator_1 
+    analysis_pings['pings_ratio_constancy_indicator_1'] = pings_ratio_constancy_indicator_1
     analysis_pings['pings_ratio_constancy_indicator_2'] = pings_ratio_constancy_indicator_2
     analysis_pings['pings_ratio_constancy_indicator_3'] = pings_ratio_constancy_indicator_3
     analysis_pings['pings_std'] = pings_std
     analysis_pings['pings_ratio_std'] = pings_ratio_std
-    analysis_pings['wins_count'] = win_df['totalPings'].count() 
+    analysis_pings['wins_count'] = win_df['totalPings'].count()
     analysis_pings['win_pings_mean'] = win_df['totalPings'].mean()
     analysis_pings['win_pings_median'] = win_df['totalPings'].median()
     analysis_pings['win_pings_sum'] = win_df['totalPings'].sum()
@@ -269,18 +271,16 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
     analysis_pings['lose_pings_std'] = lose_df['totalPings'].std()
     analysis_pings['lose_pings_ratio_mean'] = lose_df['ratioPings'].mean()
     analysis_pings['lose_pings_ratio_std'] = lose_df['ratioPings'].std()
- 
+
     for key in analysis_pings:
-        if(isinstance(analysis_pings[key], float)):
-            analysis_pings[key] = round(analysis_pings[key],3)
-        
+        if (isinstance(analysis_pings[key], float)):
+            analysis_pings[key] = round(analysis_pings[key], 3)
 
-
-    analysis_pings_formatted = json.dumps(analysis_pings, default=str,indent=4)
+    analysis_pings_formatted = json.dumps(
+        analysis_pings, default=str, indent=4)
     save_file = f"{save_path}ping_overview_analysis_{player_alias}.json"
     with open(save_file, "w") as outfile:
         outfile.write(analysis_pings_formatted)
-
 
     df_ratio_dates_mean = df[['gameCreation', 'ratioPings']].copy()
     df_ratio_dates_mean = df_ratio_dates_mean.groupby(
@@ -305,9 +305,9 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
 
     file_total_pings = f"{save_path}ping_overview_total_{player_alias}_scatter"
     fig_total_pings.savefig(file_total_pings)
-    
+
     plt.close()
-    
+
     # Ping Ratio Overview Line Chart
     fig_ratio_pings, axs_ratio_pings = plt.subplots(figsize=(8, 4))
     df_ratio_dates_mean.plot(
@@ -325,7 +325,7 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
     frequency = df_frequency.values
 
     plt.close()
-    
+
     # #Ping Ratio Overview Bar Chart
     # fig_frequency_pings, axs_frequency_pings = plt.subplots(figsize=(8, 4))
     # df.plot(kind='bar',x=idx,  y=frequency, ax=axs_frequency_pings)
@@ -341,20 +341,21 @@ def analysis_ping_overview(geral_pings_overview, save_path,player_alias):
     return analysis_pings
 
 
-def save_vision_overview(match_list, match_settings, player_puuid, save_path, player_alias):
+def save_vision_overview(match_list, settings, player_puuid, save_path, player_alias):
 
     print(f"Getting : {player_alias}  puuid => {player_puuid}")
 
     geral_vision_overview = []
 
-    filtered_mach_list = filter_match_settings(match_list, match_settings)
+    filtered_mach_list = filter_settings(match_list, settings)
 
     for match in filtered_mach_list:
 
-        player_data = get_player_match_info_by_player_puuid(match, player_puuid)
+        player_data = get_player_match_info_by_player_puuid(
+            match, player_puuid)
 
-        if ("challenges"  in player_data) & ("enemyVisionPings" in player_data):
-        
+        if ("challenges" in player_data) & ("enemyVisionPings" in player_data):
+
             vision_overview = {}
 
             # Convert miliseconds timestamp to seconds
@@ -374,18 +375,18 @@ def save_vision_overview(match_list, match_settings, player_puuid, save_path, pl
 
             ward_takedowns = player_data['challenges']['wardTakedowns']
             ward_takedowns_before_20M = player_data['challenges']['wardTakedownsBefore20M']
-            
+
             # vision_score_advantage_lane_opponent = player_data['challenges']['visionScoreAdvantageLaneOpponent']
             # control_ward_time_coverage_in_river_or_enemy_half = player_data['challenges']['controlWardTimeCoverageInRiverOrEnemyHalf']
-            
+
             wards_killed = player_data['wardsKilled']
             wards_placed = player_data['wardsPlaced']
 
             enemy_vision_pings = player_data['enemyVisionPings']
             need_vision_pings = player_data['needVisionPings']
             vision_cleared_pings = player_data['visionClearedPings']
-            total_vision_pings = enemy_vision_pings + need_vision_pings + vision_cleared_pings
-
+            total_vision_pings = enemy_vision_pings + \
+                need_vision_pings + vision_cleared_pings
 
             vision_overview['gameCreation'] = match_creation
             vision_overview['gameDuration'] = match_duration
@@ -409,11 +410,11 @@ def save_vision_overview(match_list, match_settings, player_puuid, save_path, pl
             vision_overview['enemyVisionPings'] = enemy_vision_pings
             vision_overview['needVisionPings'] = need_vision_pings
             vision_overview['visionClearedPings'] = vision_cleared_pings
-            
+
             geral_vision_overview.append(vision_overview)
 
     # vision_overview_analysis = analysis_ping_overview(geral_vision_overview, save_path,player_alias)
-    
+
     geral_vision_overview = format_json(geral_vision_overview)
 
     save_file = f"{save_path}vision_overview_{player_alias}.json"
@@ -422,15 +423,14 @@ def save_vision_overview(match_list, match_settings, player_puuid, save_path, pl
         outfile.write(geral_vision_overview)
 
     # return vision_overview_analysis
-    return 
+    return
 
 
-def save_all_players_pings_overview(match_settings, player_type,players_type_alias_puuid):
-   
+def save_all_players_pings_overview(match_settings, player_type, players_type_alias_puuid):
+
     geral_pings_overview_analysis = []
-   
-    
-    for player in  players_type_alias_puuid[player_type] :
+
+    for player in players_type_alias_puuid[player_type]:
 
         player_alias = player
         player_puuid = players_type_alias_puuid[player_type][player]
@@ -442,14 +442,14 @@ def save_all_players_pings_overview(match_settings, player_type,players_type_ali
         raw_matches_data = json.load(raw_data_matchs_file)
         raw_data_matchs_file.close()
 
-        pings_overview_analysis = save_ping_overview(raw_matches_data, match_settings, player_puuid, save_path, player_alias)
+        pings_overview_analysis = save_ping_overview(
+            raw_matches_data, match_settings, player_puuid, save_path, player_alias)
 
         geral_pings_overview_analysis.append(pings_overview_analysis)
 
-    
-    geral_pings_overview_analysis =format_json(geral_pings_overview_analysis)
+    geral_pings_overview_analysis = format_json(geral_pings_overview_analysis)
 
-    save_file =  f"analysis/{player_type}_geral_ping_overview_analysis.json"
+    save_file = f"analysis/{player_type}_geral_ping_overview_analysis.json"
     with open(save_file, "w") as outfile:
 
         outfile.write(geral_pings_overview_analysis)
@@ -457,12 +457,11 @@ def save_all_players_pings_overview(match_settings, player_type,players_type_ali
     return
 
 
-def save_all_players_vision_overview(match_settings, player_type,players_type_alias_puuid):
-   
+def save_all_players_vision_overview(match_settings, player_type, players_type_alias_puuid):
+
     # geral_vision_overview_analysis = []
-   
-    
-    for player in  players_type_alias_puuid[player_type] :
+
+    for player in players_type_alias_puuid[player_type]:
 
         player_alias = player
         player_puuid = players_type_alias_puuid[player_type][player]
@@ -475,11 +474,11 @@ def save_all_players_vision_overview(match_settings, player_type,players_type_al
         raw_data_matchs_file.close()
 
         # pings_overview_analysis = save_ping_overview(raw_matches_data, match_settings, player_puuid, save_path, player_alias)
-        save_vision_overview(raw_matches_data, match_settings, player_puuid, save_path, player_alias)
+        save_vision_overview(raw_matches_data, match_settings,
+                             player_puuid, save_path, player_alias)
 
         # geral_pings_overview_analysis.append(pings_overview_analysis)
 
-    
     # geral_pings_overview_analysis =format_json(geral_pings_overview_analysis)
 
     # save_file =  f"analysis/{player_type}_geral_ping_overview_analysis.json"
@@ -490,13 +489,28 @@ def save_all_players_vision_overview(match_settings, player_type,players_type_al
     return
 
 # Set matchs settings filter search
-match_settings = {}
-match_settings['gameType'] = ["CUSTOM_GAME", "MATCHED_GAME"]
-match_settings['gameMode'] = ["CLASSIC"]
 
-player_settings = {}
-player_settings['individualPosition'] = ["JUNGLE"]
 
+settings = {
+    'matchSettings': {
+        'gameType': [
+            'CUSTOM_GAME',
+            'MATCHED_GAME'
+        ],
+        'gameMode': [
+            'CLASSIC'
+        ],
+    },
+    'playerSettings': {
+        'individualPosition': [
+            'JUNGLE'
+        ],
+        'championName': [
+            'Sejuani'
+        ],
+    }
+
+}
 
 # Load players puuid alias
 file_puuids_alias = open("players_type_alias_puuid.json", "r")
@@ -522,13 +536,11 @@ raw_matches_data = json.load(raw_data_matchs_file)
 raw_data_matchs_file.close()
 
 # Save all players type
-save_all_players_pings_overview(match_settings,player_type,players_type_alias_puuid)
-# save_all_players_vision_overview(match_settings,player_type,players_type_alias_puuid)
+# save_all_players_pings_overview(settings,player_type,players_type_alias_puuid)
+# save_all_players_vision_overview(settings,player_type,players_type_alias_puuid)
 
 # Save only 1 player
-# save_ping_overview(raw_matches_data, match_settings, player_puuid, save_path, player_alias)
+save_ping_overview(raw_matches_data, settings,
+                   player_puuid, save_path, player_alias)
 
 # Test code area
-# for i in match_settings:
-#     print(f"{i} :  {match_settings[i]}")
-# print(f"{settings} :  {match_settings[settings]}")    

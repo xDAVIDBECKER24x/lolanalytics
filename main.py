@@ -95,7 +95,7 @@ def save_ping_overview(match_list, match_settings, player_puuid, save_path, play
 
             player_data = get_player_match_info_by_player_puuid(match, player_puuid)
             
-            if "allInPings" in player_data:
+            if ("allInPings" in player_data) :
 
                 pings_overview = {}
 
@@ -339,7 +339,7 @@ def save_vision_overview(match_list, match_settings, player_puuid, save_path, pl
 
             player_data = get_player_match_info_by_player_puuid(match, player_puuid)
 
-            if ("challenges"  in player_data) & ("allInPings" in player_alias):
+            if ("challenges"  in player_data) & ("enemyVisionPings" in player_data):
             
                 vision_overview = {}
 

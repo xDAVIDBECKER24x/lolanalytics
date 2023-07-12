@@ -343,7 +343,7 @@ def save_vision_overview(match_list, settings, player_puuid, save_path, player_a
 
     geral_vision_overview = []
 
-    filtered_mach_list = filter_settings(match_list, settings)
+    filtered_mach_list = filter_settings(match_list, settings, player_puuid)
 
     for match in filtered_mach_list:
 
@@ -484,31 +484,13 @@ def save_all_players_vision_overview(match_settings, player_type, players_type_a
 
     return
 
-# Set matchs settings filter search
+# Load settings match filter
+file_settings_match_filter = open("settings_match_filter.json", "r")
+settings_match_filter = json.loads(file_settings_match_filter.read())
+file_settings_match_filter.close()
 
-
-settings = {
-    'matchSettings': {
-        'gameType': [
-            'CUSTOM_GAME',
-            'MATCHED_GAME'
-        ],
-        'gameMode': [
-            'CLASSIC'
-        ],
-    },
-    'playerSettings': {
-        # 'individualPosition': [
-        #     'MID'
-        # ],
-        'championName': [
-            'Akali'
-        ],
-    }
-
-}
-settings['playerSettings']['championName'].append("Zed")
-settings.update({'lane':'MID'})
+settings_match_filter['playerSettings']['championName'].append("Zed")
+settings_match_filter.update({'lane':'MID'})
 
 # Load players puuid alias
 file_puuids_alias = open("players_type_alias_puuid.json", "r")
@@ -534,11 +516,11 @@ raw_matches_data = json.load(raw_data_matchs_file)
 raw_data_matchs_file.close()
 
 # Save all players type
-# save_all_players_pings_overview(settings,player_type,players_type_alias_puuid)
-# save_all_players_vision_overview(settings,player_type,players_type_alias_puuid)
+# save_all_players_pings_overview(settings_match_filter,player_type,players_type_alias_puuid)
+# save_all_players_vision_overview(settings_match_filter,player_type,players_type_alias_puuid)
 
 # Save only 1 player
-save_ping_overview(raw_matches_data, settings,
+save_ping_overview(raw_matches_data, settings_match_filter,
                    player_puuid, save_path, player_alias)
 
 # Test code area

@@ -1,0 +1,16 @@
+{
+    "matchSettings": {
+        "gameType": [
+            "CUSTOM_GAME",
+            "MATCHED_GAME"
+        ],
+        "gameMode": [
+            "CLASSIC"
+        ]
+    },
+    "playerSettings": {
+        "championName": [
+
+        ]
+    }
+}

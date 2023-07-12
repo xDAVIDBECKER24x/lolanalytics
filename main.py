@@ -27,12 +27,10 @@ def filter_settings(match_list, settings, player_puuid):
         check_settings = True
 
         for match_settings in settings['matchSettings']:
-
-            if match['info'][match_settings] not in settings['matchSettings'][match_settings]:
-                check_settings = False
-
-        if check_settings == False:
-            continue
+            
+            if match['info'][match_settings] not in settings['matchSettings'][match_settings]: check_settings = False
+                
+        if check_settings == False : continue
 
         player_match_data = get_player_match_info_by_player_puuid(match, player_puuid)
 
@@ -46,7 +44,7 @@ def filter_settings(match_list, settings, player_puuid):
 
             filtered_matches.append(match)
 
-    print(len(filtered_matches))
+    print(f"\tMatchs filtered => {len(filtered_matches)}")
 
     return filtered_matches
 
@@ -91,13 +89,11 @@ def save_match_overview(match_list, player_puuid, save_file):
 
 def save_ping_overview(match_list, settings, player_puuid, save_path, player_alias):
 
-    print(f"Getting : {player_alias}  puuid => {player_puuid}")
+    print(f"Getting : {player_alias}\n\tpuuid => {player_puuid}")
 
     geral_pings_overview = []
 
     filtered_mach_list = filter_settings(match_list, settings, player_puuid)
-    # filtered_mach_list = filter_player_settings(filtered_mach_list,player_puuid,settings)
-    # print(filtered_mach_list)
 
     for match in filtered_mach_list:
 
@@ -502,15 +498,17 @@ settings = {
         ],
     },
     'playerSettings': {
-        'individualPosition': [
-            'JUNGLE'
-        ],
+        # 'individualPosition': [
+        #     'MID'
+        # ],
         'championName': [
-            'Sejuani'
+            'Akali'
         ],
     }
 
 }
+settings['playerSettings']['championName'].append("Zed")
+settings.update({'lane':'MID'})
 
 # Load players puuid alias
 file_puuids_alias = open("players_type_alias_puuid.json", "r")

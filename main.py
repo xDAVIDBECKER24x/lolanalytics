@@ -17,28 +17,35 @@ def format_json(json_data):
 
     return json_formatted
 
+def filter_match_settings(match_list, match_settings):
 
-def check_game_mode(match, mode):
+    filtered_matches = []
+    
+    for match in match_list:
 
-    if (match['info']['gameMode'] in mode):
-        return True
+        check_settings = True
 
-    return False
+        for settings in match_settings:
+            
+            if match['info'][settings] not in match_settings[settings] :
 
+              check_settings = False
+           
+        if check_settings == True :
 
-def check_game_type(match, type):
+            filtered_matches.append(match)
 
-    if (match['info']['gameType'] in type):
-        return True
+    print(len(filtered_matches))
 
-    return False
+    return filtered_matches
 
+def filter_player_settings(match_list, match_settings):
+    
+    for match in match_list:
 
-def check_match_settings(match, match_settings):
+            if ((check_game_type(match, match_settings['game_type']) & check_game_mode(match, match_settings['game_mode'])) == True):
 
-    if ((check_game_type(match, match_settings['game_type']) & check_game_mode(match, match_settings['game_mode'])) == True):
-
-        return True
+                return True
 
     return False
 
@@ -89,13 +96,20 @@ def save_ping_overview(match_list, match_settings, player_puuid, save_path, play
 
     geral_pings_overview = []
 
-    for match in match_list:
+    # for match in match_list:
 
-        if (check_match_settings(match, match_settings) == True):
+    #     if (filter_match_settings(match, match_settings) == True):
 
-            player_data = get_player_match_info_by_player_puuid(match, player_puuid)
-            
-            if ("allInPings" in player_data) :
+    #         player_data = get_player_match_info_by_player_puuid(match, player_puuid)
+    
+    filtered_mach_list = filter_match_settings(match_list, match_settings)
+    # print(filtered_mach_list)
+
+    for match in filtered_mach_list: 
+        
+        player_data = get_player_match_info_by_player_puuid(match, player_puuid)
+        
+        if ("allInPings" in player_data) :
 
                 pings_overview = {}
 
@@ -333,70 +347,70 @@ def save_vision_overview(match_list, match_settings, player_puuid, save_path, pl
 
     geral_vision_overview = []
 
-    for match in match_list:
+    filtered_mach_list = filter_match_settings(match_list, match_settings)
 
-        if (check_match_settings(match, match_settings) == True):
+    for match in filtered_mach_list:
 
-            player_data = get_player_match_info_by_player_puuid(match, player_puuid)
+        player_data = get_player_match_info_by_player_puuid(match, player_puuid)
 
-            if ("challenges"  in player_data) & ("enemyVisionPings" in player_data):
+        if ("challenges"  in player_data) & ("enemyVisionPings" in player_data):
+        
+            vision_overview = {}
+
+            # Convert miliseconds timestamp to seconds
+            match_duration_seconds = match['info']['gameDuration']
+            match_duration = strftime(
+                "%H:%M:%S", gmtime(match_duration_seconds))
+
+            match_creation = match['info']['gameCreation']
+            vision_score = player_data['visionScore']
+            vision_score_per_minute = player_data['challenges']['visionScorePerMinute']
+            # ratio_vision_pings = (total_vision_pings/match_duration_seconds)*60
+            complete_support_quest_in_time = player_data['challenges']['completeSupportQuestInTime']
+            control_wards_placed = player_data['challenges']['controlWardsPlaced']
+            stealth_wards_placed = player_data['challenges']['stealthWardsPlaced']
+            detector_wards_placed = player_data['detectorWardsPlaced']
+            vision_wards_bought_in_game = player_data['visionWardsBoughtInGame']
+
+            ward_takedowns = player_data['challenges']['wardTakedowns']
+            ward_takedowns_before_20M = player_data['challenges']['wardTakedownsBefore20M']
             
-                vision_overview = {}
+            # vision_score_advantage_lane_opponent = player_data['challenges']['visionScoreAdvantageLaneOpponent']
+            # control_ward_time_coverage_in_river_or_enemy_half = player_data['challenges']['controlWardTimeCoverageInRiverOrEnemyHalf']
+            
+            wards_killed = player_data['wardsKilled']
+            wards_placed = player_data['wardsPlaced']
 
-                # Convert miliseconds timestamp to seconds
-                match_duration_seconds = match['info']['gameDuration']
-                match_duration = strftime(
-                    "%H:%M:%S", gmtime(match_duration_seconds))
-
-                match_creation = match['info']['gameCreation']
-                vision_score = player_data['visionScore']
-                vision_score_per_minute = player_data['challenges']['visionScorePerMinute']
-                # ratio_vision_pings = (total_vision_pings/match_duration_seconds)*60
-                complete_support_quest_in_time = player_data['challenges']['completeSupportQuestInTime']
-                control_wards_placed = player_data['challenges']['controlWardsPlaced']
-                stealth_wards_placed = player_data['challenges']['stealthWardsPlaced']
-                detector_wards_placed = player_data['detectorWardsPlaced']
-                vision_wards_bought_in_game = player_data['visionWardsBoughtInGame']
-
-                ward_takedowns = player_data['challenges']['wardTakedowns']
-                ward_takedowns_before_20M = player_data['challenges']['wardTakedownsBefore20M']
-                
-                # vision_score_advantage_lane_opponent = player_data['challenges']['visionScoreAdvantageLaneOpponent']
-                # control_ward_time_coverage_in_river_or_enemy_half = player_data['challenges']['controlWardTimeCoverageInRiverOrEnemyHalf']
-                
-                wards_killed = player_data['wardsKilled']
-                wards_placed = player_data['wardsPlaced']
-
-                enemy_vision_pings = player_data['enemyVisionPings']
-                need_vision_pings = player_data['needVisionPings']
-                vision_cleared_pings = player_data['visionClearedPings']
-                total_vision_pings = enemy_vision_pings + need_vision_pings + vision_cleared_pings
+            enemy_vision_pings = player_data['enemyVisionPings']
+            need_vision_pings = player_data['needVisionPings']
+            vision_cleared_pings = player_data['visionClearedPings']
+            total_vision_pings = enemy_vision_pings + need_vision_pings + vision_cleared_pings
 
 
-                vision_overview['gameCreation'] = match_creation
-                vision_overview['gameDuration'] = match_duration
-                vision_overview['win'] = player_data['win']
-                vision_overview['championName'] = player_data['championName']
-                vision_overview['visionScore'] = vision_score
-                vision_overview['visionScorePerMinute'] = vision_score_per_minute
-                # vision_overview['ratioVisionPings'] = ratio_vision_pings
-                vision_overview['completeSupportQuestInTime'] = complete_support_quest_in_time
-                vision_overview['controlWardsPlaced'] = control_wards_placed
-                vision_overview['stealthWardsPlaced'] = stealth_wards_placed
-                vision_overview['detectorWardsPlaced'] = detector_wards_placed
-                vision_overview['visionWardsBoughtInGame'] = vision_wards_bought_in_game
-                vision_overview['wardsKilled'] = wards_killed
-                vision_overview['wardsPlaced'] = wards_placed
-                vision_overview['wardTakedowns'] = ward_takedowns
-                vision_overview['wardTakedownsBefore20M'] = ward_takedowns_before_20M
-                # vision_overview['visionScoreAdvantageLaneOpponent'] = vision_score_advantage_lane_opponent
-                # vision_overview['controlWardTimeCoverageInRiverOrEnemyHalf'] = control_ward_time_coverage_in_river_or_enemy_half
-                vision_overview['totalVisionPings'] = total_vision_pings
-                vision_overview['enemyVisionPings'] = enemy_vision_pings
-                vision_overview['needVisionPings'] = need_vision_pings
-                vision_overview['visionClearedPings'] = vision_cleared_pings
-                
-                geral_vision_overview.append(vision_overview)
+            vision_overview['gameCreation'] = match_creation
+            vision_overview['gameDuration'] = match_duration
+            vision_overview['win'] = player_data['win']
+            vision_overview['championName'] = player_data['championName']
+            vision_overview['visionScore'] = vision_score
+            vision_overview['visionScorePerMinute'] = vision_score_per_minute
+            # vision_overview['ratioVisionPings'] = ratio_vision_pings
+            vision_overview['completeSupportQuestInTime'] = complete_support_quest_in_time
+            vision_overview['controlWardsPlaced'] = control_wards_placed
+            vision_overview['stealthWardsPlaced'] = stealth_wards_placed
+            vision_overview['detectorWardsPlaced'] = detector_wards_placed
+            vision_overview['visionWardsBoughtInGame'] = vision_wards_bought_in_game
+            vision_overview['wardsKilled'] = wards_killed
+            vision_overview['wardsPlaced'] = wards_placed
+            vision_overview['wardTakedowns'] = ward_takedowns
+            vision_overview['wardTakedownsBefore20M'] = ward_takedowns_before_20M
+            # vision_overview['visionScoreAdvantageLaneOpponent'] = vision_score_advantage_lane_opponent
+            # vision_overview['controlWardTimeCoverageInRiverOrEnemyHalf'] = control_ward_time_coverage_in_river_or_enemy_half
+            vision_overview['totalVisionPings'] = total_vision_pings
+            vision_overview['enemyVisionPings'] = enemy_vision_pings
+            vision_overview['needVisionPings'] = need_vision_pings
+            vision_overview['visionClearedPings'] = vision_cleared_pings
+            
+            geral_vision_overview.append(vision_overview)
 
     # vision_overview_analysis = analysis_ping_overview(geral_vision_overview, save_path,player_alias)
     
@@ -477,8 +491,11 @@ def save_all_players_vision_overview(match_settings, player_type,players_type_al
 
 # Set matchs settings filter search
 match_settings = {}
-match_settings['game_type'] = ["CUSTOM_GAME", "MATCHED_GAME"]
-match_settings['game_mode'] = ["CLASSIC"]
+match_settings['gameType'] = ["CUSTOM_GAME", "MATCHED_GAME"]
+match_settings['gameMode'] = ["CLASSIC"]
+
+player_settings = {}
+player_settings['individualPosition'] = ["JUNGLE"]
 
 
 # Load players puuid alias
@@ -490,23 +507,28 @@ file_puuids_alias.close()
 player_type = 'geral'
 
 # Select player alias
-# player_alias = 'nataruk'
+player_alias = 'beckynho'
 
 # Get player puuid by alias
-# puuid = players_type_alias_puuid[player_type][player_alias]
+player_puuid = players_type_alias_puuid[player_type][player_alias]
 
-# # Set path to save player analysis
-# save_path = f"data/{player_type}/{player_alias}/"
+# Set path to save player analysis
+save_path = f"data/{player_type}/{player_alias}/"
 
 # # Load raw data from exported matches json
-# raw_data_matchs_file = f"{save_path}matchs_metadata_{player_alias}.json"
-# raw_data_matchs_file = open(raw_data_matchs_file)
-# raw_matches_data = json.load(raw_data_matchs_file)
-# raw_data_matchs_file.close()
+raw_data_matchs_file = f"{save_path}matchs_metadata_{player_alias}.json"
+raw_data_matchs_file = open(raw_data_matchs_file)
+raw_matches_data = json.load(raw_data_matchs_file)
+raw_data_matchs_file.close()
 
 # Save all players type
-# save_all_players_pings_overview(match_settings,player_type,players_type_alias_puuid)
-save_all_players_vision_overview(match_settings,player_type,players_type_alias_puuid)
+save_all_players_pings_overview(match_settings,player_type,players_type_alias_puuid)
+# save_all_players_vision_overview(match_settings,player_type,players_type_alias_puuid)
 
 # Save only 1 player
-# save_pings_overview(raw_matches_data, match_settings,puuid, save_path, player_alias)
+# save_ping_overview(raw_matches_data, match_settings, player_puuid, save_path, player_alias)
+
+# Test code area
+# for i in match_settings:
+#     print(f"{i} :  {match_settings[i]}")
+# print(f"{settings} :  {match_settings[settings]}")    

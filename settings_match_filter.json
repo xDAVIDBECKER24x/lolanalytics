@@ -9,8 +9,11 @@
         ]
     },
     "playerSettings": {
-        "championName": [
+        "championName": [],
+        "lane": [],
+        "individualPosition": []
+    },
+    "playerChallenges": {
 
-        ]
     }
 }

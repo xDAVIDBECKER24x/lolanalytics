@@ -18,7 +18,7 @@ def format_json(json_data):
     return json_formatted
 
 
-def filter_settings(match_list, settings, player_puuid):
+def settings_match_filter(match_list, settings, player_puuid):
 
     filtered_matches = []
 
@@ -37,6 +37,12 @@ def filter_settings(match_list, settings, player_puuid):
         for player_settings in settings['playerSettings']:
 
             if player_match_data[player_settings] not in settings['playerSettings'][player_settings]:
+
+                check_settings = False
+       
+        for player_challenges in settings['playerChallenges']:
+
+            if player_challenges['challenges'][player_challenges] not in settings['playerChallenges'][player_challenges]:
 
                 check_settings = False
 
@@ -93,7 +99,7 @@ def save_ping_overview(match_list, settings, player_puuid, save_path, player_ali
 
     geral_pings_overview = []
 
-    filtered_mach_list = filter_settings(match_list, settings, player_puuid)
+    filtered_mach_list = settings_match_filter(match_list, settings, player_puuid)
 
     for match in filtered_mach_list:
 
@@ -343,7 +349,7 @@ def save_vision_overview(match_list, settings, player_puuid, save_path, player_a
 
     geral_vision_overview = []
 
-    filtered_mach_list = filter_settings(match_list, settings, player_puuid)
+    filtered_mach_list = settings_match_filter(match_list, settings, player_puuid)
 
     for match in filtered_mach_list:
 
@@ -485,12 +491,16 @@ def save_all_players_vision_overview(match_settings, player_type, players_type_a
     return
 
 # Load settings match filter
-file_settings_match_filter = open("settings_match_filter.json", "r")
-settings_match_filter = json.loads(file_settings_match_filter.read())
-file_settings_match_filter.close()
+file_settings_filter = open("settings_match_filter.json", "r")
+settings_filter = json.loads(file_settings_filter.read())
+file_settings_filter.close()
 
-settings_match_filter['playerSettings']['championName'].append("Zed")
-settings_match_filter.update({'lane':'MID'})
+settings_filter['playerSettings']['championName'] = ['Akali']
+settings_filter['playerSettings']['lane'] = ['TOP']
+settings_filter['playerSettings']['individualPosition'] = ['TOP']
+settings_filter['playerSettings']['individualPosition'] = ['TOP']
+
+print(settings_match_filter)
 
 # Load players puuid alias
 file_puuids_alias = open("players_type_alias_puuid.json", "r")
@@ -520,7 +530,7 @@ raw_data_matchs_file.close()
 # save_all_players_vision_overview(settings_match_filter,player_type,players_type_alias_puuid)
 
 # Save only 1 player
-save_ping_overview(raw_matches_data, settings_match_filter,
+save_ping_overview(raw_matches_data, settings_filter,
                    player_puuid, save_path, player_alias)
 
 # Test code area

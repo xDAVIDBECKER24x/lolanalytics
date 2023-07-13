@@ -1,4 +1,5 @@
 import json
+import operator 
 import pandas as pd
 import numpy as np
 from time import gmtime
@@ -28,7 +29,9 @@ def settings_match_filter(match_list, settings, player_puuid):
 
         for match_settings in settings['matchSettings']:
             
-            if match['info'][match_settings] not in settings['matchSettings'][match_settings]: check_settings = False
+            if match['info'][match_settings] not in settings['matchSettings'][match_settings]: 
+                
+                check_settings = False
                 
         if check_settings == False : continue
 
@@ -39,12 +42,14 @@ def settings_match_filter(match_list, settings, player_puuid):
             if player_match_data[player_settings] not in settings['playerSettings'][player_settings]:
 
                 check_settings = False
-       
-        for player_challenges in settings['playerChallenges']:
 
-            if player_challenges['challenges'][player_challenges] not in settings['playerChallenges'][player_challenges]:
+        # if check_settings == False : continue
 
-                check_settings = False
+        # for player_challenges in settings['playerChallenges']:
+
+        #     if player_challenges['challenges'][player_challenges] not in settings['playerChallenges'][player_challenges]:
+
+        #         check_settings = False
 
         if check_settings == True:
 
@@ -226,7 +231,7 @@ def analysis_ping_overview(geral_pings_overview, save_path, player_alias):
     pings_most_frequency = df['totalPings'].value_counts()[:5].index.tolist()
 
     df_frequency = df['totalPings'].value_counts()
-    # bECKYNH
+
     # print(df_frequency.index.value_counts())
     # print(df_frequency.tolist())
 
@@ -328,18 +333,6 @@ def analysis_ping_overview(geral_pings_overview, save_path, player_alias):
 
     plt.close()
 
-    # #Ping Ratio Overview Bar Chart
-    # fig_frequency_pings, axs_frequency_pings = plt.subplots(figsize=(8, 4))
-    # df.plot(kind='bar',x=idx,  y=frequency, ax=axs_frequency_pings)
-    # axs_frequency_pings.set_xlabel("")
-    # axs_frequency_pings.set_ylabel("Pings")
-    # axs_frequency_pings.set_title(f"Distrituição Frequência {player_alias.capitalize()}")
-
-    # file_frequency_pings = f"{save_path}ping_overview_ratio_{player_alias}_bar"
-    # fig_frequency_pings.savefig(file_frequency_pings)
-
-    # plt.close()
-
     return analysis_pings
 
 
@@ -415,7 +408,7 @@ def save_vision_overview(match_list, settings, player_puuid, save_path, player_a
 
             geral_vision_overview.append(vision_overview)
 
-    # vision_overview_analysis = analysis_ping_overview(geral_vision_overview, save_path,player_alias)
+    vision_overview_analysis = analysis_vision_overview(geral_vision_overview, save_path,player_alias)
 
     geral_vision_overview = format_json(geral_vision_overview)
 
@@ -424,8 +417,169 @@ def save_vision_overview(match_list, settings, player_puuid, save_path, player_a
 
         outfile.write(geral_vision_overview)
 
-    # return vision_overview_analysis
-    return
+    return vision_overview_analysis
+
+
+def analysis_vision_overview(geral_vision_overview, save_path, player_alias):
+
+    analysis_vision = {}
+
+    df = pd.DataFrame(geral_vision_overview)
+    df['gameCreation'] = pd.to_datetime(df['gameCreation'], unit='ms')
+    df['gameCreation'] = df['gameCreation'].dt.strftime('%Y-%m-%d')
+
+    matchs_count = len(df.index)
+    vision_std = df['visionScore'].std()
+    vision_mean = df['visionScore'].mean()
+    vision_ratio_mean = df['visionScorePerMinute'].mean()
+    vision_ratio_std = df['visionScorePerMinute'].std()
+    vision_mean_constancy_indicator_1 = len(df[
+        (df["visionScore"] <= (vision_mean + vision_std)) &
+        (df["visionScore"] >= (vision_mean - vision_std))
+    ])
+    vision_mean_constancy_indicator_2 = len(df[
+        (df["visionScore"] <= (vision_mean + (2*vision_std))) &
+        (df["visionScore"] >= (vision_mean - (2*vision_std)))
+    ])
+    vision_mean_constancy_indicator_3 = len(df[
+        (df["visionScore"] <= (vision_mean + (3*vision_std))) &
+        (df["visionScore"] >= (vision_mean - (3*vision_std)))
+    ])
+    vision_ratio_constancy_indicator_1 = len(df[
+        (df["visionScorePerMinute"] <= (vision_ratio_mean + vision_ratio_std)) &
+        (df["visionScorePerMinute"] >= (vision_ratio_mean - vision_ratio_std))
+    ])
+    vision_ratio_constancy_indicator_2 = len(df[
+        (df["visionScorePerMinute"] <= (vision_ratio_mean + (2*vision_ratio_std))) &
+        (df["visionScorePerMinute"] >= (vision_ratio_mean - (2*vision_ratio_std)))
+    ])
+    vision_ratio_constancy_indicator_3 = len(df[
+        (df["visionScorePerMinute"] <= (vision_ratio_mean + (3*vision_ratio_std))) &
+        (df["visionScorePerMinute"] >= (vision_ratio_mean - (3*vision_ratio_std)))
+    ])
+
+    vision_mean_constancy_indicator_1 = (
+        vision_mean_constancy_indicator_1/matchs_count)*100
+    vision_mean_constancy_indicator_2 = (
+        vision_mean_constancy_indicator_2/matchs_count)*100
+    vision_mean_constancy_indicator_3 = (
+        vision_mean_constancy_indicator_3/matchs_count)*100
+
+    vision_ratio_constancy_indicator_1 = (
+        vision_ratio_constancy_indicator_1/matchs_count)*100
+    vision_ratio_constancy_indicator_2 = (
+        vision_ratio_constancy_indicator_2/matchs_count)*100
+    vision_ratio_constancy_indicator_3 = (
+        vision_ratio_constancy_indicator_3/matchs_count)*100
+
+    vision_most_frequency = df["visionScore"].mode()
+    vision_most_frequency = df['visionScore'].value_counts()[:5].index.tolist()
+
+    df_frequency = df['visionScore'].value_counts()
+
+    # print(df_frequency.index.value_counts())
+    # print(df_frequency.tolist())
+
+    df.sort_values(by=['gameCreation'], inplace=True)
+
+    win_df = df[df["win"] == True]
+    lose_df = df[df['win'] == False]
+
+    wins = win_df['totalPings'].count()
+    winrate = (wins/matchs_count)*100
+
+    start_date = df['gameCreation'].min()
+    end_date = df['gameCreation'].max()
+
+    analysis_vision['player_alias'] = player_alias
+    analysis_vision['matchs_count'] = matchs_count
+    analysis_vision['start_date'] = start_date
+    analysis_vision['end_date'] = end_date
+    analysis_vision['winrate'] = winrate
+    analysis_vision['vision_sum'] = df['visionScore'].sum()
+    analysis_vision['vision_mean'] = vision_mean
+    analysis_vision['vision_ratio'] = vision_ratio_mean
+    analysis_vision['vision_median'] = df['visionScore'].median()
+    analysis_vision['vision_most_frequency'] = vision_most_frequency
+    analysis_vision['vision_mean_constancy_indicator_1'] = vision_mean_constancy_indicator_1
+    analysis_vision['vision_mean_constancy_indicator_2'] = vision_mean_constancy_indicator_2
+    analysis_vision['vision_mean_constancy_indicator_3'] = vision_mean_constancy_indicator_3
+    analysis_vision['vision_ratio_constancy_indicator_1'] = vision_ratio_constancy_indicator_1
+    analysis_vision['vision_ratio_constancy_indicator_2'] = vision_ratio_constancy_indicator_2
+    analysis_vision['vision_ratio_constancy_indicator_3'] = vision_ratio_constancy_indicator_3
+    analysis_vision['vision_std'] = vision_std
+    analysis_vision['vision_ratio_std'] = vision_ratio_std
+    analysis_vision['wins_count'] = win_df['visionScore'].count()
+    analysis_vision['win_vision_mean'] = win_df['visionScore'].mean()
+    analysis_vision['win_vision_median'] = win_df['visionScore'].median()
+    analysis_vision['win_vision_sum'] = win_df['visionScore'].sum()
+    analysis_vision['win_vision_std'] = win_df['visionScore'].std()
+    analysis_vision['win_vision_ratio_mean'] = win_df['visionScorePerMinute'].mean()
+    analysis_vision['win_vision_ratio_std'] = win_df['visionScorePerMinute'].std()
+    analysis_vision['lose_count'] = lose_df['visionScore'].count()
+    analysis_vision['lose_vision_mean'] = lose_df['visionScore'].mean()
+    analysis_vision['lose_vision_median'] = lose_df['visionScore'].median()
+    analysis_vision['lose_vision_sum'] = lose_df['visionScore'].sum()
+    analysis_vision['lose_vision_std'] = lose_df['visionScore'].std()
+    analysis_vision['lose_vision_ratio_mean'] = lose_df['visionScorePerMinute'].mean()
+    analysis_vision['lose_vision_ratio_std'] = lose_df['visionScorePerMinute'].std()
+
+    for key in analysis_vision:
+        if (isinstance(analysis_vision[key], float)):
+            analysis_vision[key] = round(analysis_vision[key], 3)
+
+    analysis_vision_formatted = json.dumps(
+        analysis_vision, default=str, indent=4)
+    save_file = f"{save_path}ping_overview_analysis_{player_alias}.json"
+    with open(save_file, "w") as outfile:
+        outfile.write(analysis_vision_formatted)
+
+    df_ratio_dates_mean = df[['gameCreation', 'visionScorePerMinute']].copy()
+    df_ratio_dates_mean = df_ratio_dates_mean.groupby(
+        'gameCreation', as_index=False)['visionScorePerMinute'].mean()
+
+    max_vision = df['visionScore'].max()
+    min_vision = df['visionScore'].min()
+    max_ratio = df['visionScorePerMinute'].max()
+
+    # Ping Total Overview Scatter Chart
+    fig_total_vision, axs_total_vision = plt.subplots(figsize=(8, 4))
+    df.plot(kind='scatter', x='gameCreation',
+            y='visionScore', ax=axs_total_vision)
+
+    axs_total_vision.set_ylim([0, max_vision+(max_vision/10)])
+    axs_total_vision.set_xticks(df['gameCreation'])
+    axs_total_vision.set_xticklabels(df['gameCreation'])
+    axs_total_vision.xaxis.set_major_locator(mdates.MonthLocator(interval=1))
+    axs_total_vision.set_xlabel("")
+    axs_total_vision.set_ylabel("Pontos de Visão")
+    axs_total_vision.set_title(f"Dispersão S {player_alias.capitalize()}")
+
+    file_total_vision = f"{save_path}vision_overview_total_{player_alias}_scatter"
+    fig_total_vision.savefig(file_total_vision)
+
+    plt.close()
+
+    # Ping Ratio Overview Line Chart
+    fig_ratio_vision, axs_ratio_vision = plt.subplots(figsize=(8, 4))
+    df_ratio_dates_mean.plot(
+        kind='line', x='gameCreation', y='visionScorePerMinute', ax=axs_ratio_vision)
+    axs_ratio_vision.xaxis.set_major_locator(mdates.MonthLocator(interval=1))
+    axs_ratio_vision.legend(['Frequência'])
+    axs_ratio_vision.set_xlabel("")
+    axs_ratio_vision.set_ylabel("Visão/Minuto")
+    axs_ratio_vision.set_title(f"Frequência Score Visão {player_alias.capitalize()}")
+
+    file_ratio_vision = f"{save_path}vision_overview_ratio_{player_alias}_line"
+    fig_ratio_vision.savefig(file_ratio_vision)
+
+    idx = df_frequency.index.values
+    frequency = df_frequency.values
+
+    plt.close()
+
+    return analysis_vision
+
 
 
 def save_all_players_pings_overview(match_settings, player_type, players_type_alias_puuid):
@@ -495,12 +649,15 @@ file_settings_filter = open("settings_match_filter.json", "r")
 settings_filter = json.loads(file_settings_filter.read())
 file_settings_filter.close()
 
-settings_filter['playerSettings']['championName'] = ['Akali']
-settings_filter['playerSettings']['lane'] = ['TOP']
-settings_filter['playerSettings']['individualPosition'] = ['TOP']
-settings_filter['playerSettings']['individualPosition'] = ['TOP']
+# settings_filter['playerSettings']['championName'] = ['Akali']
+# settings_filter['playerSettings']['lane'] = ['TOP']
+# settings_filter['playerSettings']['individualPosition'] = ['TOP']
+
+
+
 
 print(settings_match_filter)
+
 
 # Load players puuid alias
 file_puuids_alias = open("players_type_alias_puuid.json", "r")

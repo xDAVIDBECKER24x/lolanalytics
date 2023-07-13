@@ -43,19 +43,15 @@ def settings_match_filter(match_list, settings, player_puuid):
 
                 check_settings = False
 
-        # if check_settings == False : continue
-
-        # for player_challenges in settings['playerChallenges']:
-
-        #     if player_challenges['challenges'][player_challenges] not in settings['playerChallenges'][player_challenges]:
-
-        #         check_settings = False
-
         if check_settings == True:
 
             filtered_matches.append(match)
 
-    print(f"\tMatchs filtered => {len(filtered_matches)}")
+    if not filtered_matches: 
+        print("\tmatchs => None matchs found")
+    else :
+        print(f"\tmatchs filtered => {len(filtered_matches)}")
+
 
     return filtered_matches
 
@@ -338,11 +334,13 @@ def analysis_ping_overview(geral_pings_overview, save_path, player_alias):
 
 def save_vision_overview(match_list, settings, player_puuid, save_path, player_alias):
 
-    print(f"Getting : {player_alias}  puuid => {player_puuid}")
+    print(f"Getting : {player_alias}\n\tpuuid => {player_puuid}")
 
     geral_vision_overview = []
-
+    
     filtered_mach_list = settings_match_filter(match_list, settings, player_puuid)
+
+    if not filtered_mach_list : return
 
     for match in filtered_mach_list:
 
@@ -408,8 +406,9 @@ def save_vision_overview(match_list, settings, player_puuid, save_path, player_a
 
             geral_vision_overview.append(vision_overview)
 
+    
     vision_overview_analysis = analysis_vision_overview(geral_vision_overview, save_path,player_alias)
-
+   
     geral_vision_overview = format_json(geral_vision_overview)
 
     save_file = f"{save_path}vision_overview_{player_alias}.json"
@@ -477,15 +476,12 @@ def analysis_vision_overview(geral_vision_overview, save_path, player_alias):
 
     df_frequency = df['visionScore'].value_counts()
 
-    # print(df_frequency.index.value_counts())
-    # print(df_frequency.tolist())
-
     df.sort_values(by=['gameCreation'], inplace=True)
 
     win_df = df[df["win"] == True]
     lose_df = df[df['win'] == False]
 
-    wins = win_df['totalPings'].count()
+    wins = win_df['visionScore'].count()
     winrate = (wins/matchs_count)*100
 
     start_date = df['gameCreation'].min()
@@ -581,7 +577,6 @@ def analysis_vision_overview(geral_vision_overview, save_path, player_alias):
     return analysis_vision
 
 
-
 def save_all_players_pings_overview(match_settings, player_type, players_type_alias_puuid):
 
     geral_pings_overview_analysis = []
@@ -615,7 +610,7 @@ def save_all_players_pings_overview(match_settings, player_type, players_type_al
 
 def save_all_players_vision_overview(match_settings, player_type, players_type_alias_puuid):
 
-    # geral_vision_overview_analysis = []
+    geral_vision_overview_analysis = []
 
     for player in players_type_alias_puuid[player_type]:
 
@@ -628,19 +623,18 @@ def save_all_players_vision_overview(match_settings, player_type, players_type_a
         raw_data_matchs_file = open(raw_data_matchs_file)
         raw_matches_data = json.load(raw_data_matchs_file)
         raw_data_matchs_file.close()
-
-        # pings_overview_analysis = save_ping_overview(raw_matches_data, match_settings, player_puuid, save_path, player_alias)
-        save_vision_overview(raw_matches_data, match_settings,
+        
+        vision_overview_analysis = save_vision_overview(raw_matches_data, match_settings,
                              player_puuid, save_path, player_alias)
 
-        # geral_pings_overview_analysis.append(pings_overview_analysis)
+        geral_vision_overview_analysis.append(vision_overview_analysis)
 
-    # geral_pings_overview_analysis =format_json(geral_pings_overview_analysis)
+    geral_vision_overview_analysis =format_json(geral_vision_overview_analysis)
 
-    # save_file =  f"analysis/{player_type}_geral_ping_overview_analysis.json"
-    # with open(save_file, "w") as outfile:
+    save_file =  f"analysis/{player_type}_geral_vision_overview_analysis.json"
+    with open(save_file, "w") as outfile:
 
-    #     outfile.write(geral_pings_overview_analysis)
+        outfile.write(geral_vision_overview_analysis)
 
     return
 
@@ -650,13 +644,10 @@ settings_filter = json.loads(file_settings_filter.read())
 file_settings_filter.close()
 
 # settings_filter['playerSettings']['championName'] = ['Akali']
-# settings_filter['playerSettings']['lane'] = ['TOP']
-# settings_filter['playerSettings']['individualPosition'] = ['TOP']
+settings_filter['playerSettings']['lane'] = ['MIDDLE']
+settings_filter['playerSettings']['role'] = ['SOLO']
+settings_filter['playerSettings']['individualPosition'] = ['MIDDLE']
 
-
-
-
-print(settings_match_filter)
 
 
 # Load players puuid alias
@@ -683,11 +674,11 @@ raw_matches_data = json.load(raw_data_matchs_file)
 raw_data_matchs_file.close()
 
 # Save all players type
-# save_all_players_pings_overview(settings_match_filter,player_type,players_type_alias_puuid)
-# save_all_players_vision_overview(settings_match_filter,player_type,players_type_alias_puuid)
+# save_all_players_pings_overview(settings_filter,player_type,players_type_alias_puuid)
+# save_all_players_vision_overview(settings_filter,player_type,players_type_alias_puuid)
 
 # Save only 1 player
-save_ping_overview(raw_matches_data, settings_filter,
+save_vision_overview(raw_matches_data, settings_filter,
                    player_puuid, save_path, player_alias)
 
 # Test code area

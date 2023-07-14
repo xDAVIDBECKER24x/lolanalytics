@@ -1,6 +1,6 @@
 import requests
 
-api_key = "RGAPI-33d19954-676f-4e3e-b731-d188ae273317"
+api_key = "RGAPI-bae535b5-74c8-47c3-a513-8aabb0391762"
 
 def get_player_data_by_name(name):
 

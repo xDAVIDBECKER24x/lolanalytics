@@ -289,6 +289,7 @@ def analysis_ping_overview(geral_pings_overview, save_path, player_alias):
     df_ratio_dates_mean = df_ratio_dates_mean.groupby(
         'gameCreation', as_index=False)['ratioPings'].mean()
 
+
     max_pings = df['totalPings'].max()
     min_pings = df['totalPings'].min()
     max_ratio = df['ratioPings'].max()
@@ -533,12 +534,24 @@ def analysis_vision_overview(geral_vision_overview, save_path, player_alias):
     df_ratio_dates_mean = df[['gameCreation', 'visionScorePerMinute']].copy()
     df_ratio_dates_mean = df_ratio_dates_mean.groupby(
         'gameCreation', as_index=False)['visionScorePerMinute'].mean()
+    
+        
+    df_distribution_vision = df[['visionScore']].copy()
+    df_distribution_vision = df_distribution_vision['visionScore'].value_counts().reset_index()
+    df_distribution_vision.columns = ['visionScore', 'counts']
+    df_distribution_vision['visionScore'] = pd.to_numeric(df['visionScore'],errors='coerce')
+    df_distribution_vision.sort_values(by=['visionScore'])
+    # vision_score_ocurences = df_distribution_vision['visionScore']
+    # vision_score_frequency = df_distribution_vision['counts']
+    # print(vision_score_ocurences.sort_values())
+    print(df_distribution_vision)
+   
 
     max_vision = df['visionScore'].max()
     min_vision = df['visionScore'].min()
     max_ratio = df['visionScorePerMinute'].max()
 
-    # Ping Total Overview Scatter Chart
+    # Vision Total Overview Scatter Chart
     fig_total_vision, axs_total_vision = plt.subplots(figsize=(8, 4))
     df.plot(kind='scatter', x='gameCreation',
             y='visionScore', ax=axs_total_vision)
@@ -556,7 +569,7 @@ def analysis_vision_overview(geral_vision_overview, save_path, player_alias):
 
     plt.close()
 
-    # Ping Ratio Overview Line Chart
+    # Vision Ratio Overview Line Chart
     fig_ratio_vision, axs_ratio_vision = plt.subplots(figsize=(8, 4))
     df_ratio_dates_mean.plot(
         kind='line', x='gameCreation', y='visionScorePerMinute', ax=axs_ratio_vision)
@@ -571,6 +584,20 @@ def analysis_vision_overview(geral_vision_overview, save_path, player_alias):
 
     idx = df_frequency.index.values
     frequency = df_frequency.values
+
+    plt.close()
+
+    # Vision Match Distribution Overview Line Chart
+    fig_distribution_vision, axs_distribution_vision = plt.subplots(figsize=(8, 4))
+    df_distribution_vision.plot(
+        kind='bar', x='visionScore', y='counts', ax=axs_distribution_vision)
+    axs_distribution_vision.legend(['Distribuição'])
+    axs_distribution_vision.set_xlabel("Quantidade")
+    axs_distribution_vision.set_ylabel("Ocorrências")
+    axs_distribution_vision.set_title(f"Distribuição Placar Visão {player_alias.capitalize()}")
+
+    file_distribution_vision = f"{save_path}vision_overview_distribution_{player_alias}_line"
+    fig_distribution_vision.savefig(file_distribution_vision)
 
     plt.close()
 

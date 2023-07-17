@@ -10,6 +10,7 @@ import matplotlib.dates as mdates
 import matplotlib.dates as dates
 from scipy.interpolate import make_interp_spline
 from numpyencoder import NumpyEncoder
+from scipy.interpolate import interp1d
 
 
 def format_json(json_data):
@@ -101,6 +102,8 @@ def save_ping_overview(match_list, settings, player_puuid, save_path, player_ali
     geral_pings_overview = []
 
     filtered_mach_list = settings_match_filter(match_list, settings, player_puuid)
+
+    if not filtered_mach_list : return
 
     for match in filtered_mach_list:
 
@@ -318,6 +321,36 @@ def analysis_ping_overview(geral_pings_overview, save_path, player_alias):
     plt.close()
 
     # Ping Ratio Overview Line Chart
+
+    df1 = pd.DataFrame()
+    df1['Weight_A'] = [80, 65,  60 ,59]
+    df1.index = [2005,2015,2030,2031]
+
+    f1 = interp1d(df1.index, df1['Weight_A'],kind='cubic')
+    
+    df2 = pd.DataFrame()
+    new_index = np.arange(2005,2031)
+    df2['Weight_A'] = f1(new_index)
+    df2.index = new_index
+
+    ax2 = df2.plot.line()
+    ax2.set_title('After interpolation')
+    ax2.set_xlabel("year")
+    ax2.set_ylabel("weight")
+
+    plt.show()
+        
+
+    # df_ratio_dates_mean.index=['gameCreation']
+    # f1 = interp1d(df_ratio_dates_mean.index, df_ratio_dates_mean['ratioPings'],kind='cubic')
+   
+    # df_ratio_dates_mean_smooth = pd.DataFrame()
+    # new_ratio_index = np.arange(df_ratio_dates_mean['ratioPings'])
+    # df_ratio_dates_mean_smooth['ratioPings'] = df_ratio_dates_mean(new_ratio_index)
+    # ax2 = df_ratio_dates_mean_smooth.plot.line()
+    # plt.close()
+
+
     fig_ratio_pings, axs_ratio_pings = plt.subplots(figsize=(8, 4))
     df_ratio_dates_mean.plot(
         kind='line', x='gameCreation', y='ratioPings', ax=axs_ratio_pings)
@@ -584,6 +617,8 @@ def analysis_vision_overview(geral_vision_overview, save_path, player_alias):
 
     plt.close()
 
+
+
     # Vision Ratio Overview Line Chart
     fig_ratio_vision, axs_ratio_vision = plt.subplots(figsize=(8, 4))
     df_ratio_dates_mean.plot(
@@ -686,9 +721,9 @@ settings_filter = json.loads(file_settings_filter.read())
 file_settings_filter.close()
 
 # settings_filter['playerSettings']['championName'] = ['Akali']
-settings_filter['playerSettings']['role'] = ['SOLO']
-settings_filter['playerSettings']['lane'] = ['MIDDLE','TOP']
-settings_filter['playerSettings']['individualPosition'] = ['TOP','MIDDLE']
+settings_filter['playerSettings']['role'] = ['CARRY']
+settings_filter['playerSettings']['lane'] = ['BOTTOM']
+settings_filter['playerSettings']['individualPosition'] = ['BOTTOM']
 
 # Role: SOLO, CARRY, NONE, SUPPORT
 # Lane: JUNGLE, MIDDLE, BOTTOM, TOP
@@ -724,8 +759,8 @@ raw_data_matchs_file.close()
 # save_all_players_vision_overview(settings_filter,player_type,players_type_alias_puuid)
 
 # Save only 1 player
-save_vision_overview(raw_matches_data, settings_filter,
-                   player_puuid, save_path, player_alias)
+# save_vision_overview(raw_matches_data, settings_filter,
+                #    player_puuid, save_path, player_alias)
 save_ping_overview(raw_matches_data, settings_filter,
                    player_puuid, save_path, player_alias)
 

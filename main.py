@@ -686,9 +686,13 @@ settings_filter = json.loads(file_settings_filter.read())
 file_settings_filter.close()
 
 # settings_filter['playerSettings']['championName'] = ['Akali']
-settings_filter['playerSettings']['lane'] = ['MIDDLE']
 settings_filter['playerSettings']['role'] = ['SOLO']
-settings_filter['playerSettings']['individualPosition'] = ['MIDDLE']
+settings_filter['playerSettings']['lane'] = ['MIDDLE','TOP']
+settings_filter['playerSettings']['individualPosition'] = ['TOP','MIDDLE']
+
+# Role: SOLO, CARRY, NONE, SUPPORT
+# Lane: JUNGLE, MIDDLE, BOTTOM, TOP
+# Position: TOP, MIDDLE, JUNGLE, BOTTOM, UTILITY, APEX, NONE
 
 
 

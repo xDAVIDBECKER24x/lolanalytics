@@ -127,7 +127,6 @@ def save_ping_overview(match_list, settings, player_puuid, save_path, player_ali
             hold_pings = player_data['getBackPings']
             need_vision_pings = player_data['needVisionPings']
             vision_cleared_pings = player_data['visionClearedPings']
-
             basic_pings = player_data['basicPings']
             on_my_way_pings = player_data['onMyWayPings']
             push_pings = player_data['pushPings']
@@ -290,6 +289,12 @@ def analysis_ping_overview(geral_pings_overview, save_path, player_alias):
         'gameCreation', as_index=False)['ratioPings'].mean()
 
 
+    df_distribution_pings = df[['totalPings']].copy()
+    df_distribution_pings = pd.DataFrame(df_distribution_pings['totalPings'].value_counts().reset_index().values, columns=["totalPings", "counts"])
+    df_distribution_pings = df_distribution_pings.sort_values(by=['totalPings'], ascending=True)
+    # print(df_distribution_pings)
+
+
     max_pings = df['totalPings'].max()
     min_pings = df['totalPings'].min()
     max_ratio = df['ratioPings'].max()
@@ -329,6 +334,21 @@ def analysis_ping_overview(geral_pings_overview, save_path, player_alias):
     frequency = df_frequency.values
 
     plt.close()
+
+    # Ping Match Distribution Overview Line Chart
+    fig_distribution_pings, axs_distribution_pings = plt.subplots(figsize=(8, 4))
+    df_distribution_pings.plot(
+        kind='bar', x='totalPings', y='counts', ax=axs_distribution_pings)
+    axs_distribution_pings.legend(['Distribuição'])
+    axs_distribution_pings.set_xlabel("Quantidade")
+    axs_distribution_pings.set_ylabel("Ocorrências")
+    axs_distribution_pings.set_title(f"Distribuição Pings {player_alias.capitalize()}")
+
+    file_distribution_pings = f"{save_path}ping_overview_distribution_{player_alias}_bar"
+    fig_distribution_pings.savefig(file_distribution_pings)
+
+    plt.close()
+
 
     return analysis_pings
 
@@ -512,7 +532,7 @@ def analysis_vision_overview(geral_vision_overview, save_path, player_alias):
     analysis_vision['win_vision_sum'] = win_df['visionScore'].sum()
     analysis_vision['win_vision_std'] = win_df['visionScore'].std()
     analysis_vision['win_vision_ratio_mean'] = win_df['visionScorePerMinute'].mean()
-    analysis_vision['win_vision_ratio_std'] = win_df['visionScorePerMinute'].std()
+    analysis_vision['win_vision_ratio   _std'] = win_df['visionScorePerMinute'].std()
     analysis_vision['lose_count'] = lose_df['visionScore'].count()
     analysis_vision['lose_vision_mean'] = lose_df['visionScore'].mean()
     analysis_vision['lose_vision_median'] = lose_df['visionScore'].median()
@@ -537,14 +557,9 @@ def analysis_vision_overview(geral_vision_overview, save_path, player_alias):
     
         
     df_distribution_vision = df[['visionScore']].copy()
-    df_distribution_vision = df_distribution_vision['visionScore'].value_counts().reset_index()
-    df_distribution_vision.columns = ['visionScore', 'counts']
-    df_distribution_vision['visionScore'] = pd.to_numeric(df['visionScore'],errors='coerce')
-    df_distribution_vision.sort_values(by=['visionScore'])
-    # vision_score_ocurences = df_distribution_vision['visionScore']
-    # vision_score_frequency = df_distribution_vision['counts']
-    # print(vision_score_ocurences.sort_values())
-    print(df_distribution_vision)
+    df_distribution_vision = pd.DataFrame(df_distribution_vision['visionScore'].value_counts().reset_index().values, columns=["visionScore", "counts"])
+    df_distribution_vision = df_distribution_vision.sort_values(by=['visionScore'], ascending=True)
+    # print(df_distribution_vision)
    
 
     max_vision = df['visionScore'].max()
@@ -706,6 +721,8 @@ raw_data_matchs_file.close()
 
 # Save only 1 player
 save_vision_overview(raw_matches_data, settings_filter,
+                   player_puuid, save_path, player_alias)
+save_ping_overview(raw_matches_data, settings_filter,
                    player_puuid, save_path, player_alias)
 
 # Test code area

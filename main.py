@@ -312,6 +312,7 @@ def analysis_ping_overview(geral_pings_overview, save_path, player_alias):
     axs_total_pings.set_xlabel("")
     axs_total_pings.set_ylabel("Quantidade de Pings")
     axs_total_pings.set_title(f"Dispersão Pings {player_alias.capitalize()}")
+    axs_total_pings.grid(True, alpha=0.3, linestyle="--")
 
     file_total_pings = f"{save_path}ping_overview_total_{player_alias}_scatter"
     fig_total_pings.savefig(file_total_pings)
@@ -328,6 +329,7 @@ def analysis_ping_overview(geral_pings_overview, save_path, player_alias):
     axs_ratio_pings.set_xlabel("")
     axs_ratio_pings.set_ylabel("Pings/Minuto")
     axs_ratio_pings.set_title(f"Frequência Pings {player_alias.capitalize()}")
+    axs_ratio_pings.grid(True, alpha=0.3, linestyle="--")
 
     file_ratio_pings = f"{save_path}ping_overview_ratio_{player_alias}_line"
     fig_ratio_pings.savefig(file_ratio_pings)
@@ -390,20 +392,22 @@ def analysis_ping_overview(geral_pings_overview, save_path, player_alias):
 
     # 4
     # Calculating mean and Stdev of AGW
-    df_mean = np.mean(df["totalPings"])
-    df_std = np.std(df["totalPings"])
-    
+
+   
+    # Ping Match Distribution Range Chart 
+    axs_probability_density_pings = plt.subplots(figsize=(8, 4))
     # Calculating probability density function (PDF)
-    pdf = stats.norm.pdf(df["totalPings"].sort_values(), df_mean, df_std)
-
-    # Drawing a graph
-    plt.plot(df["totalPings"].sort_values(), pdf)
-    plt.xlim([0,70])  
-    plt.xlabel("x", size=12)    
-    plt.ylabel("y", size=12)                
+    axs_probability_density_pings = stats.norm.pdf(df["totalPings"].sort_values(), pings_mean, pings_std)
+    
+    plt.plot(df["totalPings"].sort_values(), axs_probability_density_pings)
+    plt.xlim([0,df["totalPings"].max()])  
+    plt.xlabel("Frequência", size=12)    
+    plt.ylabel("Quantidade", size=12)        
+    plt.title(f"Probabilidade Densidade {player_alias.capitalize()}")        
     plt.grid(True, alpha=0.3, linestyle="--")
-    plt.show()
-
+    plt.savefig(f"{save_path}ping_probability_density_{player_alias}_line")
+    
+    plt.close()
 
     # Ping Match Distribution Overview Line Chart
     fig_distribution_pings, axs_distribution_pings = plt.subplots(figsize=(8, 4))
@@ -413,6 +417,7 @@ def analysis_ping_overview(geral_pings_overview, save_path, player_alias):
     axs_distribution_pings.set_xlabel("Quantidade")
     axs_distribution_pings.set_ylabel("Ocorrências")
     axs_distribution_pings.set_title(f"Distribuição Pings {player_alias.capitalize()}")
+    axs_distribution_pings.grid(True, alpha=0.3, linestyle="--")
 
     file_distribution_pings = f"{save_path}ping_overview_distribution_{player_alias}_bar"
     fig_distribution_pings.savefig(file_distribution_pings)

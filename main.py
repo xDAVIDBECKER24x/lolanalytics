@@ -11,7 +11,7 @@ import matplotlib.dates as dates
 from numpyencoder import NumpyEncoder
 from scipy.interpolate import interp1d
 from scipy.interpolate import make_interp_spline
-from scipy.stats import norm
+import scipy.stats as stats
 import math
 
 def format_json(json_data):
@@ -379,13 +379,29 @@ def analysis_ping_overview(geral_pings_overview, save_path, player_alias):
     # plt.show()
 
 
-    # 3
+    # # 3
     
-    mu = 0
-    variance = 1
-    sigma = math.sqrt(variance)
-    x = np.linspace(mu - 3*sigma, mu + 3*sigma, 100)
-    plt.plot(x, stats.norm.pdf(x, mu, sigma))
+    # mu = 0
+    # variance = 1
+    # sigma = math.sqrt(variance)
+    # x = np.linspace(mu - 3*sigma, mu + 3*sigma, 100)
+    # plt.plot(x, stats.norm.pdf(x, mu, sigma))
+    # plt.show()
+
+    # 4
+    # Calculating mean and Stdev of AGW
+    df_mean = np.mean(df["totalPings"])
+    df_std = np.std(df["totalPings"])
+    
+    # Calculating probability density function (PDF)
+    pdf = stats.norm.pdf(df["totalPings"].sort_values(), df_mean, df_std)
+
+    # Drawing a graph
+    plt.plot(df["totalPings"].sort_values(), pdf)
+    plt.xlim([0,70])  
+    plt.xlabel("x", size=12)    
+    plt.ylabel("y", size=12)                
+    plt.grid(True, alpha=0.3, linestyle="--")
     plt.show()
 
 

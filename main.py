@@ -8,10 +8,11 @@ from datetime import datetime
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import matplotlib.dates as dates
-from scipy.interpolate import make_interp_spline
 from numpyencoder import NumpyEncoder
 from scipy.interpolate import interp1d
-
+from scipy.interpolate import make_interp_spline
+from scipy.stats import norm
+import math
 
 def format_json(json_data):
 
@@ -176,7 +177,6 @@ def save_ping_overview(match_list, settings, player_puuid, save_path, player_ali
 def analysis_ping_overview(geral_pings_overview, save_path, player_alias):
 
     analysis_pings = {}
-
     df = pd.DataFrame(geral_pings_overview)
     df['gameCreation'] = pd.to_datetime(df['gameCreation'], unit='ms')
     df['gameCreation'] = df['gameCreation'].dt.strftime('%Y-%m-%d')
@@ -295,8 +295,6 @@ def analysis_ping_overview(geral_pings_overview, save_path, player_alias):
     df_distribution_pings = df[['totalPings']].copy()
     df_distribution_pings = pd.DataFrame(df_distribution_pings['totalPings'].value_counts().reset_index().values, columns=["totalPings", "counts"])
     df_distribution_pings = df_distribution_pings.sort_values(by=['totalPings'], ascending=True)
-    # print(df_distribution_pings)
-
 
     max_pings = df['totalPings'].max()
     min_pings = df['totalPings'].min()
@@ -322,35 +320,6 @@ def analysis_ping_overview(geral_pings_overview, save_path, player_alias):
 
     # Ping Ratio Overview Line Chart
 
-    df1 = pd.DataFrame()
-    df1['Weight_A'] = [80, 65,  60 ,59]
-    df1.index = [2005,2015,2030,2031]
-
-    f1 = interp1d(df1.index, df1['Weight_A'],kind='cubic')
-    
-    df2 = pd.DataFrame()
-    new_index = np.arange(2005,2031)
-    df2['Weight_A'] = f1(new_index)
-    df2.index = new_index
-
-    ax2 = df2.plot.line()
-    ax2.set_title('After interpolation')
-    ax2.set_xlabel("year")
-    ax2.set_ylabel("weight")
-
-    plt.show()
-        
-
-    # df_ratio_dates_mean.index=['gameCreation']
-    # f1 = interp1d(df_ratio_dates_mean.index, df_ratio_dates_mean['ratioPings'],kind='cubic')
-   
-    # df_ratio_dates_mean_smooth = pd.DataFrame()
-    # new_ratio_index = np.arange(df_ratio_dates_mean['ratioPings'])
-    # df_ratio_dates_mean_smooth['ratioPings'] = df_ratio_dates_mean(new_ratio_index)
-    # ax2 = df_ratio_dates_mean_smooth.plot.line()
-    # plt.close()
-
-
     fig_ratio_pings, axs_ratio_pings = plt.subplots(figsize=(8, 4))
     df_ratio_dates_mean.plot(
         kind='line', x='gameCreation', y='ratioPings', ax=axs_ratio_pings)
@@ -367,6 +336,58 @@ def analysis_ping_overview(geral_pings_overview, save_path, player_alias):
     frequency = df_frequency.values
 
     plt.close()
+
+    # # 1º
+    # # print(df_distribution_pings['totalPings'])
+    # # Dataset
+    # y = np.array(df_distribution_pings['counts'])
+    # x = np.array(df_distribution_pings['totalPings'])
+    
+    # print(x)
+    # print(y)
+
+    # X_Y_Spline = make_interp_spline(x, y)
+    
+    
+    # # Returns evenly spaced numbers
+    # # over a specified interval.
+    # X_ = np.linspace(x.min(), x.max(), 1000)
+    # Y_ = X_Y_Spline(X_)
+    
+    # # Plotting the Graph
+    # plt.plot(X_, Y_)
+    # plt.title("Plot Smooth")
+    # plt.xlabel("X")
+    # plt.ylabel("Y")
+    # plt.show()
+
+    # # 2
+    # # Dataset
+    # y = np.array(df_distribution_pings['counts'])
+    # x = np.array(df_distribution_pings['totalPings'])
+    
+    # cubic_interpolation_model = interp1d(x, y, kind = "quadratic")
+    
+    # # Plotting the Graph
+    # X_=np.linspace(x.min(), x.max(), 500)
+    # Y_=cubic_interpolation_model(X_)
+  
+    # plt.plot(X_, Y_)
+    # plt.title("Plot Smooth")
+    # plt.xlabel("X")
+    # plt.ylabel("Y")
+    # plt.show()
+
+
+    # 3
+    
+    mu = 0
+    variance = 1
+    sigma = math.sqrt(variance)
+    x = np.linspace(mu - 3*sigma, mu + 3*sigma, 100)
+    plt.plot(x, stats.norm.pdf(x, mu, sigma))
+    plt.show()
+
 
     # Ping Match Distribution Overview Line Chart
     fig_distribution_pings, axs_distribution_pings = plt.subplots(figsize=(8, 4))
@@ -721,9 +742,9 @@ settings_filter = json.loads(file_settings_filter.read())
 file_settings_filter.close()
 
 # settings_filter['playerSettings']['championName'] = ['Akali']
-settings_filter['playerSettings']['role'] = ['CARRY']
-settings_filter['playerSettings']['lane'] = ['BOTTOM']
-settings_filter['playerSettings']['individualPosition'] = ['BOTTOM']
+# settings_filter['playerSettings']['role'] = ['SOLO']
+# settings_filter['playerSettings']['lane'] = ['MIDDLE']
+# settings_filter['playerSettings']['individualPosition'] = ['MIDDLE']
 
 # Role: SOLO, CARRY, NONE, SUPPORT
 # Lane: JUNGLE, MIDDLE, BOTTOM, TOP

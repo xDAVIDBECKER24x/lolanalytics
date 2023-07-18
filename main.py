@@ -401,8 +401,8 @@ def analysis_ping_overview(geral_pings_overview, save_path, player_alias):
     
     plt.plot(df["totalPings"].sort_values(), axs_probability_density_pings)
     plt.xlim([0,df["totalPings"].max()])  
-    plt.xlabel("Frequência", size=12)    
-    plt.ylabel("Quantidade", size=12)        
+    plt.xlabel("Quantidade", size=12)    
+    plt.ylabel("Frequência", size=12)        
     plt.title(f"Probabilidade Densidade {player_alias.capitalize()}")        
     plt.grid(True, alpha=0.3, linestyle="--")
     plt.savefig(f"{save_path}ping_probability_density_{player_alias}_line")
@@ -779,10 +779,10 @@ players_type_alias_puuid = json.loads(file_puuids_alias.read())
 file_puuids_alias.close()
 
 # Select player type
-player_type = 'geral'
+player_type = 'proplayer'
 
 # Select player alias
-player_alias = 'beckynho'
+player_alias = 'brance'
 
 # Get player puuid by alias
 player_puuid = players_type_alias_puuid[player_type][player_alias]
